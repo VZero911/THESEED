@@ -1,3 +1,7 @@
+<!-- banner -->
+<p align="center"><img src="assets/banner.svg" alt="The Seed" width="100%" /></p>
+<!-- /banner -->
+
 <div align="center">
 
 # 🌱 The Seed by VZero911 — showcase
@@ -62,7 +66,7 @@ points (POC) are on the table. Write to vzero911@gmail.com or on Discord (**vzer
 ## 🏆 The Seed Top Contributor
 
 The ranking of the people who build The Seed, by **POC** (Point of Contribution: earned, never
-bought). SYSTEM (the AI agent) and V lead it, rewarded every 2 hours for each commit. Someday,
+bought). A.L.I.C.E (the AI agent) and V lead it, rewarded every 2 hours for each commit. Someday,
 someone may catch up.
 
 ## 🌍 In real life: the same mechanism, on a concert ticket
@@ -107,8 +111,8 @@ Expo / React Native · React + Vite + wagmi + three.js · TypeScript strict · A
 
 <p align="center"><img src="screenshots/31-design-tokens-v2.png" width="640" /></p>
 
-A project by **V** ([@VZero911](https://github.com/VZero911)), built with **SYSTEM** (Claude Code).
+A project by **V** ([@VZero911](https://github.com/VZero911)), built with **A.L.I.C.E** (Claude Code).
 
 ---
 
-*© 2026 V0 (VZero911). Built by V with SYSTEM, an AI agent powered by Claude (Anthropic). See [NOTICE](NOTICE.md).*
+*© 2026 V0 (VZero911). Built by V with A.L.I.C.E, an AI agent powered by Claude (Anthropic). See [NOTICE](NOTICE.md).*

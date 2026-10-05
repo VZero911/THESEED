@@ -4,10 +4,17 @@ import type { GameMonster } from '../api/types'
 import { familyOf, ROLES } from '../game/format'
 import { ElementEmblem } from './art/ElementEmblem'
 import { MonsterArt } from './art/MonsterArt'
+import { ELEMENT_COLORS, STAR_FRAMES } from './art/palette'
 import { Stars } from './components'
 import { colors, radius, space } from './theme'
 
 /** A monster tile used by the collection, the team picker and the summon result. */
+/** V3 frame: the border follows the stars, the pedestal glow follows the element. */
+export function cardTint(stars: number, element: GameMonster['element']) {
+  const frame = STAR_FRAMES[Math.max(1, Math.min(8, stars))] ?? ['#8a5a3c', '#c48a63']
+  return { border: frame[1], pedestal: `${ELEMENT_COLORS[element].glow}2e` }
+}
+
 export function MonsterCard({
   monster,
   onPress,
@@ -19,6 +26,7 @@ export function MonsterCard({
   selected?: boolean
   badge?: string
 }) {
+  const tint = cardTint(monster.stars, monster.element)
   return (
     <Pressable
       accessibilityRole={onPress ? 'button' : undefined}
@@ -26,15 +34,17 @@ export function MonsterCard({
       accessibilityState={{ selected: !!selected }}
       disabled={!onPress}
       onPress={onPress}
-      style={[styles.card, selected && styles.selected]}
+      style={[styles.card, { borderColor: tint.border }, selected && styles.selected]}
     >
       {badge ? <Text style={styles.badge}>{badge}</Text> : null}
-      <MonsterArt
-        family={familyOf(monster)}
-        element={monster.element}
-        stars={monster.stars}
-        awakened={monster.awakened}
-      />
+      <View style={[styles.pedestal, { backgroundColor: tint.pedestal }]}>
+        <MonsterArt
+          family={familyOf(monster)}
+          element={monster.element}
+          stars={monster.stars}
+          awakened={monster.awakened}
+        />
+      </View>
       <View style={styles.emblem}>
         <ElementEmblem element={monster.element} size={24} />
       </View>
@@ -60,6 +70,7 @@ const styles = StyleSheet.create({
     borderRadius: radius.lg,
     padding: space.md,
   },
+  pedestal: { borderRadius: 999, padding: space.xs },
   emblem: { position: 'absolute', top: space.xs, left: space.xs },
   selected: { borderColor: colors.gold, backgroundColor: colors.panelHigh },
   name: { color: colors.text, fontWeight: '700', fontSize: 15 },
