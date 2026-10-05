@@ -23,14 +23,21 @@ td,th{border:1px solid var(--muted);padding:4px 8px}</style>
 <p><a href="index.html">← The Seed by VZero911</a></p>
 <h1>Prediction: the future of The Seed in 10 steps</h1>
 <blockquote>
-<p>Written by SYSTEM for V on 2026-10-02, updated at every scan (norm <code>NORME.md</code> §7).
+<p>Written by A.L.I.C.E for V on 2026-10-02, updated at every scan (norm <code>NORME.md</code> §7).
 Each step says <strong>where we go</strong>, <strong>what we automate</strong> (small, medium, big) and gives a ready-to-
 paste <strong>prompt</strong> to start the working session. Detailed tasks live in the registry
 <code>agents/backlog.json</code> (<code>make automation-sync</code> → console, "Automation" section).</p>
 <p>The common thread: make <strong>absolutely everything automatic</strong>, until AI agents and MCP servers do,
-under V's control, the work V and SYSTEM do today.</p>
+under V's control, the work V and A.L.I.C.E do today.</p>
 </blockquote>
-<h2>Where we stand (2026-10-02, evening)</h2>
+<h2>Where we stand (2026-10-03, night)</h2>
+<p>Since the evening of 2026-10-02: the arena (wings, rivals, league), 331 achievements, skins, banners,
+tags, contribution rewards, English by default, animations, the Android/iOS build configuration and
+every closed-beta tool A.L.I.C.E can prepare (<code>make beta-check</code> 11/11). What is left is mostly V's:
+domain, server, keystore and test ETH, legal publisher, GitHub Actions billing
+(<code>docs/V_ACTIONS.md</code>). Estimates: back about <strong>70 %</strong>, front about <strong>55 %</strong>, automation about
+<strong>60 %</strong> of the target.</p>
+<h2>Where we stood (2026-10-02, evening)</h2>
 <ul>
 <li><strong>Back</strong>: contracts (11, 336 tests, 100 % coverage), the full game API, on-chain marketplace,
   indexer, on-chain polls and achievements, background jobs: about <strong>50 %</strong> of the target.</li>
@@ -38,7 +45,7 @@ under V's control, the work V and SYSTEM do today.</p>
   wallets: about <strong>30 %</strong>.</li>
 <li><strong>Automation</strong>: <code>make all-up</code> and a 2-hour routine (backup, POC, GitHub, fast-forward of <code>master</code>,
   public showcase, norms scan), a registry with a priority model, an MCP server and two agents
-  (issues, polls); the SYSTEM autopilot exists but is off.</li>
+  (issues, polls); the A.L.I.C.E autopilot exists but is off.</li>
 </ul>
 <hr />
 <h2>Step 1: clean foundations (done)</h2>
@@ -63,8 +70,8 @@ screens with the SDK's V2 tokens, screenshots in <code>docs/screenshots/</code>,
 <li>Done: <code>make security-scan</code>, <code>make test-stats</code>, contribution POC computed from commits, a
   background task settling ended auctions, Dependabot, the 2-hour routine, <code>make norms-scan</code>.</li>
 <li>To do: <code>make status-report</code> (handoff numbers), automatic screenshots (Playwright), GitHub
-  comments on issues and PRs generated from the handoff, SYSTEM dev notes published by the routine.</li>
-<li><strong>Done when</strong>: a SYSTEM session no longer does any repetitive task by hand.</li>
+  comments on issues and PRs generated from the handoff, A.L.I.C.E dev notes published by the routine.</li>
+<li><strong>Done when</strong>: a A.L.I.C.E session no longer does any repetitive task by hand.</li>
 </ul>
 <blockquote>
 <p>Prompt: "Step 3 of <code>prompts/PREDICTIONS.md</code>: take the registry's <code>step: 3</code> tasks one by one,
@@ -99,7 +106,7 @@ simulation run on every content change (V: long progression).</p>
 mobile build."</p>
 </blockquote>
 <h2>Step 7: the public testnet</h2>
-<p>Base Sepolia with a real signer for SYSTEM (KMS or a budgeted wallet, with a nonce lock), one-gesture
+<p>Base Sepolia with a real signer for A.L.I.C.E (KMS or a budgeted wallet, with a nonce lock), one-gesture
 deployment (rehearsal, deploy, verify, report), audit preparation.</p>
 <blockquote>
 <p>Prompt: "Step 7: full testnet pipeline, real signer, deployment report, audit checklist.
@@ -117,7 +124,7 @@ mainnet <strong>after an audit</strong> and on V's decision. Then The Seed OS.</
 <hr />
 <h2>How this prediction lives</h2>
 <ol>
-<li>Each SYSTEM session runs a <strong>scan</strong> (code, visual, norms) and adds what it saw as repetitive to
+<li>Each A.L.I.C.E session runs a <strong>scan</strong> (code, visual, norms) and adds what it saw as repetitive to
    the registry <code>agents/backlog.json</code> and here (the relevant step).</li>
 <li>Selected tasks go to the game spec (§8 octies), then to an issue.</li>
 <li><code>make automation-sync</code> loads the registry into the database: the console shows it, the agents

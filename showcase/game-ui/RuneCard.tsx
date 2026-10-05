@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, View } from 'react-native'
 import { Text } from '../i18n/Text'
 import type { Rune } from '../api/types'
 import { RARITY, statValue } from '../game/runes'
+import { RuneGem } from './art/RuneGem'
 import { colors, radius, space } from './theme'
 
 /** A rune tile: slot, stars, level, set, main stat and substats. */
@@ -26,7 +27,13 @@ export function RuneCard({
       style={[styles.card, { borderColor: selected ? colors.gold : rarity.color }]}
     >
       <View style={styles.head}>
-        <Text style={[styles.slot, { color: rarity.color }]}>{rune.slot}</Text>
+        <RuneGem
+          slot={rune.slot}
+          setId={rune.set.id}
+          rarity={rune.rarity}
+          stars={rune.stars}
+          size={44}
+        />
         <View style={{ flex: 1 }}>
           <Text style={styles.title} numberOfLines={1}>
             {rune.set.name} +{rune.level}

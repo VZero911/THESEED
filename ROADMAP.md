@@ -1,14 +1,23 @@
 # Prediction: the future of The Seed in 10 steps
 
-> Written by SYSTEM for V on 2026-10-02, updated at every scan (norm `NORME.md` §7).
+> Written by A.L.I.C.E for V on 2026-10-02, updated at every scan (norm `NORME.md` §7).
 > Each step says **where we go**, **what we automate** (small, medium, big) and gives a ready-to-
 > paste **prompt** to start the working session. Detailed tasks live in the registry
 > `agents/backlog.json` (`make automation-sync` → console, "Automation" section).
 >
 > The common thread: make **absolutely everything automatic**, until AI agents and MCP servers do,
-> under V's control, the work V and SYSTEM do today.
+> under V's control, the work V and A.L.I.C.E do today.
 
-## Where we stand (2026-10-02, evening)
+## Where we stand (2026-10-03, night)
+
+Since the evening of 2026-10-02: the arena (wings, rivals, league), 331 achievements, skins, banners,
+tags, contribution rewards, English by default, animations, the Android/iOS build configuration and
+every closed-beta tool A.L.I.C.E can prepare (`make beta-check` 11/11). What is left is mostly V's:
+domain, server, keystore and test ETH, legal publisher, GitHub Actions billing
+(`docs/V_ACTIONS.md`). Estimates: back about **70 %**, front about **55 %**, automation about
+**60 %** of the target.
+
+## Where we stood (2026-10-02, evening)
 
 - **Back**: contracts (11, 336 tests, 100 % coverage), the full game API, on-chain marketplace,
   indexer, on-chain polls and achievements, background jobs: about **50 %** of the target.
@@ -16,7 +25,7 @@
   wallets: about **30 %**.
 - **Automation**: `make all-up` and a 2-hour routine (backup, POC, GitHub, fast-forward of `master`,
   public showcase, norms scan), a registry with a priority model, an MCP server and two agents
-  (issues, polls); the SYSTEM autopilot exists but is off.
+  (issues, polls); the A.L.I.C.E autopilot exists but is off.
 
 ---
 
@@ -45,8 +54,8 @@ V2 (players, market, wallets in the 3D, tools, agentic tasks).
 - Done: `make security-scan`, `make test-stats`, contribution POC computed from commits, a
   background task settling ended auctions, Dependabot, the 2-hour routine, `make norms-scan`.
 - To do: `make status-report` (handoff numbers), automatic screenshots (Playwright), GitHub
-  comments on issues and PRs generated from the handoff, SYSTEM dev notes published by the routine.
-- **Done when**: a SYSTEM session no longer does any repetitive task by hand.
+  comments on issues and PRs generated from the handoff, A.L.I.C.E dev notes published by the routine.
+- **Done when**: a A.L.I.C.E session no longer does any repetitive task by hand.
 
 > Prompt: "Step 3 of `prompts/PREDICTIONS.md`: take the registry's `step: 3` tasks one by one,
 > with preview, log and tests."
@@ -82,7 +91,7 @@ simulation run on every content change (V: long progression).
 
 ## Step 7: the public testnet
 
-Base Sepolia with a real signer for SYSTEM (KMS or a budgeted wallet, with a nonce lock), one-gesture
+Base Sepolia with a real signer for A.L.I.C.E (KMS or a budgeted wallet, with a nonce lock), one-gesture
 deployment (rehearsal, deploy, verify, report), audit preparation.
 
 > Prompt: "Step 7: full testnet pipeline, real signer, deployment report, audit checklist.
@@ -107,7 +116,7 @@ mainnet **after an audit** and on V's decision. Then The Seed OS.
 
 ## How this prediction lives
 
-1. Each SYSTEM session runs a **scan** (code, visual, norms) and adds what it saw as repetitive to
+1. Each A.L.I.C.E session runs a **scan** (code, visual, norms) and adds what it saw as repetitive to
    the registry `agents/backlog.json` and here (the relevant step).
 2. Selected tasks go to the game spec (§8 octies), then to an issue.
 3. `make automation-sync` loads the registry into the database: the console shows it, the agents
