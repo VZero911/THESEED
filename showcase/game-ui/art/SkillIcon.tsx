@@ -1,9 +1,9 @@
 /**
- * Spell icons (V: "qu'on voie mieux les sorts"): one badge per kind of skill, drawn in SVG, framed
- * in the colour of the caster's element. The kind is read from what the skill does in the battle
- * log (several targets, heals, buffs, debuffs, stun) or, for the skill list, from its definition.
+ * V3 spell icons: one badge per kind of skill, framed in the caster's element colour, with a
+ * faceted light (bright upper-left, dark lower-right) shared with the rune gems and item icons.
+ * Pure spec + thin renderer pattern.
  */
-import Svg, { Circle, Defs, Path, RadialGradient, Rect, Stop } from 'react-native-svg'
+import Svg, { Circle, Defs, LinearGradient, Path, Rect, Stop } from 'react-native-svg'
 import type { Element } from '../../api/types'
 import { ELEMENT_COLORS } from './palette'
 
@@ -57,20 +57,33 @@ export function actionKindOf(action: {
   return action.skill.endsWith('_1') ? 'strike' : 'spell'
 }
 
+export interface SkillIconSpec {
+  glyph: string
+  tint: string
+  frameDark: string
+  frameMain: string
+  frameGlow: string
+}
+
+/** Pure description of a skill icon, shared by the renderer and its tests. */
+export function skillIconSpec(kind: SkillKind, element: Element): SkillIconSpec {
+  const colors = ELEMENT_COLORS[element]
+  return {
+    glyph: GLYPHS[kind],
+    tint: KIND_TINT[kind],
+    frameDark: colors.dark,
+    frameMain: colors.main,
+    frameGlow: colors.glow,
+  }
+}
+
 const GLYPHS: Record<SkillKind, string> = {
-  // Sword
   strike: 'M17 4l3 0 0 3-9 9-3-3zM6 15l3 3-2 2-1-1-2 2-1-1 2-2-1-1z',
-  // Burst
   area: 'M12 2l2 6 6-2-4 5 5 3-6 1 1 6-4-4-4 4 1-6-6-1 5-3-4-5 6 2z',
-  // Cross
   heal: 'M9 3h6v6h6v6h-6v6H9v-6H3V9h6z',
-  // Arrow up
   buff: 'M12 3l7 8h-4v10H9V11H5z',
-  // Arrow down
   debuff: 'M12 21l-7-8h4V3h6v10h4z',
-  // Spiral stars
   stun: 'M12 4a8 8 0 1 0 8 8h-3a5 5 0 1 1-5-5zM18 2l1 2 2 1-2 1-1 2-1-2-2-1 2-1z',
-  // Rune star
   spell: 'M12 2l2.6 6.6L21 9l-5 4.4L17.5 21 12 17.2 6.5 21 8 13.4 3 9l6.4-.4z',
 }
 
@@ -93,7 +106,7 @@ export function SkillIcon({
   element: Element
   size?: number
 }) {
-  const colors = ELEMENT_COLORS[element]
+  const spec = skillIconSpec(kind, element)
   const id = `sk-${kind}-${element}`
   return (
     <Svg
@@ -103,10 +116,11 @@ export function SkillIcon({
       accessibilityLabel={SKILL_KIND_LABELS[kind]}
     >
       <Defs>
-        <RadialGradient id={id} cx="50%" cy="35%" r="70%">
-          <Stop offset="0" stopColor={colors.glow} stopOpacity={1} />
-          <Stop offset="1" stopColor={colors.dark} stopOpacity={1} />
-        </RadialGradient>
+        <LinearGradient id={id} x1="0" y1="0" x2="1" y2="1">
+          <Stop offset="0" stopColor={spec.frameGlow} stopOpacity={0.9} />
+          <Stop offset="0.4" stopColor={spec.frameDark} stopOpacity={1} />
+          <Stop offset="1" stopColor="#0b0a14" stopOpacity={0.85} />
+        </LinearGradient>
       </Defs>
       <Rect x={1} y={1} width={30} height={30} rx={8} fill={`url(#${id})`} />
       <Rect
@@ -116,11 +130,14 @@ export function SkillIcon({
         height={30}
         rx={8}
         fill="none"
-        stroke={colors.main}
+        stroke={spec.frameMain}
         strokeWidth={2}
       />
-      <Circle cx={16} cy={16} r={11} fill="#000" opacity={0.18} />
-      <Path d={GLYPHS[kind]} fill={KIND_TINT[kind]} transform="translate(4 4)" />
+      {/* V3 faceted planes */}
+      <Path d="M6 3 L3 16 L16 16z" fill="#ffffff" opacity={0.1} />
+      <Path d="M26 29 L29 16 L16 16z" fill="#000000" opacity={0.15} />
+      <Circle cx={16} cy={16} r={11} fill="#000" opacity={0.12} />
+      <Path d={spec.glyph} fill={spec.tint} transform="translate(4 4)" />
     </Svg>
   )
 }
