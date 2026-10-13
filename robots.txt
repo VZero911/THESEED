@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://vzero911.github.io/The_Seed.V0-Public/sitemap.xml

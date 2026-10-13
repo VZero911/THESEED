@@ -1,0 +1,24 @@
+{
+  "_comment": "Feedback requests (V, 2026-10-04): a short question shown at random to a player, answered for a small POC reward through the reward box (nothing is minted before the player claims it). Kinds: rating (1 to 5), choice (one of `options`), text (free answer, 500 characters). `topic` ties the answers to the part of the game they judge, `tunes` says where the numbers live, for V.",
+  "cooldown_hours": 24,
+  "min_account_age_hours": 2,
+  "max_answers_per_player": 60,
+  "min_samples": 5,
+  "rating_ok": 3.5,
+  "rating_fix": 2.5,
+  "reward_poc": 1,
+  "questions": [
+    {"key": "runes_power", "topic": "runes", "kind": "rating", "text": "How do you find the strength of runes and rune sets?", "tunes": "content/runes.json"},
+    {"key": "runes_grind", "topic": "runes", "kind": "choice", "text": "How is the supply of grinds and gems?", "options": ["Too scarce", "About right", "Too generous"], "tunes": "content/runes.json (material_drop_weights)"},
+    {"key": "summon_rates", "topic": "summon", "kind": "rating", "text": "How fair do the summon rates feel?", "tunes": "content/summon_pools.json"},
+    {"key": "battle_pace", "topic": "battles", "kind": "choice", "text": "How is the speed of battles?", "options": ["Too slow", "About right", "Too fast"], "tunes": "game/src/game/battle (animation speed)"},
+    {"key": "battle_difficulty", "topic": "battles", "kind": "rating", "text": "How is the difficulty of the campaign? (1 too hard, 3 right, 5 too easy)", "tunes": "content/stages.json"},
+    {"key": "arena_fun", "topic": "arena", "kind": "rating", "text": "How much fun is the arena?", "tunes": "content/arena.json"},
+    {"key": "energy_limit", "topic": "economy", "kind": "choice", "text": "Does energy limit you too much?", "options": ["Yes, often", "Sometimes", "Never"], "tunes": "content/energy.json"},
+    {"key": "economy_mana", "topic": "economy", "kind": "rating", "text": "Do you earn enough Mana for what you want to do?", "tunes": "content/economy.json"},
+    {"key": "ui_clarity", "topic": "interface", "kind": "rating", "text": "How clear is the interface?", "tunes": "game/src/screens"},
+    {"key": "ui_missing", "topic": "interface", "kind": "text", "text": "What is the one thing you miss most in the game?", "tunes": "docs/HANDOFF.md (V's requests)"},
+    {"key": "start_help", "topic": "onboarding", "kind": "rating", "text": "How easy was it to start playing?", "tunes": "game/src/screens (first steps)"},
+    {"key": "performance", "topic": "performance", "kind": "choice", "text": "How does the game run on your device?", "options": ["Slow or freezing", "Fine", "Very smooth"], "tunes": "game/src (rendering)"}
+  ]
+}

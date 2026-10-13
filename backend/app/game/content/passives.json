@@ -1,0 +1,12 @@
+{
+ "_comment": "Passive skills (V, 2026-10-02): a skill that is not chosen, it triggers by itself in battle, or is built into the character. Triggers: battle_start (when the fight or the wave begins), on_damaged (when the holder is hit, with `chance` %), hp_below (once, when the holder falls under `threshold` of its HP). The effects are the buffs and debuffs of the skills. A species gets the passive of its family if any, else the one of its role (food monsters and fodder below `min_stars` have none). PLACEHOLDER numbers.",
+ "min_stars": 3,
+ "passives": {
+  "rage": {"name": "Rage", "trigger": "on_damaged", "chance": 25, "effects": [{"effect": "atk_up", "target": "self", "turns": 2}]},
+  "rempart": {"name": "Dernier rempart", "trigger": "hp_below", "threshold": 0.5, "effects": [{"effect": "def_up", "target": "self", "turns": 2}]},
+  "aura": {"name": "Aura d'élan", "trigger": "battle_start", "effects": [{"effect": "spd_up", "target": "allies", "turns": 1}]},
+  "vitalite": {"name": "Sursaut de vie", "trigger": "hp_below", "threshold": 0.4, "effects": [{"effect": "regen", "target": "self", "turns": 3}]}
+ },
+ "by_role": {"attack": "rage", "defense": "rempart", "support": "aura", "hp": "vitalite"},
+ "by_family": {}
+}

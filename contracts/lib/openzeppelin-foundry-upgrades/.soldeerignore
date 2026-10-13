@@ -1,0 +1,4 @@
+# Assumes .gitignore's contents are automatically included
+
+# Ignore hidden files and directories
+.*

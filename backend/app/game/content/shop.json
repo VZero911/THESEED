@@ -1,0 +1,41 @@
+{
+ "_comment": "Game shop (V: 'on verra ce que l'on met dedans'). Categories (V): each point currency has its own shop; offers at 100 / 200 / 300 / 1000 points (V), the items are placeholders to decide later. Prices: whole tokens (mana, crystal, poc) paid from the spending allowance, or points (point_* items, off-chain). daily_limit per player and UTC day. PLACEHOLDER offers.",
+ "categories": [
+  {"id": "general", "name": "Général", "currency": "mana"},
+  {"id": "premium", "name": "Cristaux", "currency": "crystal"},
+  {"id": "guild", "name": "Guilde", "currency": "point_guild"},
+  {"id": "social", "name": "Social", "currency": "point_social"},
+  {"id": "arena", "name": "Arène", "currency": "point_arena"},
+  {"id": "tower", "name": "Tour", "currency": "point_tower"},
+  {"id": "skins", "name": "Skins", "currency": "point_cosmetic"}
+ ],
+ "offers": [
+  {"id": "scroll_unknown_10", "category": "general", "name": "10 parchemins inconnus", "rewards": {"items": {"scroll_unknown": 10}}, "price": {"currency": "mana", "amount": 1000}},
+  {"id": "scroll_mystic", "category": "general", "name": "Parchemin mystique", "rewards": {"items": {"scroll_mystic": 1}}, "price": {"currency": "mana", "amount": 2500}, "daily_limit": 5},
+  {"id": "chest_bronze", "category": "general", "name": "Coffre de bronze", "rewards": {"items": {"chest_bronze": 1}}, "price": {"currency": "mana", "amount": 1500}, "daily_limit": 2},
+  {"id": "ore_pack", "category": "general", "name": "Lot de minerai de fer ×10", "rewards": {"items": {"minerai_fer": 10}}, "price": {"currency": "poc", "amount": 10}},
+  {"id": "energy_500", "category": "premium", "name": "500 énergie", "rewards": {"energy": 500}, "price": {"currency": "crystal", "amount": 50}, "daily_limit": 3},
+  {"id": "scroll_ld", "category": "premium", "name": "Parchemin de Lumière et de Ténèbres", "rewards": {"items": {"scroll_ld": 1}}, "price": {"currency": "crystal", "amount": 300}, "daily_limit": 1},
+  {"id": "scroll_legendary", "category": "premium", "name": "Parchemin légendaire (4-6★)", "rewards": {"items": {"scroll_legendary": 1}}, "price": {"currency": "crystal", "amount": 750}, "daily_limit": 1},
+  {"id": "scroll_all_attributes", "category": "premium", "name": "Parchemin de tous les attributs (4-6★)", "rewards": {"items": {"scroll_all_attributes": 1}}, "price": {"currency": "crystal", "amount": 1000}, "daily_limit": 1},
+  {"id": "guild_100", "category": "guild", "name": "Lot d'essences", "rewards": {"items": {"essence_fire": 5, "essence_water": 5, "essence_wind": 5}}, "price": {"currency": "point_guild", "amount": 100}},
+  {"id": "guild_200", "category": "guild", "name": "Parchemin mystique", "rewards": {"items": {"scroll_mystic": 1}}, "price": {"currency": "point_guild", "amount": 200}},
+  {"id": "guild_300", "category": "guild", "name": "Coffre d'argent", "rewards": {"items": {"chest_silver": 1}}, "price": {"currency": "point_guild", "amount": 300}},
+  {"id": "guild_1000", "category": "guild", "name": "Parchemin légendaire (4-6★)", "rewards": {"items": {"scroll_legendary": 1}}, "price": {"currency": "point_guild", "amount": 1000}, "daily_limit": 1},
+  {"id": "social_100", "category": "social", "name": "5 parchemins inconnus", "rewards": {"items": {"scroll_unknown": 5}}, "price": {"currency": "point_social", "amount": 100}},
+  {"id": "social_200", "category": "social", "name": "300 énergie", "rewards": {"energy": 300}, "price": {"currency": "point_social", "amount": 200}},
+  {"id": "social_300", "category": "social", "name": "2 parchemins mystiques", "rewards": {"items": {"scroll_mystic": 2}}, "price": {"currency": "point_social", "amount": 300}},
+  {"id": "social_1000", "category": "social", "name": "Coffre d'or", "rewards": {"items": {"chest_gold": 1}}, "price": {"currency": "point_social", "amount": 1000}, "daily_limit": 1},
+  {"id": "arena_100", "category": "arena", "name": "Lot de minerai de mithril", "rewards": {"items": {"minerai_mithril": 3}}, "price": {"currency": "point_arena", "amount": 100}},
+  {"id": "arena_200", "category": "arena", "name": "Parchemin mystique", "rewards": {"items": {"scroll_mystic": 1}}, "price": {"currency": "point_arena", "amount": 200}},
+  {"id": "arena_300", "category": "arena", "name": "Parchemin de Lumière et de Ténèbres", "rewards": {"items": {"scroll_ld": 1}}, "price": {"currency": "point_arena", "amount": 300}},
+  {"id": "arena_1000", "category": "arena", "name": "Parchemin de tous les attributs (4-6★)", "rewards": {"items": {"scroll_all_attributes": 1}}, "price": {"currency": "point_arena", "amount": 1000}, "daily_limit": 1},
+  {"id": "tower_100", "category": "tower", "name": "Coffre de bronze", "rewards": {"items": {"chest_bronze": 1}}, "price": {"currency": "point_tower", "amount": 100}},
+  {"id": "tower_200", "category": "tower", "name": "Coffre d'argent", "rewards": {"items": {"chest_silver": 1}}, "price": {"currency": "point_tower", "amount": 200}},
+  {"id": "tower_300", "category": "tower", "name": "Parchemin de Lumière et de Ténèbres", "rewards": {"items": {"scroll_ld": 1}}, "price": {"currency": "point_tower", "amount": 300}},
+  {"id": "tower_1000", "category": "tower", "name": "Parchemin mythique (5-6★)", "rewards": {"items": {"scroll_mythic": 1}}, "price": {"currency": "point_tower", "amount": 1000}, "daily_limit": 1},
+  {"id": "skin_frame_gold", "category": "skins", "name": "Cadre de profil doré", "rewards": {"items": {"skin_frame_gold": 1}}, "price": {"currency": "point_cosmetic", "amount": 100}, "daily_limit": 1},
+  {"id": "skin_summon_stars", "category": "skins", "name": "Effet d'invocation : pluie d'étoiles", "rewards": {"items": {"skin_summon_stars": 1}}, "price": {"currency": "point_cosmetic", "amount": 300}, "daily_limit": 1},
+  {"id": "skin_dragon_ember", "category": "skins", "name": "Skin : Dragon braise", "rewards": {"items": {"skin_dragon_ember": 1}}, "price": {"currency": "point_cosmetic", "amount": 1000}, "daily_limit": 1}
+ ]
+}

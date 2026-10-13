@@ -1,0 +1,3126 @@
+{
+ "_comment": "Achievements (V): checked by the game, recorded on-chain by SYSTEM (contracts/src/Achievements.sol, ADR 0020). Points feed the achievements leaderboard. Tiers: basique, avancé, difficile, légendaire. Kinds: poc (whole POC held: The Seed Top Contributor), clears (levels cleared), clear_stage (one level, or any of a list), clear_all (all of a list), summon_stars (best summon), account_level, social_level, guild_level, summons, monster_stars, awakened, world_boss_attacks, world_boss_kill, poll_votes, guild, friends, runes. The first player to clear a level also gets 'first-clear:<level>'. PLACEHOLDER list.",
+ "achievements": [
+  {
+   "id": "first-steps",
+   "name": "Premiers pas",
+   "description": "Gagner un premier combat.",
+   "kind": "clears",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "zone-1",
+   "name": "Gardien de la zone 1",
+   "description": "Vaincre le boss de la zone 1 du scénario.",
+   "kind": "clear_stage",
+   "target": "z1-7",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "zone-2",
+   "name": "Gardien de la zone 2",
+   "description": "Vaincre le boss de la zone 2 du scénario.",
+   "kind": "clear_stage",
+   "target": "z2-7",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "zone-3",
+   "name": "Gardien de la zone 3",
+   "description": "Vaincre le boss de la zone 3 du scénario.",
+   "kind": "clear_stage",
+   "target": "z3-7",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "zone-4",
+   "name": "Gardien de la zone 4",
+   "description": "Vaincre le boss de la zone 4 du scénario.",
+   "kind": "clear_stage",
+   "target": "z4-7",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "zone-5",
+   "name": "Gardien de la zone 5",
+   "description": "Vaincre le boss de la zone 5 du scénario.",
+   "kind": "clear_stage",
+   "target": "z5-7",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "zone-6",
+   "name": "Gardien de la zone 6",
+   "description": "Vaincre le boss de la zone 6 du scénario.",
+   "kind": "clear_stage",
+   "target": "z6-7",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "zone-7",
+   "name": "Gardien de la zone 7",
+   "description": "Vaincre le boss de la zone 7 du scénario.",
+   "kind": "clear_stage",
+   "target": "z7-7",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "zone-8",
+   "name": "Gardien de la zone 8",
+   "description": "Vaincre le boss de la zone 8 du scénario.",
+   "kind": "clear_stage",
+   "target": "z8-7",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "zone-9",
+   "name": "Gardien de la zone 9",
+   "description": "Vaincre le boss de la zone 9 du scénario.",
+   "kind": "clear_stage",
+   "target": "z9-7",
+   "points": 50,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-10",
+   "name": "Gardien de la zone 10",
+   "description": "Vaincre le boss de la zone 10 du scénario.",
+   "kind": "clear_stage",
+   "target": "z10-7",
+   "points": 50,
+   "tier": "difficile"
+  },
+  {
+   "id": "campaign",
+   "name": "Héros du scénario",
+   "description": "Finir tout le scénario (les 10 zones).",
+   "kind": "clear_all",
+   "target": [
+    "z1-7",
+    "z2-7",
+    "z3-7",
+    "z4-7",
+    "z5-7",
+    "z6-7",
+    "z7-7",
+    "z8-7",
+    "z9-7",
+    "z10-7"
+   ],
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "campaign-hard",
+   "name": "Héros endurci",
+   "description": "Finir le scénario en difficulté Hard.",
+   "kind": "clear_stage",
+   "target": "z10-7-hard",
+   "points": 150,
+   "tier": "difficile"
+  },
+  {
+   "id": "campaign-hell",
+   "name": "Revenu des Enfers",
+   "description": "Finir le scénario en difficulté Hell.",
+   "kind": "clear_stage",
+   "target": "z10-7-hell",
+   "points": 300,
+   "tier": "légendaire"
+  },
+  {
+   "id": "clears-25",
+   "name": "Aventurier",
+   "description": "Finir 25 niveaux différents.",
+   "kind": "clears",
+   "target": 25,
+   "points": 25,
+   "tier": "basique"
+  },
+  {
+   "id": "clears-100",
+   "name": "Conquérant",
+   "description": "Finir 100 niveaux différents.",
+   "kind": "clears",
+   "target": 100,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "clears-250",
+   "name": "Maître des lieux",
+   "description": "Finir 250 niveaux différents.",
+   "kind": "clears",
+   "target": 250,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "rune-b5",
+   "name": "Explorateur des donjons",
+   "description": "Finir l'étage 5 d'un donjon de runes.",
+   "kind": "clear_stage",
+   "target": [
+    "fureur-5",
+    "celerite-5",
+    "acharnement-5"
+   ],
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "rune-b10",
+   "name": "Pilleur de runes",
+   "description": "Finir l'étage 10 d'un donjon de runes.",
+   "kind": "clear_stage",
+   "target": [
+    "fureur-10",
+    "celerite-10",
+    "acharnement-10"
+   ],
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "rune-b15",
+   "name": "Seigneur des runes",
+   "description": "Finir le dernier étage (15) d'un donjon de runes.",
+   "kind": "clear_stage",
+   "target": [
+    "fureur-15",
+    "celerite-15",
+    "acharnement-15"
+   ],
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "rune-all-b15",
+   "name": "Fléau des donjons",
+   "description": "Finir l'étage 15 des trois donjons de runes.",
+   "kind": "clear_all",
+   "target": [
+    "fureur-15",
+    "celerite-15",
+    "acharnement-15"
+   ],
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "grind-b10",
+   "name": "Forgeron",
+   "description": "Finir le dernier étage (10) d'un donjon de meules.",
+   "kind": "clear_stage",
+   "target": [
+    "meules-acharnement-vampire-10",
+    "meules-ferveur-precision-10",
+    "meules-fureur-celerite-10",
+    "meules-garde-seve-10",
+    "meules-resolution-lame-10",
+    "meules-vitalite-rempart-10"
+   ],
+   "points": 50,
+   "tier": "difficile"
+  },
+  {
+   "id": "gem-b10",
+   "name": "Joaillier",
+   "description": "Finir le dernier étage (10) d'un donjon de gemmes.",
+   "kind": "clear_stage",
+   "target": [
+    "gemmes-acharnement-precision-10",
+    "gemmes-ferveur-seve-10",
+    "gemmes-fureur-rempart-10",
+    "gemmes-garde-vampire-10",
+    "gemmes-resolution-celerite-10",
+    "gemmes-vitalite-lame-10"
+   ],
+   "points": 50,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-10",
+   "name": "Premier palier",
+   "description": "Vaincre l'étage 10 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-10",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "tower-25",
+   "name": "Grimpeur",
+   "description": "Vaincre l'étage 25 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-25",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "tower-50",
+   "name": "Mi-hauteur",
+   "description": "Vaincre l'étage 50 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-50",
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-75",
+   "name": "Vertige",
+   "description": "Vaincre l'étage 75 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-75",
+   "points": 150,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-100",
+   "name": "Sommet de la Tour",
+   "description": "Vaincre l'étage 100 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-100",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "tower-hard-50",
+   "name": "Vertige absolu",
+   "description": "Vaincre l'étage 50 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-50-hard",
+   "points": 300,
+   "tier": "légendaire"
+  },
+  {
+   "id": "tower-hard-100",
+   "name": "Maître de la Tour",
+   "description": "Vaincre l'étage 100 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-100-hard",
+   "points": 1000,
+   "tier": "légendaire"
+  },
+  {
+   "id": "summons-10",
+   "name": "Invocateur",
+   "description": "Faire 10 invocations.",
+   "kind": "summons",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "summons-100",
+   "name": "Grand invocateur",
+   "description": "Faire 100 invocations.",
+   "kind": "summons",
+   "target": 100,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "summon-4",
+   "name": "Bonne pioche",
+   "description": "Invoquer un monstre 4★.",
+   "kind": "summon_stars",
+   "target": 4,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "summon-5",
+   "name": "Appel légendaire",
+   "description": "Invoquer un monstre 5★.",
+   "kind": "summon_stars",
+   "target": 5,
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "summon-6",
+   "name": "Miracle",
+   "description": "Invoquer un monstre 6★.",
+   "kind": "summon_stars",
+   "target": 6,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "stars-5",
+   "name": "Étoile montante",
+   "description": "Avoir un monstre 5★.",
+   "kind": "monster_stars",
+   "target": 5,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "stars-6",
+   "name": "Sixième sens",
+   "description": "Avoir un monstre 6★.",
+   "kind": "monster_stars",
+   "target": 6,
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "stars-7",
+   "name": "Septième ciel",
+   "description": "Avoir un monstre 7★.",
+   "kind": "monster_stars",
+   "target": 7,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "awaken-1",
+   "name": "Éveil",
+   "description": "Éveiller un monstre.",
+   "kind": "awakened",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "awaken-10",
+   "name": "Éveilleur",
+   "description": "Avoir 10 monstres éveillés.",
+   "kind": "awakened",
+   "target": 10,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "runes-50",
+   "name": "Collectionneur de runes",
+   "description": "Posséder 50 runes.",
+   "kind": "runes",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "boss-5",
+   "name": "Chasseur de géant",
+   "description": "Attaquer 5 fois le boss mondial.",
+   "kind": "world_boss_attacks",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "boss-100",
+   "name": "Assiégeant",
+   "description": "Attaquer 100 fois le boss mondial.",
+   "kind": "world_boss_attacks",
+   "target": 100,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "boss-kill",
+   "name": "Tueur de dragon",
+   "description": "Porter le coup final au boss mondial.",
+   "kind": "world_boss_kill",
+   "target": 1,
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "voter",
+   "name": "Citoyen",
+   "description": "Voter à un sondage.",
+   "kind": "poll_votes",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "friends-1",
+   "name": "Premier ami",
+   "description": "Avoir un ami.",
+   "kind": "friends",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "friends-5",
+   "name": "Entouré",
+   "description": "Avoir 5 amis.",
+   "kind": "friends",
+   "target": 5,
+   "points": 10,
+   "tier": "avancé"
+  },
+  {
+   "id": "guild",
+   "name": "Frères d'armes",
+   "description": "Rejoindre une guilde.",
+   "kind": "guild",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-10",
+   "name": "Apprenti",
+   "description": "Atteindre le niveau de compte 10.",
+   "kind": "account_level",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-50",
+   "name": "Vétéran",
+   "description": "Atteindre le niveau de compte 50.",
+   "kind": "account_level",
+   "target": 50,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "level-100",
+   "name": "Champion",
+   "description": "Atteindre le niveau de compte 100.",
+   "kind": "account_level",
+   "target": 100,
+   "points": 100,
+   "tier": "difficile"
+  },
+  {
+   "id": "level-200",
+   "name": "Légende vivante",
+   "description": "Atteindre le niveau de compte 200.",
+   "kind": "account_level",
+   "target": 200,
+   "points": 500,
+   "tier": "légendaire"
+  },
+  {
+   "id": "contributor",
+   "name": "Contributeur",
+   "description": "Gagner un premier POC en contribuant à The Seed.",
+   "kind": "poc",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "top-contributor",
+   "name": "Top Contributor",
+   "description": "Réunir 100 POC de contribution à The Seed.",
+   "kind": "poc",
+   "target": 100,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "social-5",
+   "name": "Sociable",
+   "description": "Atteindre le niveau social 5.",
+   "kind": "social_level",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "social-25",
+   "name": "Pilier de la communauté",
+   "description": "Atteindre le niveau social 25.",
+   "kind": "social_level",
+   "target": 25,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "social-50",
+   "name": "Âme du village",
+   "description": "Atteindre le niveau social 50.",
+   "kind": "social_level",
+   "target": 50,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "social-100",
+   "name": "Cœur du royaume",
+   "description": "Atteindre le niveau social 100.",
+   "kind": "social_level",
+   "target": 100,
+   "points": 500,
+   "tier": "légendaire"
+  },
+  {
+   "id": "social-200",
+   "name": "Légende vivante",
+   "description": "Atteindre le niveau social 200.",
+   "kind": "social_level",
+   "target": 200,
+   "points": 1000,
+   "tier": "légendaire"
+  },
+  {
+   "id": "guild-5",
+   "name": "Guilde naissante",
+   "description": "Être dans une guilde de niveau 5.",
+   "kind": "guild_level",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "guild-20",
+   "name": "Guilde reconnue",
+   "description": "Être dans une guilde de niveau 20.",
+   "kind": "guild_level",
+   "target": 20,
+   "points": 50,
+   "tier": "avancé"
+  },
+  {
+   "id": "guild-50",
+   "name": "Guilde de légende",
+   "description": "Être dans une guilde de niveau 50.",
+   "kind": "guild_level",
+   "target": 50,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "victories-10",
+   "name": "Vainqueur (10)",
+   "description": "Gagner 10 combats.",
+   "kind": "victories",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "victories-50",
+   "name": "Vainqueur (50)",
+   "description": "Gagner 50 combats.",
+   "kind": "victories",
+   "target": 50,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "victories-100",
+   "name": "Vainqueur (100)",
+   "description": "Gagner 100 combats.",
+   "kind": "victories",
+   "target": 100,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "victories-250",
+   "name": "Vainqueur (250)",
+   "description": "Gagner 250 combats.",
+   "kind": "victories",
+   "target": 250,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "victories-500",
+   "name": "Vainqueur (500)",
+   "description": "Gagner 500 combats.",
+   "kind": "victories",
+   "target": 500,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "victories-1000",
+   "name": "Vainqueur (1 000)",
+   "description": "Gagner 1 000 combats.",
+   "kind": "victories",
+   "target": 1000,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "victories-2500",
+   "name": "Vainqueur (2 500)",
+   "description": "Gagner 2 500 combats.",
+   "kind": "victories",
+   "target": 2500,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "victories-5000",
+   "name": "Vainqueur (5 000)",
+   "description": "Gagner 5 000 combats.",
+   "kind": "victories",
+   "target": 5000,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "victories-10000",
+   "name": "Vainqueur (10 000)",
+   "description": "Gagner 10 000 combats.",
+   "kind": "victories",
+   "target": 10000,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "victories-25000",
+   "name": "Vainqueur (25 000)",
+   "description": "Gagner 25 000 combats.",
+   "kind": "victories",
+   "target": 25000,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "victories-50000",
+   "name": "Vainqueur (50 000)",
+   "description": "Gagner 50 000 combats.",
+   "kind": "victories",
+   "target": 50000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "victories-100000",
+   "name": "Vainqueur (100 000)",
+   "description": "Gagner 100 000 combats.",
+   "kind": "victories",
+   "target": 100000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "clears-more-10",
+   "name": "Explorateur (10)",
+   "description": "Terminer 10 niveaux différents.",
+   "kind": "clears",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "clears-more-50",
+   "name": "Explorateur (50)",
+   "description": "Terminer 50 niveaux différents.",
+   "kind": "clears",
+   "target": 50,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "clears-more-150",
+   "name": "Explorateur (150)",
+   "description": "Terminer 150 niveaux différents.",
+   "kind": "clears",
+   "target": 150,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "clears-more-350",
+   "name": "Explorateur (350)",
+   "description": "Terminer 350 niveaux différents.",
+   "kind": "clears",
+   "target": 350,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "clears-more-500",
+   "name": "Explorateur (500)",
+   "description": "Terminer 500 niveaux différents.",
+   "kind": "clears",
+   "target": 500,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "summons-more-1",
+   "name": "Invocateur (1)",
+   "description": "Faire 1 invocations.",
+   "kind": "summons",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "summons-more-25",
+   "name": "Invocateur (25)",
+   "description": "Faire 25 invocations.",
+   "kind": "summons",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "summons-more-50",
+   "name": "Invocateur (50)",
+   "description": "Faire 50 invocations.",
+   "kind": "summons",
+   "target": 50,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "summons-more-250",
+   "name": "Invocateur (250)",
+   "description": "Faire 250 invocations.",
+   "kind": "summons",
+   "target": 250,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "summons-more-500",
+   "name": "Invocateur (500)",
+   "description": "Faire 500 invocations.",
+   "kind": "summons",
+   "target": 500,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "summons-more-1000",
+   "name": "Invocateur (1 000)",
+   "description": "Faire 1 000 invocations.",
+   "kind": "summons",
+   "target": 1000,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "summons-more-2500",
+   "name": "Invocateur (2 500)",
+   "description": "Faire 2 500 invocations.",
+   "kind": "summons",
+   "target": 2500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "summons-more-5000",
+   "name": "Invocateur (5 000)",
+   "description": "Faire 5 000 invocations.",
+   "kind": "summons",
+   "target": 5000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "owned-5",
+   "name": "Ménagerie (5)",
+   "description": "Posséder 5 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "owned-10",
+   "name": "Ménagerie (10)",
+   "description": "Posséder 10 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "owned-25",
+   "name": "Ménagerie (25)",
+   "description": "Posséder 25 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "owned-50",
+   "name": "Ménagerie (50)",
+   "description": "Posséder 50 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "owned-100",
+   "name": "Ménagerie (100)",
+   "description": "Posséder 100 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "owned-200",
+   "name": "Ménagerie (200)",
+   "description": "Posséder 200 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 200,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "owned-300",
+   "name": "Ménagerie (300)",
+   "description": "Posséder 300 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 300,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "owned-500",
+   "name": "Ménagerie (500)",
+   "description": "Posséder 500 monstres en même temps.",
+   "kind": "monsters_owned",
+   "target": 500,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "species-5",
+   "name": "Collectionneur (5)",
+   "description": "Posséder 5 espèces différentes.",
+   "kind": "species_owned",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "species-10",
+   "name": "Collectionneur (10)",
+   "description": "Posséder 10 espèces différentes.",
+   "kind": "species_owned",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "species-25",
+   "name": "Collectionneur (25)",
+   "description": "Posséder 25 espèces différentes.",
+   "kind": "species_owned",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "species-50",
+   "name": "Collectionneur (50)",
+   "description": "Posséder 50 espèces différentes.",
+   "kind": "species_owned",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "species-100",
+   "name": "Collectionneur (100)",
+   "description": "Posséder 100 espèces différentes.",
+   "kind": "species_owned",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "species-150",
+   "name": "Collectionneur (150)",
+   "description": "Posséder 150 espèces différentes.",
+   "kind": "species_owned",
+   "target": 150,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "species-200",
+   "name": "Collectionneur (200)",
+   "description": "Posséder 200 espèces différentes.",
+   "kind": "species_owned",
+   "target": 200,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "species-300",
+   "name": "Collectionneur (300)",
+   "description": "Posséder 300 espèces différentes.",
+   "kind": "species_owned",
+   "target": 300,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "species-400",
+   "name": "Collectionneur (400)",
+   "description": "Posséder 400 espèces différentes.",
+   "kind": "species_owned",
+   "target": 400,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "families-3",
+   "name": "Bestiaire (3)",
+   "description": "Posséder des monstres de 3 familles différentes.",
+   "kind": "families_owned",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "families-5",
+   "name": "Bestiaire (5)",
+   "description": "Posséder des monstres de 5 familles différentes.",
+   "kind": "families_owned",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "families-10",
+   "name": "Bestiaire (10)",
+   "description": "Posséder des monstres de 10 familles différentes.",
+   "kind": "families_owned",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "families-15",
+   "name": "Bestiaire (15)",
+   "description": "Posséder des monstres de 15 familles différentes.",
+   "kind": "families_owned",
+   "target": 15,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "families-20",
+   "name": "Bestiaire (20)",
+   "description": "Posséder des monstres de 20 familles différentes.",
+   "kind": "families_owned",
+   "target": 20,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "families-30",
+   "name": "Bestiaire (30)",
+   "description": "Posséder des monstres de 30 familles différentes.",
+   "kind": "families_owned",
+   "target": 30,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "families-40",
+   "name": "Bestiaire (40)",
+   "description": "Posséder des monstres de 40 familles différentes.",
+   "kind": "families_owned",
+   "target": 40,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "families-50",
+   "name": "Bestiaire (50)",
+   "description": "Posséder des monstres de 50 familles différentes.",
+   "kind": "families_owned",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "families-64",
+   "name": "Bestiaire (64)",
+   "description": "Posséder des monstres de 64 familles différentes.",
+   "kind": "families_owned",
+   "target": 64,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-fire-3",
+   "name": "Maître du feu (3)",
+   "description": "Posséder 3 monstres de l’élément feu.",
+   "kind": "owned_fire",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-fire-10",
+   "name": "Maître du feu (10)",
+   "description": "Posséder 10 monstres de l’élément feu.",
+   "kind": "owned_fire",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-fire-25",
+   "name": "Maître du feu (25)",
+   "description": "Posséder 25 monstres de l’élément feu.",
+   "kind": "owned_fire",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-water-3",
+   "name": "Maître de l’eau (3)",
+   "description": "Posséder 3 monstres de l’élément eau.",
+   "kind": "owned_water",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-water-10",
+   "name": "Maître de l’eau (10)",
+   "description": "Posséder 10 monstres de l’élément eau.",
+   "kind": "owned_water",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-water-25",
+   "name": "Maître de l’eau (25)",
+   "description": "Posséder 25 monstres de l’élément eau.",
+   "kind": "owned_water",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-wind-3",
+   "name": "Maître du vent (3)",
+   "description": "Posséder 3 monstres de l’élément vent.",
+   "kind": "owned_wind",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-wind-10",
+   "name": "Maître du vent (10)",
+   "description": "Posséder 10 monstres de l’élément vent.",
+   "kind": "owned_wind",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-wind-25",
+   "name": "Maître du vent (25)",
+   "description": "Posséder 25 monstres de l’élément vent.",
+   "kind": "owned_wind",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-earth-3",
+   "name": "Maître de la terre (3)",
+   "description": "Posséder 3 monstres de l’élément terre.",
+   "kind": "owned_earth",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-earth-10",
+   "name": "Maître de la terre (10)",
+   "description": "Posséder 10 monstres de l’élément terre.",
+   "kind": "owned_earth",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-earth-25",
+   "name": "Maître de la terre (25)",
+   "description": "Posséder 25 monstres de l’élément terre.",
+   "kind": "owned_earth",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-lightning-3",
+   "name": "Maître de la foudre (3)",
+   "description": "Posséder 3 monstres de l’élément foudre.",
+   "kind": "owned_lightning",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-lightning-10",
+   "name": "Maître de la foudre (10)",
+   "description": "Posséder 10 monstres de l’élément foudre.",
+   "kind": "owned_lightning",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-lightning-25",
+   "name": "Maître de la foudre (25)",
+   "description": "Posséder 25 monstres de l’élément foudre.",
+   "kind": "owned_lightning",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-light-3",
+   "name": "Maître de la lumière (3)",
+   "description": "Posséder 3 monstres de l’élément lumière.",
+   "kind": "owned_light",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-light-10",
+   "name": "Maître de la lumière (10)",
+   "description": "Posséder 10 monstres de l’élément lumière.",
+   "kind": "owned_light",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-light-25",
+   "name": "Maître de la lumière (25)",
+   "description": "Posséder 25 monstres de l’élément lumière.",
+   "kind": "owned_light",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "element-dark-3",
+   "name": "Maître des ténèbres (3)",
+   "description": "Posséder 3 monstres de l’élément ténèbres.",
+   "kind": "owned_dark",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "element-dark-10",
+   "name": "Maître des ténèbres (10)",
+   "description": "Posséder 10 monstres de l’élément ténèbres.",
+   "kind": "owned_dark",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "element-dark-25",
+   "name": "Maître des ténèbres (25)",
+   "description": "Posséder 25 monstres de l’élément ténèbres.",
+   "kind": "owned_dark",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "maxed-1",
+   "name": "Au sommet (1)",
+   "description": "Avoir 1 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "maxed-5",
+   "name": "Au sommet (5)",
+   "description": "Avoir 5 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "maxed-10",
+   "name": "Au sommet (10)",
+   "description": "Avoir 10 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 10,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "maxed-25",
+   "name": "Au sommet (25)",
+   "description": "Avoir 25 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 25,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "maxed-50",
+   "name": "Au sommet (50)",
+   "description": "Avoir 50 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "maxed-100",
+   "name": "Au sommet (100)",
+   "description": "Avoir 100 monstres au niveau maximum.",
+   "kind": "max_level_monsters",
+   "target": 100,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "six-star-1",
+   "name": "Panthéon (1)",
+   "description": "Posséder 1 monstres de 6★.",
+   "kind": "stars6_owned",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "six-star-3",
+   "name": "Panthéon (3)",
+   "description": "Posséder 3 monstres de 6★.",
+   "kind": "stars6_owned",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "six-star-5",
+   "name": "Panthéon (5)",
+   "description": "Posséder 5 monstres de 6★.",
+   "kind": "stars6_owned",
+   "target": 5,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "six-star-10",
+   "name": "Panthéon (10)",
+   "description": "Posséder 10 monstres de 6★.",
+   "kind": "stars6_owned",
+   "target": 10,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "six-star-25",
+   "name": "Panthéon (25)",
+   "description": "Posséder 25 monstres de 6★.",
+   "kind": "stars6_owned",
+   "target": 25,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "awaken-more-5",
+   "name": "Éveilleur (5)",
+   "description": "Éveiller 5 monstres.",
+   "kind": "awakened",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "awaken-more-25",
+   "name": "Éveilleur (25)",
+   "description": "Éveiller 25 monstres.",
+   "kind": "awakened",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "awaken-more-50",
+   "name": "Éveilleur (50)",
+   "description": "Éveiller 50 monstres.",
+   "kind": "awakened",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "awaken-more-100",
+   "name": "Éveilleur (100)",
+   "description": "Éveiller 100 monstres.",
+   "kind": "awakened",
+   "target": 100,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "rune-level-3",
+   "name": "Forgeron +3",
+   "description": "Monter une rune au niveau +3.",
+   "kind": "rune_best_level",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "rune-level-6",
+   "name": "Forgeron +6",
+   "description": "Monter une rune au niveau +6.",
+   "kind": "rune_best_level",
+   "target": 6,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "rune-level-9",
+   "name": "Forgeron +9",
+   "description": "Monter une rune au niveau +9.",
+   "kind": "rune_best_level",
+   "target": 9,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "rune-level-12",
+   "name": "Forgeron +12",
+   "description": "Monter une rune au niveau +12.",
+   "kind": "rune_best_level",
+   "target": 12,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "rune-level-15",
+   "name": "Forgeron +15",
+   "description": "Monter une rune au niveau +15.",
+   "kind": "rune_best_level",
+   "target": 15,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "runes-more-1",
+   "name": "Rassembleur de runes (1)",
+   "description": "Posséder 1 runes.",
+   "kind": "runes",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-more-10",
+   "name": "Rassembleur de runes (10)",
+   "description": "Posséder 10 runes.",
+   "kind": "runes",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-more-25",
+   "name": "Rassembleur de runes (25)",
+   "description": "Posséder 25 runes.",
+   "kind": "runes",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-more-100",
+   "name": "Rassembleur de runes (100)",
+   "description": "Posséder 100 runes.",
+   "kind": "runes",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "runes-more-250",
+   "name": "Rassembleur de runes (250)",
+   "description": "Posséder 250 runes.",
+   "kind": "runes",
+   "target": 250,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "runes-more-500",
+   "name": "Rassembleur de runes (500)",
+   "description": "Posséder 500 runes.",
+   "kind": "runes",
+   "target": 500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "runes-more-1000",
+   "name": "Rassembleur de runes (1 000)",
+   "description": "Posséder 1 000 runes.",
+   "kind": "runes",
+   "target": 1000,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "runes-more-2000",
+   "name": "Rassembleur de runes (2 000)",
+   "description": "Posséder 2 000 runes.",
+   "kind": "runes",
+   "target": 2000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "runes-legend-1",
+   "name": "Runes légendaires (1)",
+   "description": "Posséder 1 runes légendaires ou mythiques.",
+   "kind": "runes_legendary",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-legend-10",
+   "name": "Runes légendaires (10)",
+   "description": "Posséder 10 runes légendaires ou mythiques.",
+   "kind": "runes_legendary",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-legend-50",
+   "name": "Runes légendaires (50)",
+   "description": "Posséder 50 runes légendaires ou mythiques.",
+   "kind": "runes_legendary",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "runes-legend-200",
+   "name": "Runes légendaires (200)",
+   "description": "Posséder 200 runes légendaires ou mythiques.",
+   "kind": "runes_legendary",
+   "target": 200,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "runes-mythic-1",
+   "name": "Runes mythiques (1)",
+   "description": "Posséder 1 runes mythiques.",
+   "kind": "runes_mythic",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-mythic-5",
+   "name": "Runes mythiques (5)",
+   "description": "Posséder 5 runes mythiques.",
+   "kind": "runes_mythic",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "runes-mythic-25",
+   "name": "Runes mythiques (25)",
+   "description": "Posséder 25 runes mythiques.",
+   "kind": "runes_mythic",
+   "target": 25,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "runes-mythic-100",
+   "name": "Runes mythiques (100)",
+   "description": "Posséder 100 runes mythiques.",
+   "kind": "runes_mythic",
+   "target": 100,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "checkin-3",
+   "name": "Fidèle (3 jours)",
+   "description": "Valider la connexion du jour 3 fois.",
+   "kind": "checkin_days",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "checkin-7",
+   "name": "Fidèle (7 jours)",
+   "description": "Valider la connexion du jour 7 fois.",
+   "kind": "checkin_days",
+   "target": 7,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "checkin-14",
+   "name": "Fidèle (14 jours)",
+   "description": "Valider la connexion du jour 14 fois.",
+   "kind": "checkin_days",
+   "target": 14,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "checkin-30",
+   "name": "Fidèle (30 jours)",
+   "description": "Valider la connexion du jour 30 fois.",
+   "kind": "checkin_days",
+   "target": 30,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "checkin-60",
+   "name": "Fidèle (60 jours)",
+   "description": "Valider la connexion du jour 60 fois.",
+   "kind": "checkin_days",
+   "target": 60,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "checkin-100",
+   "name": "Fidèle (100 jours)",
+   "description": "Valider la connexion du jour 100 fois.",
+   "kind": "checkin_days",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "checkin-200",
+   "name": "Fidèle (200 jours)",
+   "description": "Valider la connexion du jour 200 fois.",
+   "kind": "checkin_days",
+   "target": 200,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "checkin-365",
+   "name": "Fidèle (365 jours)",
+   "description": "Valider la connexion du jour 365 fois.",
+   "kind": "checkin_days",
+   "target": 365,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "checkin-500",
+   "name": "Fidèle (500 jours)",
+   "description": "Valider la connexion du jour 500 fois.",
+   "kind": "checkin_days",
+   "target": 500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "checkin-1000",
+   "name": "Fidèle (1 000 jours)",
+   "description": "Valider la connexion du jour 1 000 fois.",
+   "kind": "checkin_days",
+   "target": 1000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "sales-1",
+   "name": "Marchand (1)",
+   "description": "Vendre 1 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "sales-5",
+   "name": "Marchand (5)",
+   "description": "Vendre 5 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "sales-10",
+   "name": "Marchand (10)",
+   "description": "Vendre 10 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "sales-25",
+   "name": "Marchand (25)",
+   "description": "Vendre 25 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 25,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "sales-50",
+   "name": "Marchand (50)",
+   "description": "Vendre 50 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "sales-100",
+   "name": "Marchand (100)",
+   "description": "Vendre 100 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 100,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "sales-250",
+   "name": "Marchand (250)",
+   "description": "Vendre 250 monstres sur le marché.",
+   "kind": "market_sales",
+   "target": 250,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "purchases-1",
+   "name": "Acheteur (1)",
+   "description": "Acheter 1 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "purchases-5",
+   "name": "Acheteur (5)",
+   "description": "Acheter 5 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "purchases-10",
+   "name": "Acheteur (10)",
+   "description": "Acheter 10 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "purchases-25",
+   "name": "Acheteur (25)",
+   "description": "Acheter 25 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 25,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "purchases-50",
+   "name": "Acheteur (50)",
+   "description": "Acheter 50 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "purchases-100",
+   "name": "Acheteur (100)",
+   "description": "Acheter 100 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 100,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "purchases-250",
+   "name": "Acheteur (250)",
+   "description": "Acheter 250 monstres sur le marché.",
+   "kind": "market_purchases",
+   "target": 250,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "friends-more-3",
+   "name": "Sociable (3)",
+   "description": "Avoir 3 amis.",
+   "kind": "friends",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "friends-more-10",
+   "name": "Sociable (10)",
+   "description": "Avoir 10 amis.",
+   "kind": "friends",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "friends-more-25",
+   "name": "Sociable (25)",
+   "description": "Avoir 25 amis.",
+   "kind": "friends",
+   "target": 25,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "friends-more-50",
+   "name": "Sociable (50)",
+   "description": "Avoir 50 amis.",
+   "kind": "friends",
+   "target": 50,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "friends-more-100",
+   "name": "Sociable (100)",
+   "description": "Avoir 100 amis.",
+   "kind": "friends",
+   "target": 100,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "boss-more-1",
+   "name": "Chasseur de boss (1)",
+   "description": "Attaquer le boss mondial 1 fois.",
+   "kind": "world_boss_attacks",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "boss-more-10",
+   "name": "Chasseur de boss (10)",
+   "description": "Attaquer le boss mondial 10 fois.",
+   "kind": "world_boss_attacks",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "boss-more-25",
+   "name": "Chasseur de boss (25)",
+   "description": "Attaquer le boss mondial 25 fois.",
+   "kind": "world_boss_attacks",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "boss-more-50",
+   "name": "Chasseur de boss (50)",
+   "description": "Attaquer le boss mondial 50 fois.",
+   "kind": "world_boss_attacks",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "boss-more-250",
+   "name": "Chasseur de boss (250)",
+   "description": "Attaquer le boss mondial 250 fois.",
+   "kind": "world_boss_attacks",
+   "target": 250,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "boss-more-500",
+   "name": "Chasseur de boss (500)",
+   "description": "Attaquer le boss mondial 500 fois.",
+   "kind": "world_boss_attacks",
+   "target": 500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "boss-more-1000",
+   "name": "Chasseur de boss (1 000)",
+   "description": "Attaquer le boss mondial 1 000 fois.",
+   "kind": "world_boss_attacks",
+   "target": 1000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "votes-more-5",
+   "name": "Citoyen (5)",
+   "description": "Voter à 5 sondages.",
+   "kind": "poll_votes",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "votes-more-10",
+   "name": "Citoyen (10)",
+   "description": "Voter à 10 sondages.",
+   "kind": "poll_votes",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "votes-more-25",
+   "name": "Citoyen (25)",
+   "description": "Voter à 25 sondages.",
+   "kind": "poll_votes",
+   "target": 25,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "votes-more-50",
+   "name": "Citoyen (50)",
+   "description": "Voter à 50 sondages.",
+   "kind": "poll_votes",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "votes-more-100",
+   "name": "Citoyen (100)",
+   "description": "Voter à 100 sondages.",
+   "kind": "poll_votes",
+   "target": 100,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "votes-more-250",
+   "name": "Citoyen (250)",
+   "description": "Voter à 250 sondages.",
+   "kind": "poll_votes",
+   "target": 250,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "level-more-5",
+   "name": "Niveau 5",
+   "description": "Atteindre le niveau de compte 5.",
+   "kind": "account_level",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-more-20",
+   "name": "Niveau 20",
+   "description": "Atteindre le niveau de compte 20.",
+   "kind": "account_level",
+   "target": 20,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-more-25",
+   "name": "Niveau 25",
+   "description": "Atteindre le niveau de compte 25.",
+   "kind": "account_level",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-more-30",
+   "name": "Niveau 30",
+   "description": "Atteindre le niveau de compte 30.",
+   "kind": "account_level",
+   "target": 30,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "level-more-40",
+   "name": "Niveau 40",
+   "description": "Atteindre le niveau de compte 40.",
+   "kind": "account_level",
+   "target": 40,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "level-more-60",
+   "name": "Niveau 60",
+   "description": "Atteindre le niveau de compte 60.",
+   "kind": "account_level",
+   "target": 60,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "level-more-75",
+   "name": "Niveau 75",
+   "description": "Atteindre le niveau de compte 75.",
+   "kind": "account_level",
+   "target": 75,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "level-more-90",
+   "name": "Niveau 90",
+   "description": "Atteindre le niveau de compte 90.",
+   "kind": "account_level",
+   "target": 90,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "level-more-125",
+   "name": "Niveau 125",
+   "description": "Atteindre le niveau de compte 125.",
+   "kind": "account_level",
+   "target": 125,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "level-more-150",
+   "name": "Niveau 150",
+   "description": "Atteindre le niveau de compte 150.",
+   "kind": "account_level",
+   "target": 150,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "level-more-175",
+   "name": "Niveau 175",
+   "description": "Atteindre le niveau de compte 175.",
+   "kind": "account_level",
+   "target": 175,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "social-more-10",
+   "name": "Social niveau 10",
+   "description": "Atteindre le niveau social 10.",
+   "kind": "social_level",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "social-more-15",
+   "name": "Social niveau 15",
+   "description": "Atteindre le niveau social 15.",
+   "kind": "social_level",
+   "target": 15,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "social-more-40",
+   "name": "Social niveau 40",
+   "description": "Atteindre le niveau social 40.",
+   "kind": "social_level",
+   "target": 40,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "social-more-75",
+   "name": "Social niveau 75",
+   "description": "Atteindre le niveau social 75.",
+   "kind": "social_level",
+   "target": 75,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "social-more-125",
+   "name": "Social niveau 125",
+   "description": "Atteindre le niveau social 125.",
+   "kind": "social_level",
+   "target": 125,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "social-more-150",
+   "name": "Social niveau 150",
+   "description": "Atteindre le niveau social 150.",
+   "kind": "social_level",
+   "target": 150,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "social-more-175",
+   "name": "Social niveau 175",
+   "description": "Atteindre le niveau social 175.",
+   "kind": "social_level",
+   "target": 175,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "guild-more-10",
+   "name": "Guilde niveau 10",
+   "description": "Amener ta guilde au niveau 10.",
+   "kind": "guild_level",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "guild-more-30",
+   "name": "Guilde niveau 30",
+   "description": "Amener ta guilde au niveau 30.",
+   "kind": "guild_level",
+   "target": 30,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "guild-more-40",
+   "name": "Guilde niveau 40",
+   "description": "Amener ta guilde au niveau 40.",
+   "kind": "guild_level",
+   "target": 40,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-1-hard",
+   "name": "Gardien de la zone 1 (Hard)",
+   "description": "Vaincre le boss de la zone 1 en Hard.",
+   "kind": "clear_stage",
+   "target": "z1-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-2-hard",
+   "name": "Gardien de la zone 2 (Hard)",
+   "description": "Vaincre le boss de la zone 2 en Hard.",
+   "kind": "clear_stage",
+   "target": "z2-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-3-hard",
+   "name": "Gardien de la zone 3 (Hard)",
+   "description": "Vaincre le boss de la zone 3 en Hard.",
+   "kind": "clear_stage",
+   "target": "z3-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-4-hard",
+   "name": "Gardien de la zone 4 (Hard)",
+   "description": "Vaincre le boss de la zone 4 en Hard.",
+   "kind": "clear_stage",
+   "target": "z4-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-5-hard",
+   "name": "Gardien de la zone 5 (Hard)",
+   "description": "Vaincre le boss de la zone 5 en Hard.",
+   "kind": "clear_stage",
+   "target": "z5-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-6-hard",
+   "name": "Gardien de la zone 6 (Hard)",
+   "description": "Vaincre le boss de la zone 6 en Hard.",
+   "kind": "clear_stage",
+   "target": "z6-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-7-hard",
+   "name": "Gardien de la zone 7 (Hard)",
+   "description": "Vaincre le boss de la zone 7 en Hard.",
+   "kind": "clear_stage",
+   "target": "z7-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-8-hard",
+   "name": "Gardien de la zone 8 (Hard)",
+   "description": "Vaincre le boss de la zone 8 en Hard.",
+   "kind": "clear_stage",
+   "target": "z8-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-9-hard",
+   "name": "Gardien de la zone 9 (Hard)",
+   "description": "Vaincre le boss de la zone 9 en Hard.",
+   "kind": "clear_stage",
+   "target": "z9-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-10-hard",
+   "name": "Gardien de la zone 10 (Hard)",
+   "description": "Vaincre le boss de la zone 10 en Hard.",
+   "kind": "clear_stage",
+   "target": "z10-7-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "zone-1-hell",
+   "name": "Gardien de la zone 1 (Enfer)",
+   "description": "Vaincre le boss de la zone 1 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z1-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-2-hell",
+   "name": "Gardien de la zone 2 (Enfer)",
+   "description": "Vaincre le boss de la zone 2 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z2-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-3-hell",
+   "name": "Gardien de la zone 3 (Enfer)",
+   "description": "Vaincre le boss de la zone 3 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z3-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-4-hell",
+   "name": "Gardien de la zone 4 (Enfer)",
+   "description": "Vaincre le boss de la zone 4 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z4-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-5-hell",
+   "name": "Gardien de la zone 5 (Enfer)",
+   "description": "Vaincre le boss de la zone 5 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z5-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-6-hell",
+   "name": "Gardien de la zone 6 (Enfer)",
+   "description": "Vaincre le boss de la zone 6 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z6-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-7-hell",
+   "name": "Gardien de la zone 7 (Enfer)",
+   "description": "Vaincre le boss de la zone 7 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z7-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-8-hell",
+   "name": "Gardien de la zone 8 (Enfer)",
+   "description": "Vaincre le boss de la zone 8 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z8-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-9-hell",
+   "name": "Gardien de la zone 9 (Enfer)",
+   "description": "Vaincre le boss de la zone 9 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z9-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "zone-10-hell",
+   "name": "Gardien de la zone 10 (Enfer)",
+   "description": "Vaincre le boss de la zone 10 en Enfer.",
+   "kind": "clear_stage",
+   "target": "z10-7-hell",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "dungeon-fureur-5",
+   "name": "Forge des Fureurs — Étage 5 : terminé",
+   "description": "Terminer Forge des Fureurs — Étage 5.",
+   "kind": "clear_stage",
+   "target": "fureur-5",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-celerite-5",
+   "name": "Sanctuaire des Vents — Étage 5 : terminé",
+   "description": "Terminer Sanctuaire des Vents — Étage 5.",
+   "kind": "clear_stage",
+   "target": "celerite-5",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-acharnement-5",
+   "name": "Abysse Fulgurant — Étage 5 : terminé",
+   "description": "Terminer Abysse Fulgurant — Étage 5.",
+   "kind": "clear_stage",
+   "target": "acharnement-5",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-fureur-10",
+   "name": "Forge des Fureurs — Étage 10 : terminé",
+   "description": "Terminer Forge des Fureurs — Étage 10.",
+   "kind": "clear_stage",
+   "target": "fureur-10",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-celerite-10",
+   "name": "Sanctuaire des Vents — Étage 10 : terminé",
+   "description": "Terminer Sanctuaire des Vents — Étage 10.",
+   "kind": "clear_stage",
+   "target": "celerite-10",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-acharnement-10",
+   "name": "Abysse Fulgurant — Étage 10 : terminé",
+   "description": "Terminer Abysse Fulgurant — Étage 10.",
+   "kind": "clear_stage",
+   "target": "acharnement-10",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "dungeon-fureur-15",
+   "name": "Forge des Fureurs — Étage 15 (Hard) : terminé",
+   "description": "Terminer Forge des Fureurs — Étage 15 (Hard).",
+   "kind": "clear_stage",
+   "target": "fureur-15",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "dungeon-celerite-15",
+   "name": "Sanctuaire des Vents — Étage 15 (Hard) : terminé",
+   "description": "Terminer Sanctuaire des Vents — Étage 15 (Hard).",
+   "kind": "clear_stage",
+   "target": "celerite-15",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "dungeon-acharnement-15",
+   "name": "Abysse Fulgurant — Étage 15 (Hard) : terminé",
+   "description": "Terminer Abysse Fulgurant — Étage 15 (Hard).",
+   "kind": "clear_stage",
+   "target": "acharnement-15",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "dungeon-gemmes-acharnement-precision-10",
+   "name": "Caverne Acharnement & Précision — Étage 10 : terminé",
+   "description": "Terminer Caverne Acharnement & Précision — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-acharnement-precision-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-acharnement-precision-5",
+   "name": "Caverne Acharnement & Précision — Étage 5 : terminé",
+   "description": "Terminer Caverne Acharnement & Précision — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-acharnement-precision-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-gemmes-ferveur-seve-10",
+   "name": "Caverne Ferveur & Sève — Étage 10 : terminé",
+   "description": "Terminer Caverne Ferveur & Sève — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-ferveur-seve-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-ferveur-seve-5",
+   "name": "Caverne Ferveur & Sève — Étage 5 : terminé",
+   "description": "Terminer Caverne Ferveur & Sève — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-ferveur-seve-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-gemmes-fureur-rempart-10",
+   "name": "Caverne Fureur & Rempart — Étage 10 : terminé",
+   "description": "Terminer Caverne Fureur & Rempart — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-fureur-rempart-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-fureur-rempart-5",
+   "name": "Caverne Fureur & Rempart — Étage 5 : terminé",
+   "description": "Terminer Caverne Fureur & Rempart — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-fureur-rempart-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-gemmes-garde-vampire-10",
+   "name": "Caverne Garde & Vampire — Étage 10 : terminé",
+   "description": "Terminer Caverne Garde & Vampire — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-garde-vampire-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-garde-vampire-5",
+   "name": "Caverne Garde & Vampire — Étage 5 : terminé",
+   "description": "Terminer Caverne Garde & Vampire — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-garde-vampire-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-gemmes-resolution-celerite-10",
+   "name": "Caverne Résolution & Célérité — Étage 10 : terminé",
+   "description": "Terminer Caverne Résolution & Célérité — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-resolution-celerite-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-resolution-celerite-5",
+   "name": "Caverne Résolution & Célérité — Étage 5 : terminé",
+   "description": "Terminer Caverne Résolution & Célérité — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-resolution-celerite-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-gemmes-vitalite-lame-10",
+   "name": "Caverne Vitalité & Lame — Étage 10 : terminé",
+   "description": "Terminer Caverne Vitalité & Lame — Étage 10.",
+   "kind": "clear_stage",
+   "target": "gemmes-vitalite-lame-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-gemmes-vitalite-lame-5",
+   "name": "Caverne Vitalité & Lame — Étage 5 : terminé",
+   "description": "Terminer Caverne Vitalité & Lame — Étage 5.",
+   "kind": "clear_stage",
+   "target": "gemmes-vitalite-lame-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-acharnement-vampire-10",
+   "name": "Carrière Acharnement & Vampire — Étage 10 : terminé",
+   "description": "Terminer Carrière Acharnement & Vampire — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-acharnement-vampire-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-acharnement-vampire-5",
+   "name": "Carrière Acharnement & Vampire — Étage 5 : terminé",
+   "description": "Terminer Carrière Acharnement & Vampire — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-acharnement-vampire-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-ferveur-precision-10",
+   "name": "Carrière Ferveur & Précision — Étage 10 : terminé",
+   "description": "Terminer Carrière Ferveur & Précision — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-ferveur-precision-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-ferveur-precision-5",
+   "name": "Carrière Ferveur & Précision — Étage 5 : terminé",
+   "description": "Terminer Carrière Ferveur & Précision — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-ferveur-precision-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-fureur-celerite-10",
+   "name": "Carrière Fureur & Célérité — Étage 10 : terminé",
+   "description": "Terminer Carrière Fureur & Célérité — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-fureur-celerite-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-fureur-celerite-5",
+   "name": "Carrière Fureur & Célérité — Étage 5 : terminé",
+   "description": "Terminer Carrière Fureur & Célérité — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-fureur-celerite-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-garde-seve-10",
+   "name": "Carrière Garde & Sève — Étage 10 : terminé",
+   "description": "Terminer Carrière Garde & Sève — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-garde-seve-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-garde-seve-5",
+   "name": "Carrière Garde & Sève — Étage 5 : terminé",
+   "description": "Terminer Carrière Garde & Sève — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-garde-seve-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-resolution-lame-10",
+   "name": "Carrière Résolution & Lame — Étage 10 : terminé",
+   "description": "Terminer Carrière Résolution & Lame — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-resolution-lame-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-resolution-lame-5",
+   "name": "Carrière Résolution & Lame — Étage 5 : terminé",
+   "description": "Terminer Carrière Résolution & Lame — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-resolution-lame-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "dungeon-meules-vitalite-rempart-10",
+   "name": "Carrière Vitalité & Rempart — Étage 10 : terminé",
+   "description": "Terminer Carrière Vitalité & Rempart — Étage 10.",
+   "kind": "clear_stage",
+   "target": "meules-vitalite-rempart-10",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "dungeon-meules-vitalite-rempart-5",
+   "name": "Carrière Vitalité & Rempart — Étage 5 : terminé",
+   "description": "Terminer Carrière Vitalité & Rempart — Étage 5.",
+   "kind": "clear_stage",
+   "target": "meules-vitalite-rempart-5",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "tower-20",
+   "name": "Tour : étage 20",
+   "description": "Atteindre l’étage 20 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-20",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "tower-30",
+   "name": "Tour : étage 30",
+   "description": "Atteindre l’étage 30 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-30",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "tower-40",
+   "name": "Tour : étage 40",
+   "description": "Atteindre l’étage 40 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-40",
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "tower-60",
+   "name": "Tour : étage 60",
+   "description": "Atteindre l’étage 60 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-60",
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "tower-70",
+   "name": "Tour : étage 70",
+   "description": "Atteindre l’étage 70 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-70",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-80",
+   "name": "Tour : étage 80",
+   "description": "Atteindre l’étage 80 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-80",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-90",
+   "name": "Tour : étage 90",
+   "description": "Atteindre l’étage 90 de la Tour.",
+   "kind": "clear_stage",
+   "target": "tower-90",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "tower-hard-10",
+   "name": "Tour Hard : étage 10",
+   "description": "Atteindre l’étage 10 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-10-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-hard-20",
+   "name": "Tour Hard : étage 20",
+   "description": "Atteindre l’étage 20 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-20-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-hard-30",
+   "name": "Tour Hard : étage 30",
+   "description": "Atteindre l’étage 30 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-30-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-hard-40",
+   "name": "Tour Hard : étage 40",
+   "description": "Atteindre l’étage 40 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-40-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-hard-60",
+   "name": "Tour Hard : étage 60",
+   "description": "Atteindre l’étage 60 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-60-hard",
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "tower-hard-70",
+   "name": "Tour Hard : étage 70",
+   "description": "Atteindre l’étage 70 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-70-hard",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "tower-hard-80",
+   "name": "Tour Hard : étage 80",
+   "description": "Atteindre l’étage 80 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-80-hard",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "tower-hard-90",
+   "name": "Tour Hard : étage 90",
+   "description": "Atteindre l’étage 90 de la Tour en Hard.",
+   "kind": "clear_stage",
+   "target": "tower-90-hard",
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "arena-wins-1",
+   "name": "Rival vaincu (1)",
+   "description": "Gagner la première victoire du jour contre un rival 1 fois.",
+   "kind": "arena_rival_wins",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "arena-wins-10",
+   "name": "Rival vaincu (10)",
+   "description": "Gagner la première victoire du jour contre un rival 10 fois.",
+   "kind": "arena_rival_wins",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "arena-wins-30",
+   "name": "Rival vaincu (30)",
+   "description": "Gagner la première victoire du jour contre un rival 30 fois.",
+   "kind": "arena_rival_wins",
+   "target": 30,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "arena-wins-100",
+   "name": "Rival vaincu (100)",
+   "description": "Gagner la première victoire du jour contre un rival 100 fois.",
+   "kind": "arena_rival_wins",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "arena-wins-300",
+   "name": "Rival vaincu (300)",
+   "description": "Gagner la première victoire du jour contre un rival 300 fois.",
+   "kind": "arena_rival_wins",
+   "target": 300,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "arena-wins-1000",
+   "name": "Rival vaincu (1 000)",
+   "description": "Gagner la première victoire du jour contre un rival 1 000 fois.",
+   "kind": "arena_rival_wins",
+   "target": 1000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "arena-day-3",
+   "name": "Journée d’arène (3)",
+   "description": "Battre 3 rivaux différents le même jour.",
+   "kind": "arena_day_best",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "arena-day-5",
+   "name": "Journée d’arène (5)",
+   "description": "Battre 5 rivaux différents le même jour.",
+   "kind": "arena_day_best",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "arena-day-7",
+   "name": "Journée d’arène (7)",
+   "description": "Battre 7 rivaux différents le même jour.",
+   "kind": "arena_day_best",
+   "target": 7,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "arena-day-10",
+   "name": "Journée d’arène (10)",
+   "description": "Battre 10 rivaux différents le même jour.",
+   "kind": "arena_day_best",
+   "target": 10,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "league-wins-1",
+   "name": "Duelliste (1)",
+   "description": "Gagner 1 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-wins-10",
+   "name": "Duelliste (10)",
+   "description": "Gagner 10 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-wins-50",
+   "name": "Duelliste (50)",
+   "description": "Gagner 50 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "league-wins-150",
+   "name": "Duelliste (150)",
+   "description": "Gagner 150 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 150,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "league-wins-500",
+   "name": "Duelliste (500)",
+   "description": "Gagner 500 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "league-wins-1500",
+   "name": "Duelliste (1 500)",
+   "description": "Gagner 1 500 combats de ligue en attaque.",
+   "kind": "league_wins",
+   "target": 1500,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "league-rating-1200",
+   "name": "Cote 1 200",
+   "description": "Atteindre une cote de 1 200 en ligue.",
+   "kind": "league_rating",
+   "target": 1200,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-rating-1500",
+   "name": "Cote 1 500",
+   "description": "Atteindre une cote de 1 500 en ligue.",
+   "kind": "league_rating",
+   "target": 1500,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-rating-1800",
+   "name": "Cote 1 800",
+   "description": "Atteindre une cote de 1 800 en ligue.",
+   "kind": "league_rating",
+   "target": 1800,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "league-rating-2200",
+   "name": "Cote 2 200",
+   "description": "Atteindre une cote de 2 200 en ligue.",
+   "kind": "league_rating",
+   "target": 2200,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "league-streak-3",
+   "name": "Invaincu (3)",
+   "description": "Enchaîner 3 victoires de ligue d’affilée.",
+   "kind": "league_streak",
+   "target": 3,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-streak-5",
+   "name": "Invaincu (5)",
+   "description": "Enchaîner 5 victoires de ligue d’affilée.",
+   "kind": "league_streak",
+   "target": 5,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "league-streak-10",
+   "name": "Invaincu (10)",
+   "description": "Enchaîner 10 victoires de ligue d’affilée.",
+   "kind": "league_streak",
+   "target": 10,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "league-streak-20",
+   "name": "Invaincu (20)",
+   "description": "Enchaîner 20 victoires de ligue d’affilée.",
+   "kind": "league_streak",
+   "target": 20,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "skins-1",
+   "name": "Collectionneur de skins (1)",
+   "description": "Posséder 1 skin(s) différent(s).",
+   "kind": "skins_owned",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "skins-3",
+   "name": "Collectionneur de skins (3)",
+   "description": "Posséder 3 skin(s) différent(s).",
+   "kind": "skins_owned",
+   "target": 3,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "skins-10",
+   "name": "Collectionneur de skins (10)",
+   "description": "Posséder 10 skin(s) différent(s).",
+   "kind": "skins_owned",
+   "target": 10,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "secret-night-owl",
+   "name": "Oiseau de nuit",
+   "description": "Ouvrir le jeu à 3 h du matin (heure UTC).",
+   "kind": "night_hour",
+   "target": 1,
+   "points": 25,
+   "tier": "avancé",
+   "hidden": true
+  },
+  {
+   "id": "secret-stubborn",
+   "name": "Tête dure",
+   "description": "Perdre 10 combats de suite, et continuer.",
+   "kind": "defeat_streak",
+   "target": 10,
+   "points": 75,
+   "tier": "difficile",
+   "hidden": true
+  },
+  {
+   "id": "secret-toolbox",
+   "name": "Couteau suisse",
+   "description": "Utiliser 5 outils d’automatisation différents.",
+   "kind": "tools_used",
+   "target": 5,
+   "points": 75,
+   "tier": "difficile",
+   "hidden": true
+  },
+  {
+   "id": "pass-the-founders",
+   "name": "Dépasser les fondateurs",
+   "description": "Détenir plus de POC que V et A.L.I.C.E : le premier à les dépasser.",
+   "kind": "poc_over_staff",
+   "target": 1,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "flawless-1",
+   "name": "Sans une égratignure (1)",
+   "description": "Gagner 1 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 1,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "flawless-10",
+   "name": "Sans une égratignure (10)",
+   "description": "Gagner 10 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 10,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "flawless-25",
+   "name": "Sans une égratignure (25)",
+   "description": "Gagner 25 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 25,
+   "points": 10,
+   "tier": "basique"
+  },
+  {
+   "id": "flawless-50",
+   "name": "Sans une égratignure (50)",
+   "description": "Gagner 50 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 50,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "flawless-100",
+   "name": "Sans une égratignure (100)",
+   "description": "Gagner 100 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 100,
+   "points": 25,
+   "tier": "avancé"
+  },
+  {
+   "id": "flawless-250",
+   "name": "Sans une égratignure (250)",
+   "description": "Gagner 250 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 250,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "flawless-500",
+   "name": "Sans une égratignure (500)",
+   "description": "Gagner 500 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 500,
+   "points": 75,
+   "tier": "difficile"
+  },
+  {
+   "id": "flawless-1000",
+   "name": "Sans une égratignure (1 000)",
+   "description": "Gagner 1 000 combat(s) sans perdre aucun monstre.",
+   "kind": "flawless_wins",
+   "target": 1000,
+   "points": 250,
+   "tier": "légendaire"
+  },
+  {
+   "id": "secret-last-one",
+   "name": "Le dernier debout",
+   "description": "Gagner un combat avec un seul survivant.",
+   "kind": "last_one_standing",
+   "target": 1,
+   "points": 75,
+   "tier": "difficile",
+   "hidden": true
+  }
+ ],
+ "tier_pot": {
+  "basique": 0,
+  "avancé": 1,
+  "difficile": 3,
+  "légendaire": 10
+ },
+ "_pot_comment": "V (2026-10-02): POT come from events and rankings, on-chain achievements and the starter pack. tier_pot: POT sent to the reward box when an achievement of this tier is unlocked."
+}

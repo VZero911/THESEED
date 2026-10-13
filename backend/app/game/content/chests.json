@@ -1,0 +1,34 @@
+{
+ "_comment": "Chests (V): opened from the inventory, each roll draws one line by weight. Rewards follow V's scale (Mana: 1 000 medium, 10-20k big, 25k+ special). They come from content rewards (world boss, world firsts, arena, guild, events). PLACEHOLDER tables.",
+ "chests": {
+  "chest_bronze": {"rolls": 2, "loot": [
+   {"weight": 45, "mana": [250, 1000]},
+   {"weight": 25, "items": {"scroll_unknown": [1, 3]}},
+   {"weight": 20, "items": {"minerai_fer": [2, 5], "bois_chene": [2, 5]}},
+   {"weight": 10, "energy": [50, 100]}
+  ]},
+  "chest_silver": {"rolls": 3, "loot": [
+   {"weight": 40, "mana": [1000, 5000]},
+   {"weight": 25, "items": {"scroll_unknown": [3, 5]}},
+   {"weight": 15, "items": {"minerai_argent": [2, 5], "cuir_tanne": [1, 3]}},
+   {"weight": 12, "energy": [100, 250]},
+   {"weight": 8, "items": {"scroll_mystic": [1, 1]}}
+  ]},
+  "chest_gold": {"rolls": 4, "loot": [
+   {"weight": 35, "mana": [5000, 15000]},
+   {"weight": 20, "items": {"scroll_mystic": [1, 2]}},
+   {"weight": 15, "items": {"minerai_mithril": [1, 3], "quartz_runique": [1, 3]}},
+   {"weight": 15, "crystal": [20, 60]},
+   {"weight": 10, "energy": [250, 500]},
+   {"weight": 3, "items": {"scroll_ld": [1, 1]}}
+  ]},
+  "chest_legendary": {"rolls": 5, "loot": [
+   {"weight": 30, "mana": [25000, 50000]},
+   {"weight": 20, "items": {"scroll_mystic": [2, 5]}},
+   {"weight": 15, "crystal": [100, 300]},
+   {"weight": 15, "items": {"coeur_dragon": [1, 1], "larme_etoile": [1, 2]}},
+   {"weight": 6, "items": {"scroll_ld": [1, 1]}},
+   {"weight": 8, "items": {"scroll_mythic": [1, 1]}}
+  ]}
+ }
+}

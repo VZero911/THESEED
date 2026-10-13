@@ -1,0 +1,12 @@
+{
+ "_comment": "Auto-equip profiles (V): how much each rune stat is worth for a monster, in 'best 6-star substat rolls' (1 = one perfect roll). The default profile of a monster comes from its role. Players can save their own profiles. PLACEHOLDER weights.",
+ "by_role": {"attack": "attack", "defense": "tank_def", "hp": "tank_hp", "support": "support", "food": "balanced"},
+ "profiles": [
+  {"id": "attack", "name": "Attaque", "weights": {"atk_pct": 3, "crit_dmg": 3, "crit_rate": 3, "spd": 2, "atk_flat": 1, "acc": 0.5}},
+  {"id": "speed", "name": "Vitesse", "weights": {"spd": 4, "atk_pct": 1, "hp_pct": 1, "acc": 1, "crit_rate": 1}},
+  {"id": "tank_hp", "name": "Tank PV", "weights": {"hp_pct": 4, "def_pct": 2, "spd": 2, "res": 1.5, "hp_flat": 1}},
+  {"id": "tank_def", "name": "Tank DEF", "weights": {"def_pct": 4, "hp_pct": 2, "spd": 2, "res": 1.5, "def_flat": 1}},
+  {"id": "support", "name": "Soutien", "weights": {"spd": 4, "hp_pct": 2, "acc": 2, "res": 2, "def_pct": 1}},
+  {"id": "balanced", "name": "Équilibré", "weights": {"spd": 2, "hp_pct": 2, "atk_pct": 2, "def_pct": 2, "crit_rate": 1, "crit_dmg": 1, "acc": 1, "res": 1}}
+ ]
+}

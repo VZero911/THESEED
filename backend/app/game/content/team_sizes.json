@@ -1,0 +1,15 @@
+{
+ "_comment": "Team sizes (V, 2026-10-02): 4 monsters for most content, 3 for special content (PvP, some PvE), 5 by difficulty in the great dungeons, never more than 18 (grindstone dungeons take 18 and gem dungeons 6, V 2026-10-04; the world boss is its own rule in world_boss.json). The first rule that matches a stage wins (`kind`, `difficulty`, `min_index` are optional filters); `special_stages` forces a size for one stage (V picks the special PvE ones later). PLACEHOLDER thresholds.",
+ "default": 4,
+ "min": 1,
+ "max": 18,
+ "pvp": 3,
+ "rules": [
+  {"kind": "grind_dungeon", "size": 18},
+  {"kind": "gem_dungeon", "size": 6},
+  {"kind": "rune_dungeon", "min_index": 11, "size": 5},
+  {"kind": "campaign", "difficulty": "hell", "size": 5},
+  {"kind": "tower", "difficulty": "hard", "min_index": 50, "size": 5}
+ ],
+ "special_stages": {}
+}

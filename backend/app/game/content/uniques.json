@@ -1,0 +1,17 @@
+{
+ "_comment": "V (Infernal uniques, docs/game/INFERNAL_UNIQUES.md). TUNABLE placeholders. A unique is crafted at the altar from `shards` shards of its own kind; shards drop only from `boss_stage`.",
+ "shards": 100,
+ "boss_stage": "infernal-grind-boss",
+ "uniques": [
+  "azrakhel_fire",
+  "thalassyr_water",
+  "vheyra_wind",
+  "gorrumak_earth",
+  "zaelith_lightning",
+  "seraqiel_light",
+  "nyxhollow_dark",
+  "malgrith_fire",
+  "orovane_water",
+  "kharzul_dark"
+ ]
+}

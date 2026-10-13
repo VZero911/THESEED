@@ -1,0 +1,218 @@
+{
+ "_comment": "Login calendar (V, game spec 7 ter): one check-in per UTC day, a 28-day cycle; a missed day does not reset it (the next check-in is the next day of the cycle). Big rewards on days 7, 14, 21 and 28. The reward goes to the reward box. V (2026-10-02): give a little more, and CUMULATIVE: every completed cycle raises the day's reward by `cycle_bonus.per_cycle` (up to `max`), and milestones on the TOTAL number of check-ins give a one-off gift. PLACEHOLDER rewards.",
+ "sender": "SYSTEM",
+ "days": [
+  {
+   "mana": 450
+  },
+  {
+   "energy": 150
+  },
+  {
+   "items": {
+    "scroll_unknown": 5
+   }
+  },
+  {
+   "mana": 750
+  },
+  {
+   "energy": 225
+  },
+  {
+   "items": {
+    "scroll_unknown": 8
+   }
+  },
+  {
+   "mana": 1500,
+   "items": {
+    "scroll_mystic": 2
+   }
+  },
+  {
+   "mana": 450
+  },
+  {
+   "energy": 150
+  },
+  {
+   "items": {
+    "scroll_unknown": 5
+   }
+  },
+  {
+   "mana": 750
+  },
+  {
+   "energy": 225
+  },
+  {
+   "items": {
+    "essence_fire": 5,
+    "essence_water": 5,
+    "essence_wind": 5
+   }
+  },
+  {
+   "mana": 2250,
+   "items": {
+    "scroll_mystic": 3,
+    "chest_bronze": 2
+   }
+  },
+  {
+   "mana": 450
+  },
+  {
+   "energy": 150
+  },
+  {
+   "items": {
+    "scroll_unknown": 8
+   }
+  },
+  {
+   "mana": 750
+  },
+  {
+   "energy": 300
+  },
+  {
+   "items": {
+    "essence_earth": 5,
+    "essence_lightning": 5
+   }
+  },
+  {
+   "mana": 3000,
+   "items": {
+    "scroll_mystic": 5,
+    "chest_silver": 2
+   }
+  },
+  {
+   "mana": 750
+  },
+  {
+   "energy": 225
+  },
+  {
+   "items": {
+    "scroll_unknown": 8
+   }
+  },
+  {
+   "mana": 1125
+  },
+  {
+   "energy": 300
+  },
+  {
+   "crystal": 75
+  },
+  {
+   "mana": 7500,
+   "crystal": 150,
+   "items": {
+    "scroll_legendary": 2
+   }
+  }
+ ],
+ "cycle_bonus": {
+  "per_cycle": 0.1,
+  "max": 3.0
+ },
+ "milestones": [
+  {
+   "days": 7,
+   "title": "Une semaine de présence",
+   "rewards": {
+    "items": {
+     "chest_bronze": 1
+    }
+   }
+  },
+  {
+   "days": 30,
+   "title": "Un mois de présence",
+   "rewards": {
+    "crystal": 100,
+    "items": {
+     "chest_silver": 1,
+     "scroll_mystic": 2
+    }
+   }
+  },
+  {
+   "days": 60,
+   "title": "Deux mois de présence",
+   "rewards": {
+    "crystal": 200,
+    "items": {
+     "chest_gold": 1,
+     "scroll_mystic": 5
+    }
+   }
+  },
+  {
+   "days": 100,
+   "title": "Cent jours de présence",
+   "rewards": {
+    "mana": 50000,
+    "crystal": 500,
+    "items": {
+     "scroll_legendary": 2,
+     "chest_gold": 2
+    }
+   }
+  },
+  {
+   "days": 200,
+   "title": "Deux cents jours de présence",
+   "rewards": {
+    "crystal": 1000,
+    "items": {
+     "chest_legendary": 1,
+     "scroll_mythic": 1
+    }
+   }
+  },
+  {
+   "days": 365,
+   "title": "Une année de présence",
+   "rewards": {
+    "mana": 250000,
+    "crystal": 3000,
+    "items": {
+     "chest_legendary": 2,
+     "scroll_mythic": 2
+    }
+   }
+  },
+  {
+   "days": 500,
+   "title": "Cinq cents jours de présence",
+   "rewards": {
+    "crystal": 3000,
+    "items": {
+     "chest_legendary": 3,
+     "scroll_mythic": 3
+    }
+   }
+  },
+  {
+   "days": 1000,
+   "title": "Mille jours de présence",
+   "rewards": {
+    "mana": 1000000,
+    "crystal": 10000,
+    "items": {
+     "chest_legendary": 10,
+     "scroll_mythic": 10,
+     "scroll_all_attributes": 5
+    }
+   }
+  }
+ ]
+}

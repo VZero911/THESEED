@@ -1,0 +1,79 @@
+{
+ "_comment": "Player polls (V): what should the game focus on? Each poll is opened on-chain (contracts/src/Polls.sol) the first time it is listed; players vote with a signature (no gas), one vote each, and get a reward. The last option can be a free answer. Results feed SYSTEM's follow-up (agents/README.md), V keeps a veto on-chain. Each poll states its estimated impact on the blockchain (`chain`): the vote reward scales with it (impact_multipliers), and once the work is done an admin marks the poll useful (follow_up_levels): every voter gets the poll's follow-up reward, scaled the same way, in their reward box. PLACEHOLDER questions.",
+ "polls": [
+  {
+   "key": "focus-2026-10",
+   "question": "Sur quoi The Seed doit-il se concentrer en premier ?",
+   "options": [
+    "L'arène PvP",
+    "Les raids de guilde",
+    "Plus de familles de monstres",
+    "Le combat manuel",
+    "Autre (dis-nous)"
+   ],
+   "free_answer": true,
+   "starts_at": "2026-10-01T00:00:00Z",
+   "ends_at": "2026-10-31T00:00:00Z",
+   "reward": {
+    "mana": 1000,
+    "poc": 10,
+    "items": {
+     "scroll_mystic": 1
+    }
+   },
+   "chain": {
+    "change": "upgrade",
+    "contracts": [
+     "Marketplace",
+     "Roles"
+    ],
+    "note": "PvP and guild raids touch the Roles and Marketplace contracts (an upgrade of existing proxies)."
+   },
+   "follow_up": {
+    "mana": 500,
+    "poc": 5,
+    "items": {
+     "scroll_unknown": 2
+    }
+   }
+  },
+  {
+   "key": "event-next",
+   "question": "Quel événement veux-tu pour le prochain week-end ?",
+   "options": [
+    "Drops doublés",
+    "Énergie à moitié prix",
+    "Boss mondial renforcé"
+   ],
+   "free_answer": false,
+   "starts_at": "2026-10-01T00:00:00Z",
+   "ends_at": "2026-10-15T00:00:00Z",
+   "reward": {
+    "mana": 500,
+    "poc": 5,
+    "items": {
+     "scroll_unknown": 5
+    }
+   },
+   "chain": {
+    "change": "none",
+    "contracts": [],
+    "note": "A weekend event is off-chain game data."
+   },
+   "follow_up": {
+    "mana": 250,
+    "poc": 2
+   }
+  }
+ ],
+ "impact_multipliers": {
+  "none": 1.0,
+  "upgrade": 1.5,
+  "new_contract": 2.0,
+  "migration": 3.0
+ },
+ "follow_up_levels": {
+  "useful": 1.0,
+  "very_useful": 2.0
+ }
+}
