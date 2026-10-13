@@ -1,0 +1,58 @@
+{
+  "_comment": "Onboarding hints (V, 2026-10-04): no tutorial. A short list of suggestions, each shown only while it is not done and its feature (content/locks.json) is open, three at a time, in this order. A hint is done when the account's own data shows it (no stored state, nothing to reset). Texts are French like the rest of the content (the game translates them through i18n/from-french.json).",
+  "welcome": {
+    "days": 7,
+    "title": "Bienvenue dans The Seed",
+    "text": "Il n'y a pas de tutoriel : explore. Termine un niveau, invoque quelque chose, et reviens ici pour des idées. De nouveaux lieux s'ouvrent quand ton compte monte de niveau."
+  },
+  "show": 3,
+  "hints": [
+    {
+      "id": "first_clear",
+      "text": "Termine ton premier niveau : choisis une équipe et appuie sur Combattre."
+    },
+    {
+      "id": "summon",
+      "text": "Utilise un parchemin d'invocation : les nouveaux monstres sont le cœur du jeu."
+    },
+    {
+      "id": "level_5",
+      "text": "Monte un monstre au niveau 5 : gagne des combats avec lui dans ton équipe."
+    },
+    {
+      "id": "deck",
+      "text": "Enregistre un deck pour avoir ton équipe préférée en un clic."
+    },
+    {
+      "id": "checkin",
+      "text": "Fais ton pointage du jour : une petite récompense, chaque jour."
+    },
+    {
+      "id": "rune",
+      "text": "Équipe un monstre d'une rune : les runes rendent les combats bien plus faciles."
+    },
+    {
+      "id": "friend",
+      "text": "Ajoute un ami : vous pourrez discuter."
+    },
+    {
+      "id": "chat",
+      "feature": "chat",
+      "text": "Dis bonjour dans le salon."
+    },
+    {
+      "id": "arena",
+      "feature": "arena",
+      "text": "Essaie l'arène : affronte des équipes rivales pour monter en rang."
+    },
+    {
+      "id": "awaken",
+      "text": "Éveille un monstre une fois son niveau maximum atteint."
+    },
+    {
+      "id": "guild",
+      "feature": "guild",
+      "text": "Rejoins une guilde : une guilde partage un salon et un niveau."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_comment": "Content lock (V, 2026-10-04): there is no tutorial, learning and optimising one's account is the game. A feature opens when the account reaches `account_level` (and has cleared `stage_clears` stages in total). Read-only screens stay open: the lock stops actions, never the view. Enforced only when CONTENT_LOCK=true.",
+  "features": {
+    "chat": { "account_level": 2, "stage_clears": 1, "label": "Chat (écriture)" },
+    "market": { "account_level": 5, "stage_clears": 5, "label": "Marché" },
+    "arena": { "account_level": 8, "stage_clears": 10, "label": "Arène" },
+    "world_boss": { "account_level": 10, "stage_clears": 15, "label": "Boss mondial" },
+    "guild": { "account_level": 12, "stage_clears": 20, "label": "Guildes" }
+  }
+}

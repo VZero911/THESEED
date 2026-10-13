@@ -1,0 +1,214 @@
+{
+ "_comment": "Timed events (V): data-driven start and end (UTC), bonuses applied while they run (they multiply when events overlap), and a gift each player can claim once. Launch events (V: generous, 1, 2, 3 weeks then 1, 2, 3 months) use `launch_days` [from, to], counted from `launch_at` (V sets the real launch date); other events use `starts_at` / `ends_at`. Bonuses: mana (x reward), xp (x), drop_rate (x chance of monster/item/scroll drops), energy_cost (x, rounded up), cosmetic_points (x the cosmetic points each summon gives, rounded up; V: events add cosmetic points). Few light & dark scrolls (V). PLACEHOLDER numbers.",
+ "launch_at": "2026-10-01T00:00:00Z",
+ "events": [
+  {
+   "id": "launch-week-1",
+   "name": "Lancement — Semaine 1",
+   "description": "La première semaine de The Seed : Mana et XP doublés, plus de drops.",
+   "launch_days": [
+    0,
+    7
+   ],
+   "element": "wind",
+   "bonuses": {
+    "mana": 2.0,
+    "xp": 2.0,
+    "drop_rate": 1.5,
+    "cosmetic_points": 3.0
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Semaine 1",
+    "body": "La première semaine de The Seed : Mana et XP doublés, plus de drops.",
+    "rewards": {
+     "energy": 1000,
+     "mana": 5000,
+     "items": {
+      "scroll_mystic": 10,
+      "scroll_unknown": 30
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "launch-week-2",
+   "name": "Lancement — Semaine 2",
+   "description": "Deuxième semaine : les bonus continuent.",
+   "launch_days": [
+    7,
+    14
+   ],
+   "element": "fire",
+   "bonuses": {
+    "mana": 1.75,
+    "xp": 1.75,
+    "drop_rate": 1.4,
+    "cosmetic_points": 2.5
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Semaine 2",
+    "body": "Deuxième semaine : les bonus continuent.",
+    "rewards": {
+     "energy": 1000,
+     "mana": 7500,
+     "items": {
+      "scroll_mystic": 15,
+      "chest_silver": 1
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "launch-week-3",
+   "name": "Lancement — Semaine 3",
+   "description": "Troisième semaine : un parchemin légendaire pour fêter ça.",
+   "launch_days": [
+    14,
+    21
+   ],
+   "element": "water",
+   "bonuses": {
+    "mana": 1.5,
+    "xp": 1.5,
+    "drop_rate": 1.3,
+    "cosmetic_points": 2.0
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Semaine 3",
+    "body": "Troisième semaine : un parchemin légendaire pour fêter ça.",
+    "rewards": {
+     "energy": 1500,
+     "mana": 10000,
+     "items": {
+      "scroll_mystic": 20,
+      "scroll_legendary": 1
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "launch-month-1",
+   "name": "Lancement — Premier mois",
+   "description": "The Seed a un mois : merci d'être là !",
+   "launch_days": [
+    21,
+    30
+   ],
+   "element": "earth",
+   "bonuses": {
+    "mana": 1.5,
+    "xp": 1.5,
+    "drop_rate": 1.2,
+    "cosmetic_points": 2.0
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Premier mois",
+    "body": "The Seed a un mois : merci d'être là !",
+    "rewards": {
+     "energy": 2000,
+     "mana": 15000,
+     "crystal": 300,
+     "items": {
+      "scroll_mystic": 30,
+      "scroll_legendary": 2,
+      "chest_gold": 1
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "launch-month-2",
+   "name": "Lancement — Deuxième mois",
+   "description": "Deux mois d'aventure : de quoi viser plus haut.",
+   "launch_days": [
+    30,
+    60
+   ],
+   "element": "lightning",
+   "bonuses": {
+    "mana": 1.3,
+    "xp": 1.3,
+    "drop_rate": 1.1,
+    "cosmetic_points": 1.5
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Deuxième mois",
+    "body": "Deux mois d'aventure : de quoi viser plus haut.",
+    "rewards": {
+     "energy": 2500,
+     "mana": 20000,
+     "crystal": 500,
+     "items": {
+      "scroll_legendary": 3,
+      "scroll_all_attributes": 1,
+      "chest_gold": 1
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "launch-month-3",
+   "name": "Lancement — Troisième mois",
+   "description": "Trois mois : le grand cadeau du lancement.",
+   "launch_days": [
+    60,
+    90
+   ],
+   "element": "light",
+   "bonuses": {
+    "mana": 1.2,
+    "xp": 1.2,
+    "drop_rate": 1.1,
+    "cosmetic_points": 1.5
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau — Lancement — Troisième mois",
+    "body": "Trois mois : le grand cadeau du lancement.",
+    "rewards": {
+     "energy": 2500,
+     "mana": 25000,
+     "crystal": 1000,
+     "items": {
+      "scroll_mythic": 1,
+      "scroll_all_attributes": 1,
+      "chest_legendary": 1,
+      "scroll_ld": 1
+     },
+     "pot": 3
+    }
+   }
+  },
+  {
+   "id": "nuit-des-tenebres",
+   "name": "Nuit des Ténèbres",
+   "description": "L'énergie coûte moitié moins et un parchemin Lumière et Ténèbres attend chaque invocateur.",
+   "starts_at": "2026-11-01T00:00:00Z",
+   "ends_at": "2026-11-08T00:00:00Z",
+   "element": "dark",
+   "bonuses": {
+    "energy_cost": 0.5
+   },
+   "gift": {
+    "sender": "SYSTEM",
+    "title": "Cadeau de la Nuit des Ténèbres",
+    "body": "Un parchemin pour invoquer dans l'ombre.",
+    "rewards": {
+     "items": {
+      "scroll_ld": 1
+     }
+    }
+   }
+  }
+ ]
+}

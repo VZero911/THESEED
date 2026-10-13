@@ -1,0 +1,236 @@
+{
+ "_comment": "The arena (V, 2026-10-03). Wings: the attack resource of the rival arena and the PvP league, max 20, +1 per hour, refilled with POC or crystals like energy. Provisional numbers.",
+ "wings": {
+  "max": 20,
+  "regen_seconds": 3600,
+  "start": 20,
+  "refill": {
+   "poc": 20,
+   "crystal": 60
+  }
+ },
+ "rivals": [
+  {
+   "id": "rival-1",
+   "name": "Rival 1 : Tinn",
+   "level": 8,
+   "species": [
+    "gobelin_fire",
+    "gobelin_wind",
+    "champignon_lightning",
+    "kobold_dark"
+   ],
+   "arena_points": 10,
+   "guild_points": 10
+  },
+  {
+   "id": "rival-2",
+   "name": "Rival 2 : Mara",
+   "level": 12,
+   "species": [
+    "chauve_souris_water",
+    "chauve_souris_earth",
+    "fee_light",
+    "scarabee_fire"
+   ],
+   "arena_points": 20,
+   "guild_points": 20
+  },
+  {
+   "id": "rival-3",
+   "name": "Rival 3 : Brask",
+   "level": 18,
+   "species": [
+    "chauve_souris_wind",
+    "chauve_souris_lightning",
+    "fee_dark",
+    "scarabee_water"
+   ],
+   "arena_points": 30,
+   "guild_points": 30
+  },
+  {
+   "id": "rival-4",
+   "name": "Rival 4 : Ilya",
+   "level": 25,
+   "species": [
+    "archer_earth",
+    "archer_light",
+    "chaman_fire",
+    "automate_wind"
+   ],
+   "arena_points": 40,
+   "guild_points": 40
+  },
+  {
+   "id": "rival-5",
+   "name": "Rival 5 : Corvus",
+   "level": 30,
+   "species": [
+    "archer_lightning",
+    "archer_dark",
+    "chaman_water",
+    "automate_earth"
+   ],
+   "arena_points": 50,
+   "guild_points": 50
+  },
+  {
+   "id": "rival-6",
+   "name": "Rival 6 : Selka",
+   "level": 35,
+   "species": [
+    "assassin_light",
+    "assassin_fire",
+    "alchimiste_wind",
+    "gardien_lightning"
+   ],
+   "arena_points": 60,
+   "guild_points": 60
+  },
+  {
+   "id": "rival-7",
+   "name": "Rival 7 : Dorn",
+   "level": 40,
+   "species": [
+    "assassin_dark",
+    "assassin_water",
+    "alchimiste_earth",
+    "gardien_light"
+   ],
+   "arena_points": 70,
+   "guild_points": 70
+  },
+  {
+   "id": "rival-8",
+   "name": "Rival 8 : Vesper",
+   "level": 45,
+   "species": [
+    "archimage_fire",
+    "archimage_wind",
+    "gorgone_lightning",
+    "paladin_dark"
+   ],
+   "arena_points": 80,
+   "guild_points": 80
+  },
+  {
+   "id": "rival-9",
+   "name": "Rival 9 : Okan",
+   "level": 50,
+   "species": [
+    "archimage_water",
+    "archimage_earth",
+    "gorgone_light",
+    "paladin_fire"
+   ],
+   "arena_points": 90,
+   "guild_points": 90
+  },
+  {
+   "id": "rival-10",
+   "name": "Rival 10 : Nyx",
+   "level": 60,
+   "species": [
+    "dragon_wind",
+    "dragon_lightning",
+    "archange_dark",
+    "kraken_water"
+   ],
+   "arena_points": 100,
+   "guild_points": 100
+  }
+ ],
+ "_rivals_comment": "Rival arena (V, 2026-10-03): 10 simple AI rivals, fixed teams of 4, easy to hard. The first win over each rival each UTC day gives arena points and, in a guild, guild points. A fight costs 1 wing. Provisional numbers.",
+ "league": {
+  "_comment": "PvP league (V, 2026-10-03): defense 4 vs attack 4, Elo-like rating, 7 leagues, seasons of 2 weeks with rewards by league, soft reset at each new season. Provisional numbers.",
+  "start_rating": 1000,
+  "k": 24,
+  "placement_fights": 5,
+  "placement_k_factor": 2.0,
+  "season_days": 14,
+  "season_epoch": "2026-10-05",
+  "soft_reset": 0.5,
+  "base_rating": 1000,
+  "defender_loss_share": 0.5,
+  "leagues": [
+   {
+    "id": "bronze",
+    "name": "Bronze",
+    "min": 0,
+    "reward": {
+     "point_arena": 100,
+     "items": {
+      "chest_bronze": 1
+     }
+    }
+   },
+   {
+    "id": "silver",
+    "name": "Argent",
+    "min": 1200,
+    "reward": {
+     "point_arena": 250,
+     "items": {
+      "chest_silver": 1
+     }
+    }
+   },
+   {
+    "id": "gold",
+    "name": "Or",
+    "min": 1400,
+    "reward": {
+     "point_arena": 500,
+     "items": {
+      "chest_gold": 1
+     }
+    }
+   },
+   {
+    "id": "platinum",
+    "name": "Platine",
+    "min": 1600,
+    "reward": {
+     "point_arena": 900,
+     "items": {
+      "chest_gold": 2
+     }
+    }
+   },
+   {
+    "id": "diamond",
+    "name": "Diamant",
+    "min": 1800,
+    "reward": {
+     "point_arena": 1500,
+     "items": {
+      "chest_legendary": 1
+     }
+    }
+   },
+   {
+    "id": "master",
+    "name": "Maître",
+    "min": 2000,
+    "reward": {
+     "point_arena": 2500,
+     "items": {
+      "chest_legendary": 2
+     }
+    }
+   },
+   {
+    "id": "legend",
+    "name": "Légende",
+    "min": 2200,
+    "reward": {
+     "point_arena": 4000,
+     "items": {
+      "chest_legendary": 3
+     }
+    }
+   }
+  ]
+ }
+}

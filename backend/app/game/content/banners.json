@@ -1,0 +1,8 @@
+{
+ "_comment": "Summon banners (V, 2026-10-03): a banner puts a summon pool and some featured monsters in the spotlight, for a while, and shows the event bonus on cosmetic points. A banner only DISPLAYS: it never changes the odds of the pool (V's drop rule: a broader pool never makes a rare outcome easier than its own scroll). `event` ties a banner to a live event (it shows while the event runs); without `event` it is permanent. x10 and x100 summons use the same pool. PLACEHOLDER banners.",
+ "banners": [
+  {"id": "standard", "name": "Invocation mystique", "pool": "standard", "tagline": "Le cœur de l'invocation : 3 à 6★.", "featured": ["ronin_fire", "ronin_water"], "event": null},
+  {"id": "legendary", "name": "Invocation légendaire", "pool": "legendary", "tagline": "4 à 6★, les colosses et les ronins.", "featured": ["colosse_fire", "ronin_wind"], "event": null},
+  {"id": "launch-week-1", "name": "Bannière de lancement", "pool": "light_dark", "tagline": "Lumière & Ténèbres, points cosmétiques triplés.", "featured": ["ronin_light", "ronin_dark"], "event": "launch-week-1"}
+ ]
+}

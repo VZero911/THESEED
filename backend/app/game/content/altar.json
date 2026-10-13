@@ -1,0 +1,23 @@
+{
+ "_comment": "PLACEHOLDER rules of the upgrade altar and the monster box (game spec 3.3, 3.4, 7 bis).",
+ "box_capacity": 2000,
+ "feed": {
+  "xp_per_star": 600,
+  "xp_per_level": 200,
+  "food_multiplier": 8
+ },
+ "awaken_essences": {
+  "1": 5,
+  "2": 10,
+  "3": 20,
+  "4": 30,
+  "5": 50,
+  "6": 80,
+  "7": 120,
+  "8": 150
+ },
+ "rune_capacity": 4000,
+ "material_capacity": 7500,
+ "_capacity_comment": "V (2026-10-02): box 2000 monsters, storage unlimited, 4000 runes, 7500 grinds and gems. Drops beyond a capacity are not kept (destroy runes for POC to make room).",
+ "_feed_comment": "V (2026-10-02, #13): feeding follows the x10 XP curve (60 -> 600 per star, 20 -> 200 per level); lutins keep x8."
+}

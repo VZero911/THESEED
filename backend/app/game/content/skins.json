@@ -1,0 +1,8 @@
+{
+ "_comment": "Skin catalogue (ADR 0033, V 2026-10-03): each entry is a skin type of the Skins contract (`make skins-catalog` defines the missing ones on chain) and the shop item that stands for it. soulbound = account-bound, otherwise tradable; max_supply 0 = unlimited. PLACEHOLDER skins and rarities. kind: 0 monster skin, 1 village decoration, 2 summon effect, 3 profile frame.",
+ "types": [
+  {"id": 1, "item": "skin_frame_gold", "kind": 3, "rarity": 1, "soulbound": true, "max_supply": 0},
+  {"id": 2, "item": "skin_summon_stars", "kind": 2, "rarity": 3, "soulbound": true, "max_supply": 0},
+  {"id": 3, "item": "skin_dragon_ember", "kind": 0, "rarity": 4, "soulbound": false, "max_supply": 1000}
+ ]
+}

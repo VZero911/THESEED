@@ -1,0 +1,548 @@
+{
+  "Achievements.sol": {
+    "AchievementsStorage": [
+      [
+        "mapping(address => mapping(bytes32 => uint64))",
+        "unlocked"
+      ],
+      [
+        "mapping(address => uint256)",
+        "points"
+      ],
+      [
+        "mapping(bytes32 => uint32)",
+        "holders"
+      ],
+      [
+        "mapping(bytes32 => address)",
+        "first"
+      ],
+      [
+        "uint256",
+        "total"
+      ]
+    ]
+  },
+  "Marketplace.sol": {
+    "MarketplaceStorage": [
+      [
+        "IERC20",
+        "pot"
+      ],
+      [
+        "address",
+        "monster"
+      ],
+      [
+        "address",
+        "feeRecipient"
+      ],
+      [
+        "uint256",
+        "feeBps"
+      ],
+      [
+        "uint256",
+        "minBidIncrementBps"
+      ],
+      [
+        "uint256",
+        "extensionWindow"
+      ],
+      [
+        "uint256",
+        "lastListingId"
+      ],
+      [
+        "uint256",
+        "lastOfferId"
+      ],
+      [
+        "mapping(uint256 => Listing)",
+        "listings"
+      ],
+      [
+        "mapping(uint256 => Offer)",
+        "offers"
+      ],
+      [
+        "mapping(uint256 => uint256)",
+        "listingOfToken"
+      ],
+      [
+        "mapping(address => uint256)",
+        "nonces"
+      ],
+      [
+        "uint256",
+        "totalVolume"
+      ],
+      [
+        "uint256",
+        "totalFees"
+      ]
+    ]
+  },
+  "MintManager.sol": {
+    "MintManagerStorage": [
+      [
+        "ISoulboundToken",
+        "poc"
+      ],
+      [
+        "ISoulboundToken",
+        "mana"
+      ],
+      [
+        "IMonster",
+        "monster"
+      ],
+      [
+        "address",
+        "items"
+      ],
+      [
+        "uint256",
+        "epochDuration"
+      ],
+      [
+        "uint256",
+        "epochStart"
+      ],
+      [
+        "mapping(address => TokenBudget)",
+        "budgets"
+      ],
+      [
+        "ISoulboundToken",
+        "crystal"
+      ],
+      [
+        "IGameToken",
+        "pot"
+      ],
+      [
+        "mapping(address => uint256)",
+        "burnNonces"
+      ]
+    ],
+    "TokenBudget": [
+      [
+        "uint256",
+        "budget"
+      ],
+      [
+        "uint256",
+        "minted"
+      ],
+      [
+        "uint256",
+        "epochStart"
+      ]
+    ]
+  },
+  "Monster.sol": {
+    "MonsterStorage": [
+      [
+        "uint256",
+        "lastTokenId"
+      ],
+      [
+        "string",
+        "baseURI"
+      ]
+    ]
+  },
+  "Names.sol": {
+    "NamesStorage": [
+      [
+        "mapping(bytes32 => address)",
+        "holder"
+      ],
+      [
+        "mapping(address => string)",
+        "names"
+      ],
+      [
+        "mapping(address => uint256)",
+        "nonces"
+      ]
+    ]
+  },
+  "Polls.sol": {
+    "Poll": [
+      [
+        "bytes32",
+        "contentHash"
+      ],
+      [
+        "uint64",
+        "startsAt"
+      ],
+      [
+        "uint64",
+        "endsAt"
+      ],
+      [
+        "uint8",
+        "options"
+      ],
+      [
+        "bool",
+        "freeAnswer"
+      ],
+      [
+        "bool",
+        "vetoed"
+      ],
+      [
+        "uint32",
+        "voters"
+      ]
+    ],
+    "PollsStorage": [
+      [
+        "uint256",
+        "count"
+      ],
+      [
+        "mapping(uint256 => Poll)",
+        "polls"
+      ],
+      [
+        "mapping(uint256 => mapping(uint8 => uint256))",
+        "tally"
+      ],
+      [
+        "mapping(uint256 => mapping(address => uint8))",
+        "choice"
+      ]
+    ]
+  },
+  "PowerShares.sol": {
+    "PowerSharesStorage": [
+      [
+        "address",
+        "veto"
+      ],
+      [
+        "address",
+        "vetoRecovery"
+      ],
+      [
+        "mapping(bytes32 => address)",
+        "holder"
+      ],
+      [
+        "mapping(bytes32 => uint16)",
+        "weight"
+      ],
+      [
+        "mapping(bytes32 => bool)",
+        "known"
+      ],
+      [
+        "bytes32[]",
+        "roles"
+      ],
+      [
+        "uint256",
+        "proposalCount"
+      ],
+      [
+        "mapping(uint256 => Proposal)",
+        "proposals"
+      ],
+      [
+        "mapping(uint256 => mapping(address => bool))",
+        "approved"
+      ],
+      [
+        "uint64",
+        "epoch"
+      ],
+      [
+        "bool",
+        "upgrading"
+      ]
+    ],
+    "Proposal": [
+      [
+        "Kind",
+        "kind"
+      ],
+      [
+        "bytes32",
+        "role"
+      ],
+      [
+        "address",
+        "account"
+      ],
+      [
+        "uint16",
+        "bps"
+      ],
+      [
+        "uint64",
+        "epoch"
+      ],
+      [
+        "uint64",
+        "queuedAt"
+      ],
+      [
+        "uint64",
+        "eta"
+      ],
+      [
+        "bool",
+        "executed"
+      ],
+      [
+        "bool",
+        "cancelled"
+      ],
+      [
+        "address",
+        "proposer"
+      ]
+    ]
+  },
+  "Roles.sol": {
+    "Grant": [
+      [
+        "uint64",
+        "since"
+      ],
+      [
+        "uint64",
+        "expiresAt"
+      ]
+    ],
+    "RoleType": [
+      [
+        "string",
+        "name"
+      ],
+      [
+        "bool",
+        "unique"
+      ],
+      [
+        "bool",
+        "defined"
+      ],
+      [
+        "uint16",
+        "rank"
+      ]
+    ],
+    "RolesStorage": [
+      [
+        "mapping(bytes32 => RoleType)",
+        "types"
+      ],
+      [
+        "bytes32[]",
+        "ids"
+      ],
+      [
+        "mapping(address => mapping(bytes32 => Grant))",
+        "grants"
+      ],
+      [
+        "mapping(bytes32 => address)",
+        "holder"
+      ]
+    ]
+  },
+  "Skins.sol": {
+    "SkinsStorage": [
+      [
+        "uint256",
+        "lastTokenId"
+      ],
+      [
+        "string",
+        "baseURI"
+      ],
+      [
+        "mapping(uint32 => SkinType)",
+        "types"
+      ],
+      [
+        "mapping(uint256 => Skin)",
+        "skins"
+      ]
+    ]
+  },
+  "interfaces/IContractKernel.sol": {
+    "IdStatus": [
+      [
+        "bool",
+        "exists"
+      ],
+      [
+        "address",
+        "owner"
+      ],
+      [
+        "bool",
+        "locked"
+      ],
+      [
+        "bool",
+        "listed"
+      ]
+    ],
+    "VersionInfo": [
+      [
+        "address",
+        "implementation"
+      ],
+      [
+        "string",
+        "version"
+      ]
+    ]
+  },
+  "interfaces/IMarketplace.sol": {
+    "Listing": [
+      [
+        "address",
+        "seller"
+      ],
+      [
+        "uint256",
+        "tokenId"
+      ],
+      [
+        "Kind",
+        "kind"
+      ],
+      [
+        "Status",
+        "status"
+      ],
+      [
+        "uint256",
+        "price"
+      ],
+      [
+        "uint256",
+        "reservePrice"
+      ],
+      [
+        "uint256",
+        "endsAt"
+      ],
+      [
+        "address",
+        "bidder"
+      ],
+      [
+        "uint256",
+        "bid"
+      ]
+    ],
+    "Offer": [
+      [
+        "address",
+        "buyer"
+      ],
+      [
+        "uint256",
+        "tokenId"
+      ],
+      [
+        "uint256",
+        "amount"
+      ],
+      [
+        "uint256",
+        "expiresAt"
+      ],
+      [
+        "OfferStatus",
+        "status"
+      ]
+    ],
+    "Sale": [
+      [
+        "uint256",
+        "tokenId"
+      ],
+      [
+        "Kind",
+        "kind"
+      ],
+      [
+        "uint256",
+        "price"
+      ],
+      [
+        "uint256",
+        "reservePrice"
+      ],
+      [
+        "uint256",
+        "duration"
+      ]
+    ]
+  },
+  "interfaces/ISkins.sol": {
+    "Skin": [
+      [
+        "uint32",
+        "typeId"
+      ],
+      [
+        "uint32",
+        "serial"
+      ],
+      [
+        "uint40",
+        "mintedAt"
+      ],
+      [
+        "Kind",
+        "kind"
+      ],
+      [
+        "uint8",
+        "rarity"
+      ],
+      [
+        "bool",
+        "soulbound"
+      ]
+    ],
+    "SkinType": [
+      [
+        "Kind",
+        "kind"
+      ],
+      [
+        "uint8",
+        "rarity"
+      ],
+      [
+        "bool",
+        "soulbound"
+      ],
+      [
+        "uint32",
+        "maxSupply"
+      ],
+      [
+        "uint32",
+        "minted"
+      ],
+      [
+        "bool",
+        "exists"
+      ]
+    ]
+  }
+}

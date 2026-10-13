@@ -1,0 +1,643 @@
+{
+ "_comment": "PLACEHOLDER. Stackable off-chain items (game spec 7 bis, 8). Grinds (reinforce) and gems (change) belong to a rune set and only work on runes of that set. Materials (kind material) are organized by category and tier (1-5) for the crafting to come; they do not drop yet.",
+ "items": [
+  {
+   "id": "essence_fire",
+   "name": "Essence de feu",
+   "kind": "essence",
+   "element": "fire"
+  },
+  {
+   "id": "essence_water",
+   "name": "Essence d'eau",
+   "kind": "essence",
+   "element": "water"
+  },
+  {
+   "id": "essence_wind",
+   "name": "Essence de vent",
+   "kind": "essence",
+   "element": "wind"
+  },
+  {
+   "id": "essence_earth",
+   "name": "Essence de terre",
+   "kind": "essence",
+   "element": "earth"
+  },
+  {
+   "id": "essence_lightning",
+   "name": "Essence de foudre",
+   "kind": "essence",
+   "element": "lightning"
+  },
+  {
+   "id": "essence_light",
+   "name": "Essence de lumière",
+   "kind": "essence",
+   "element": "light"
+  },
+  {
+   "id": "essence_dark",
+   "name": "Essence de ténèbres",
+   "kind": "essence",
+   "element": "dark"
+  },
+  {
+   "id": "essence_magic",
+   "name": "Essence de magie",
+   "kind": "essence",
+   "description": "Essence basique des donjons d'essences. Son usage viendra plus tard."
+  },
+  {
+   "id": "stone_5",
+   "name": "Pierre à cinq étoiles",
+   "kind": "stone",
+   "description": "Permet à un monstre de dépasser son niveau maximal actuel. Autres usages plus tard."
+  },
+  {
+   "id": "stone_6",
+   "name": "Pierre à six étoiles",
+   "kind": "stone",
+   "description": "Permet à un monstre de dépasser son niveau maximal actuel. Autres usages plus tard."
+  },
+  {
+   "id": "stone_7",
+   "name": "Pierre à sept étoiles",
+   "kind": "stone",
+   "description": "Permet à un monstre de dépasser son niveau maximal actuel. Autres usages plus tard."
+  },
+  {
+   "id": "point_guild",
+   "name": "Points de guilde",
+   "kind": "points",
+   "description": "Gagnés en jouant dans une guilde (combats, boss mondial). Boutique de guilde."
+  },
+  {
+   "id": "point_social",
+   "name": "Points sociaux",
+   "kind": "points",
+   "description": "Gagnés avec les amis, les sondages et le boss mondial. Boutique sociale."
+  },
+  {
+   "id": "point_arena",
+   "name": "Points d'arène",
+   "kind": "points",
+   "description": "Gagnés dans l'arène (à venir). Boutique d'arène."
+  },
+  {
+   "id": "point_tower",
+   "name": "Points de tour",
+   "kind": "points",
+   "description": "Gagnés dans la Tour (Normal et Hard). Boutique de la Tour."
+  },
+  {
+   "id": "point_cosmetic",
+   "name": "Points cosmétiques",
+   "kind": "points",
+   "description": "Gagnés à chaque invocation. Boutique des skins."
+  },
+  {
+   "id": "skin_dragon_ember",
+   "name": "Skin : Dragon braise",
+   "kind": "skin",
+   "description": "Apparence de monstre (échangeable). Emplacement provisoire en attendant le contrat Skins."
+  },
+  {
+   "id": "skin_frame_gold",
+   "name": "Cadre de profil doré",
+   "kind": "skin",
+   "description": "Cadre de profil (lié au compte)."
+  },
+  {
+   "id": "skin_summon_stars",
+   "name": "Effet d’invocation : pluie d’étoiles",
+   "kind": "skin",
+   "description": "Effet visuel d’invocation (lié au compte)."
+  },
+  {
+   "id": "scroll_unknown",
+   "name": "Parchemin inconnu (1-4★)",
+   "kind": "scroll",
+   "pool": "basic"
+  },
+  {
+   "id": "scroll_mystic",
+   "name": "Parchemin mystique (3-6★)",
+   "kind": "scroll",
+   "pool": "standard"
+  },
+  {
+   "id": "scroll_ld",
+   "name": "Parchemin de Lumière et de Ténèbres (3-6★)",
+   "kind": "scroll",
+   "pool": "light_dark"
+  },
+  {
+   "id": "scroll_legendary",
+   "name": "Parchemin légendaire (4-6★)",
+   "kind": "scroll",
+   "pool": "legendary"
+  },
+  {
+   "id": "scroll_mythic",
+   "name": "Parchemin mythique (5-6★ : 99 % / 1 %)",
+   "kind": "scroll",
+   "pool": "mythic"
+  },
+  {
+   "id": "scroll_all_attributes",
+   "name": "Parchemin de tous les attributs (4-6★, dont L&T)",
+   "kind": "scroll",
+   "pool": "all_attributes"
+  },
+  {
+   "id": "scroll_ld_mythic",
+   "name": "Parchemin mythique de Lumière et de Ténèbres (5-6★)",
+   "kind": "scroll",
+   "pool": "light_dark_mythic"
+  },
+  {
+   "id": "grind_fureur",
+   "name": "Meule Fureur",
+   "kind": "grind",
+   "set": "fureur"
+  },
+  {
+   "id": "grind_celerite",
+   "name": "Meule Célérité",
+   "kind": "grind",
+   "set": "celerite"
+  },
+  {
+   "id": "grind_acharnement",
+   "name": "Meule Acharnement",
+   "kind": "grind",
+   "set": "acharnement"
+  },
+  {
+   "id": "grind_vitalite",
+   "name": "Meule Vitalité",
+   "kind": "grind",
+   "set": "vitalite"
+  },
+  {
+   "id": "grind_rempart",
+   "name": "Meule Rempart",
+   "kind": "grind",
+   "set": "rempart"
+  },
+  {
+   "id": "grind_ferveur",
+   "name": "Meule Ferveur",
+   "kind": "grind",
+   "set": "ferveur"
+  },
+  {
+   "id": "grind_precision",
+   "name": "Meule Précision",
+   "kind": "grind",
+   "set": "precision"
+  },
+  {
+   "id": "grind_resolution",
+   "name": "Meule Résolution",
+   "kind": "grind",
+   "set": "resolution"
+  },
+  {
+   "id": "grind_lame",
+   "name": "Meule Lame",
+   "kind": "grind",
+   "set": "lame"
+  },
+  {
+   "id": "grind_vampire",
+   "name": "Meule Vampire",
+   "kind": "grind",
+   "set": "vampire"
+  },
+  {
+   "id": "grind_garde",
+   "name": "Meule Garde",
+   "kind": "grind",
+   "set": "garde"
+  },
+  {
+   "id": "grind_seve",
+   "name": "Meule Sève",
+   "kind": "grind",
+   "set": "seve"
+  },
+  {
+   "id": "gem_fureur",
+   "name": "Gemme Fureur",
+   "kind": "gem",
+   "set": "fureur"
+  },
+  {
+   "id": "gem_celerite",
+   "name": "Gemme Célérité",
+   "kind": "gem",
+   "set": "celerite"
+  },
+  {
+   "id": "gem_acharnement",
+   "name": "Gemme Acharnement",
+   "kind": "gem",
+   "set": "acharnement"
+  },
+  {
+   "id": "gem_vitalite",
+   "name": "Gemme Vitalité",
+   "kind": "gem",
+   "set": "vitalite"
+  },
+  {
+   "id": "gem_rempart",
+   "name": "Gemme Rempart",
+   "kind": "gem",
+   "set": "rempart"
+  },
+  {
+   "id": "gem_ferveur",
+   "name": "Gemme Ferveur",
+   "kind": "gem",
+   "set": "ferveur"
+  },
+  {
+   "id": "gem_precision",
+   "name": "Gemme Précision",
+   "kind": "gem",
+   "set": "precision"
+  },
+  {
+   "id": "gem_resolution",
+   "name": "Gemme Résolution",
+   "kind": "gem",
+   "set": "resolution"
+  },
+  {
+   "id": "gem_lame",
+   "name": "Gemme Lame",
+   "kind": "gem",
+   "set": "lame"
+  },
+  {
+   "id": "gem_vampire",
+   "name": "Gemme Vampire",
+   "kind": "gem",
+   "set": "vampire"
+  },
+  {
+   "id": "gem_garde",
+   "name": "Gemme Garde",
+   "kind": "gem",
+   "set": "garde"
+  },
+  {
+   "id": "gem_seve",
+   "name": "Gemme Sève",
+   "kind": "gem",
+   "set": "seve"
+  },
+  {
+   "id": "minerai_fer",
+   "name": "Minerai de fer",
+   "kind": "material",
+   "category": "ore",
+   "tier": 1,
+   "description": "Minerais, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "minerai_argent",
+   "name": "Minerai d'argent",
+   "kind": "material",
+   "category": "ore",
+   "tier": 2,
+   "description": "Minerais, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "minerai_mithril",
+   "name": "Minerai de mithril",
+   "kind": "material",
+   "category": "ore",
+   "tier": 3,
+   "description": "Minerais, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "minerai_adamantite",
+   "name": "Minerai d'adamantite",
+   "kind": "material",
+   "category": "ore",
+   "tier": 4,
+   "description": "Minerais, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "minerai_orichalque",
+   "name": "Orichalque",
+   "kind": "material",
+   "category": "ore",
+   "tier": 5,
+   "description": "Minerais, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "bois_chene",
+   "name": "Bois de chêne",
+   "kind": "material",
+   "category": "wood",
+   "tier": 1,
+   "description": "Bois et plantes, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "herbe_lunaire",
+   "name": "Herbe lunaire",
+   "kind": "material",
+   "category": "wood",
+   "tier": 2,
+   "description": "Bois et plantes, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "ecorce_ancienne",
+   "name": "Écorce ancienne",
+   "kind": "material",
+   "category": "wood",
+   "tier": 3,
+   "description": "Bois et plantes, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "racine_mandragore",
+   "name": "Racine de mandragore",
+   "kind": "material",
+   "category": "wood",
+   "tier": 4,
+   "description": "Bois et plantes, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "seve_monde",
+   "name": "Sève de l'Arbre-Monde",
+   "kind": "material",
+   "category": "wood",
+   "tier": 5,
+   "description": "Bois et plantes, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "cuir_brut",
+   "name": "Cuir brut",
+   "kind": "material",
+   "category": "hide",
+   "tier": 1,
+   "description": "Cuirs et tissus, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "soie_araignee",
+   "name": "Soie d'araignée",
+   "kind": "material",
+   "category": "hide",
+   "tier": 2,
+   "description": "Cuirs et tissus, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "cuir_tanne",
+   "name": "Cuir tanné",
+   "kind": "material",
+   "category": "hide",
+   "tier": 3,
+   "description": "Cuirs et tissus, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "etoffe_runique",
+   "name": "Étoffe runique",
+   "kind": "material",
+   "category": "hide",
+   "tier": 4,
+   "description": "Cuirs et tissus, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "voile_astral",
+   "name": "Voile astral",
+   "kind": "material",
+   "category": "hide",
+   "tier": 5,
+   "description": "Cuirs et tissus, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "croc",
+   "name": "Croc",
+   "kind": "material",
+   "category": "monster_part",
+   "tier": 1,
+   "description": "Parties de monstres, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "plume",
+   "name": "Plume chatoyante",
+   "kind": "material",
+   "category": "monster_part",
+   "tier": 2,
+   "description": "Parties de monstres, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "ecaille",
+   "name": "Écaille de naga",
+   "kind": "material",
+   "category": "monster_part",
+   "tier": 3,
+   "description": "Parties de monstres, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "corne",
+   "name": "Corne de béhémoth",
+   "kind": "material",
+   "category": "monster_part",
+   "tier": 4,
+   "description": "Parties de monstres, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "coeur_dragon",
+   "name": "Cœur de dragon",
+   "kind": "material",
+   "category": "monster_part",
+   "tier": 5,
+   "description": "Parties de monstres, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "eclat_mana",
+   "name": "Éclat de mana",
+   "kind": "material",
+   "category": "crystal",
+   "tier": 1,
+   "description": "Cristaux bruts, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "quartz_runique",
+   "name": "Quartz runique",
+   "kind": "material",
+   "category": "crystal",
+   "tier": 2,
+   "description": "Cristaux bruts, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "cristal_tempete",
+   "name": "Cristal de tempête",
+   "kind": "material",
+   "category": "crystal",
+   "tier": 3,
+   "description": "Cristaux bruts, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "prisme",
+   "name": "Prisme élémentaire",
+   "kind": "material",
+   "category": "crystal",
+   "tier": 4,
+   "description": "Cristaux bruts, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "larme_etoile",
+   "name": "Larme d'étoile",
+   "kind": "material",
+   "category": "crystal",
+   "tier": 5,
+   "description": "Cristaux bruts, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "piece_ancienne",
+   "name": "Pièce ancienne",
+   "kind": "material",
+   "category": "relic",
+   "tier": 1,
+   "description": "Reliques, palier 1 (commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "sceau_brise",
+   "name": "Sceau brisé",
+   "kind": "material",
+   "category": "relic",
+   "tier": 2,
+   "description": "Reliques, palier 2 (peu commun). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "tablette_gravee",
+   "name": "Tablette gravée",
+   "kind": "material",
+   "category": "relic",
+   "tier": 3,
+   "description": "Reliques, palier 3 (rare). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "idole_oubliee",
+   "name": "Idole oubliée",
+   "kind": "material",
+   "category": "relic",
+   "tier": 4,
+   "description": "Reliques, palier 4 (épique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "fragment_origine",
+   "name": "Fragment de l'Origine",
+   "kind": "material",
+   "category": "relic",
+   "tier": 5,
+   "description": "Reliques, palier 5 (mythique). Réservé à l'artisanat (plus tard)."
+  },
+  {
+   "id": "chest_bronze",
+   "name": "Coffre de bronze",
+   "kind": "chest",
+   "tier": 1,
+   "description": "S'ouvre dans l'inventaire pour un lot de récompenses tirées au sort."
+  },
+  {
+   "id": "chest_silver",
+   "name": "Coffre d'argent",
+   "kind": "chest",
+   "tier": 2,
+   "description": "S'ouvre dans l'inventaire pour un lot de récompenses tirées au sort."
+  },
+  {
+   "id": "chest_gold",
+   "name": "Coffre d'or",
+   "kind": "chest",
+   "tier": 3,
+   "description": "S'ouvre dans l'inventaire pour un lot de récompenses tirées au sort."
+  },
+  {
+   "id": "chest_legendary",
+   "name": "Coffre légendaire",
+   "kind": "chest",
+   "tier": 4,
+   "description": "S'ouvre dans l'inventaire pour un lot de récompenses tirées au sort."
+  },
+  {
+   "id": "shard_azrakhel_fire",
+   "name": "Éclat de Azrakhel",
+   "kind": "shard",
+   "element": "fire",
+   "description": "Un éclat infernal. 100 éclats forgent Azrakhel à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_thalassyr_water",
+   "name": "Éclat de Thalassyr",
+   "kind": "shard",
+   "element": "water",
+   "description": "Un éclat infernal. 100 éclats forgent Thalassyr à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_vheyra_wind",
+   "name": "Éclat de Vheyra",
+   "kind": "shard",
+   "element": "wind",
+   "description": "Un éclat infernal. 100 éclats forgent Vheyra à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_gorrumak_earth",
+   "name": "Éclat de Gorrumak",
+   "kind": "shard",
+   "element": "earth",
+   "description": "Un éclat infernal. 100 éclats forgent Gorrumak à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_zaelith_lightning",
+   "name": "Éclat de Zaelith",
+   "kind": "shard",
+   "element": "lightning",
+   "description": "Un éclat infernal. 100 éclats forgent Zaelith à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_seraqiel_light",
+   "name": "Éclat de Seraqiel",
+   "kind": "shard",
+   "element": "light",
+   "description": "Un éclat infernal. 100 éclats forgent Seraqiel à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_nyxhollow_dark",
+   "name": "Éclat de Nyxhollow",
+   "kind": "shard",
+   "element": "dark",
+   "description": "Un éclat infernal. 100 éclats forgent Nyxhollow à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_malgrith_fire",
+   "name": "Éclat de Malgrith",
+   "kind": "shard",
+   "element": "fire",
+   "description": "Un éclat infernal. 100 éclats forgent Malgrith à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_orovane_water",
+   "name": "Éclat de Orovane",
+   "kind": "shard",
+   "element": "water",
+   "description": "Un éclat infernal. 100 éclats forgent Orovane à l'autel (une seule fois par compte)."
+  },
+  {
+   "id": "shard_kharzul_dark",
+   "name": "Éclat de Kharzul",
+   "kind": "shard",
+   "element": "dark",
+   "description": "Un éclat infernal. 100 éclats forgent Kharzul à l'autel (une seule fois par compte)."
+  }
+ ]
+}

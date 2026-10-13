@@ -1,0 +1,88 @@
+{
+ "_comment": "How a contribution is priced (V, 2026-10-03): POC = base(kind) x size x impact x quality x audience x area x contributor x scarcity, rounded, then capped. Every number is a PLACEHOLDER for V to tune, in this file or in a spreadsheet (seed-data MCP: contribution_kinds, contribution_factors, contribution_limits). 'impact' answers 'how does it help the system?'. 'scarcity' shrinks rewards when the period's mint budget is mostly spent, so the economy cannot inflate. The base values follow the scale of docs/CONTRIBUTIONS.md (fix 10, feature 25, system 50).",
+ "kinds": [
+  {"id": "bugfix", "label": "Bug fix", "base": 10, "area": "gameplay"},
+  {"id": "feature", "label": "Feature", "base": 25, "area": "gameplay"},
+  {"id": "system", "label": "Whole system (contract, backend, game, tests)", "base": 50, "area": "gameplay"},
+  {"id": "contract", "label": "Smart contract change", "base": 40, "area": "contracts"},
+  {"id": "security_fix", "label": "Security fix or audit finding", "base": 40, "area": "security"},
+  {"id": "test", "label": "Tests", "base": 8, "area": "quality"},
+  {"id": "docs", "label": "Documentation or translation", "base": 6, "area": "docs"},
+  {"id": "art_2d", "label": "2D art or UI", "base": 25, "area": "art"},
+  {"id": "art_3d", "label": "3D art or animation", "base": 40, "area": "art"},
+  {"id": "audio", "label": "Music or sound", "base": 25, "area": "art"},
+  {"id": "content", "label": "Game content (monsters, stages, events)", "base": 15, "area": "gameplay"},
+  {"id": "balance", "label": "Balance study or simulation", "base": 15, "area": "gameplay"},
+  {"id": "bug_report", "label": "Reproducible bug report", "base": 3, "area": "quality"},
+  {"id": "idea", "label": "Idea adopted into the roadmap", "base": 5, "area": "community"},
+  {"id": "moderation", "label": "Moderation or support work", "base": 5, "area": "community"},
+  {"id": "event", "label": "Community event run", "base": 15, "area": "community"},
+  {"id": "agent_work", "label": "AI agent task within its mandate", "base": 10, "area": "infra"},
+  {"id": "node_operation", "label": "Running a blockchain node (per period)", "base": 20, "area": "infra"},
+  {"id": "server_operation", "label": "Running a game or indexer server (per period)", "base": 20, "area": "infra"},
+  {"id": "referral", "label": "Brings a new active player or partner", "base": 5, "area": "growth"},
+  {"id": "integration", "label": "Integration or partnership (B2B)", "base": 60, "area": "growth"}
+ ],
+ "factors": {
+  "size": [
+   {"level": "xs", "multiplier": 0.5, "meaning": "minutes"},
+   {"level": "s", "multiplier": 1.0, "meaning": "about an hour"},
+   {"level": "m", "multiplier": 2.0, "meaning": "about a day"},
+   {"level": "l", "multiplier": 4.0, "meaning": "several days"},
+   {"level": "xl", "multiplier": 8.0, "meaning": "a week or more"}
+  ],
+  "impact": [
+   {"level": "none", "multiplier": 0.0, "meaning": "does not help the system: no reward"},
+   {"level": "cosmetic", "multiplier": 0.5, "meaning": "nice to have"},
+   {"level": "minor", "multiplier": 0.75, "meaning": "helps a few players or one module"},
+   {"level": "useful", "multiplier": 1.0, "meaning": "helps the game or the team every day"},
+   {"level": "important", "multiplier": 1.5, "meaning": "unblocks a big goal or protects value"},
+   {"level": "critical", "multiplier": 2.0, "meaning": "the system could not run or stay safe without it"}
+  ],
+  "quality": [
+   {"level": "rejected", "multiplier": 0.0, "meaning": "not merged / not adopted: no reward"},
+   {"level": "rework", "multiplier": 0.5, "meaning": "needed a lot of rework"},
+   {"level": "good", "multiplier": 1.0, "meaning": "reviewed, tested, merged"},
+   {"level": "excellent", "multiplier": 1.25, "meaning": "clean, tested twice over, well documented"}
+  ],
+  "audience": [
+   {"level": "internal", "multiplier": 1.0, "meaning": "the team and the project itself"},
+   {"level": "b2c", "multiplier": 1.0, "meaning": "players: the game and its community"},
+   {"level": "b2b", "multiplier": 1.5, "meaning": "companies and partners: integrations, hosting, services"}
+  ],
+  "area": [
+   {"level": "gameplay", "multiplier": 1.0, "meaning": "game rules and content"},
+   {"level": "contracts", "multiplier": 1.4, "meaning": "smart contracts: value at stake, audit needed"},
+   {"level": "security", "multiplier": 1.5, "meaning": "protects accounts and funds"},
+   {"level": "infra", "multiplier": 1.1, "meaning": "servers, nodes, agents"},
+   {"level": "quality", "multiplier": 1.0, "meaning": "tests and bug reports"},
+   {"level": "art", "multiplier": 1.0, "meaning": "visuals and sound"},
+   {"level": "docs", "multiplier": 0.8, "meaning": "documentation"},
+   {"level": "community", "multiplier": 0.9, "meaning": "support and events"},
+   {"level": "growth", "multiplier": 1.2, "meaning": "players and partners brought in"}
+  ],
+  "contributor": [
+   {"level": "human", "multiplier": 1.0, "meaning": "a person"},
+   {"level": "ai_agent", "multiplier": 1.0, "meaning": "an AI agent (SYSTEM or a plugged agent)"},
+   {"level": "organisation", "multiplier": 1.0, "meaning": "a company or a partner"}
+  ]
+ },
+ "scarcity": {
+  "_comment": "Rewards are scaled by min(1, remaining / (trigger x budget)), never below floor, so they fade as the period's budget is spent.",
+  "trigger": 0.5,
+  "floor": 0.25
+ },
+ "limits": {
+  "min_poc": 1,
+  "max_per_award": 500,
+  "max_per_contributor_period": 2000,
+  "period_days": 30,
+  "approval": "admin"
+ },
+ "currencies": [
+  {"id": "poc", "enabled": true, "per_poc": 1, "meaning": "contribution points (soulbound): the reward of work"},
+  {"id": "pot", "enabled": false, "per_poc": 1, "meaning": "exchange currency: off until V decides (ADR 0018)"},
+  {"id": "crystal", "enabled": false, "per_poc": 5, "meaning": "premium currency: off until V decides"},
+  {"id": "mana", "enabled": false, "per_poc": 100, "meaning": "game currency: off until V decides"}
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "_comment": "World boss (V 2026-10-02): one boss shared by every player. Each player attacks it up to 5 times a day for 10 energy, with up to 20 monsters in auto. When it dies it comes back 6 hours later with the next element. PLACEHOLDER numbers.",
+ "family": "dragon",
+ "name": "Dragon primordial",
+ "elements": [
+  "fire",
+  "water",
+  "wind",
+  "earth",
+  "lightning",
+  "light",
+  "dark"
+ ],
+ "level": 120,
+ "stars": 6,
+ "power": 2.5,
+ "hp": 20000000,
+ "respawn_hours": 6,
+ "attempts_per_day": 5,
+ "energy": 10,
+ "team_max": 20,
+ "max_actions": 150,
+ "reward": {
+  "mana_per_damage": 0.0002,
+  "mana_min": 10,
+  "mana_max": 400,
+  "kill_mana": 1000,
+  "kill_chest": "chest_legendary",
+  "attempt_chest": "chest_bronze",
+  "kill_pot": 5
+ }
+}

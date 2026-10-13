@@ -1,0 +1,42 @@
+{
+ "_comment": "Levels (V): account level (max 200), social level (personal, max 200 like the account, V 2026-10-02) and guild level (organisation, max 50). XP to reach level L = a*(L-1)^2 + b*(L-1). Account and social XP are computed from what the player did (rebalancing them is retroactive); guild XP is stored on the guild (it belongs to the organisation, not to the members, and stays when one leaves). V: level 200 takes months, then x10 (V: 'PLUS PLUS'): about 3M XP.",
+ "account": {
+  "max": 200,
+  "curve": {
+   "a": 60,
+   "b": 3500
+  },
+  "xp": {
+   "energy_spent_in_wins": 1,
+   "summon": 5,
+   "world_boss_attack": 10,
+   "achievement_point": 5
+  }
+ },
+ "social": {
+  "max": 200,
+  "curve": {
+   "a": 10,
+   "b": 100
+  },
+  "xp": {
+   "friend": 200,
+   "poll_vote": 300,
+   "world_boss_attack": 20,
+   "guild_member": 500,
+   "guild_day": 10
+  }
+ },
+ "guild": {
+  "max": 50,
+  "curve": {
+   "a": 200,
+   "b": 800
+  },
+  "xp": {
+   "energy_spent_in_wins": 1,
+   "world_boss_attack": 10,
+   "member_joined": 100
+  }
+ }
+}

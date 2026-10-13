@@ -1,0 +1,15 @@
+{
+ "_comment": "Point currencies (V): guild, social, arena, tower and cosmetic points (V: cosmetic points are a new currency, earned per summon, spent in the Skins shop), each spent in its own shop (shop.json). Off-chain items (point_*): they only buy in-game offers and cannot be traded (docs/ON_CHAIN.md). How many points each action gives. PLACEHOLDER numbers.",
+ "sources": {
+  "tower_win": {"point_tower": 5},
+  "tower_first_clear": {"point_tower": 20},
+  "tower_hard_win": {"point_tower": 10},
+  "tower_hard_first_clear": {"point_tower": 40},
+  "guild_win": {"point_guild": 1},
+  "guild_world_boss_attack": {"point_guild": 10},
+  "world_boss_attack": {"point_social": 5},
+  "friend_accepted": {"point_social": 50},
+  "poll_vote": {"point_social": 100},
+  "summon": {"point_cosmetic": 1}
+ }
+}

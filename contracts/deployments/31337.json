@@ -1,0 +1,315 @@
+{
+  "chainId": 31337,
+  "contracts": {
+    "Achievements": {
+      "implementation": "0x1d460d731Bd5a0fF2cA07309dAEB8641a7b175A1",
+      "proxy": "0xF67e26649037695DdFAB19f4E22d5c9Fd1564592"
+    },
+    "Crystal": {
+      "implementation": "0x8Aed6FE10dF3d6d981B101496C9c7245AE65cAEc",
+      "proxy": "0x3Af511B1bdD6A0377e23796aD6B7391d8De68636"
+    },
+    "Items": {
+      "implementation": "0xabebE9a2D62Af9a89E86EB208b51321e748640C3",
+      "proxy": "0xf42Ec71A4440F5e9871C643696DD6Dc9a38911F8"
+    },
+    "ManaCoin": {
+      "implementation": "0x273c507D8E21cDE039491B14647Fe9278D88e91D",
+      "proxy": "0x93B800CD7ACdcA13754624D4B1A2760A86bE0D1f"
+    },
+    "Marketplace": {
+      "implementation": "0xf4e55515952BdAb2aeB4010f777E802D61eB384f",
+      "proxy": "0xe519389F8c262d4301Fd2830196FB7D0021daf59"
+    },
+    "MintManager": {
+      "implementation": "0xbc71F5687CFD36f64Ae6B4549186EE3A6eE259a4",
+      "proxy": "0xD73bAb8F06DB28c87932571f87D0D2C0FDF13D94"
+    },
+    "Monster": {
+      "implementation": "0xfb6dAB6200b8958C2655C3747708F82243d3F32E",
+      "proxy": "0x798f111c92E38F102931F34D1e0ea7e671BDBE31"
+    },
+    "Names": {
+      "implementation": "0xeA8AE08513f8230cAA8d031D28cB4Ac8CE720c68",
+      "proxy": "0x6431AF84d34F0522cAA58b221d94A150B5AdAC69"
+    },
+    "POC": {
+      "implementation": "0xCC5Bc84C3FDbcF262AaDD9F76652D6784293dD9e",
+      "proxy": "0x04F75a27cE2FDC591C71a88f1EcaC7e5Ce44f5Fc"
+    },
+    "POT": {
+      "implementation": "0x10537D7bD661C9c34F547b38EC662D6FD482Ae95",
+      "proxy": "0xBD2fe040D03EB1d1E5A151fbcc19A03333223019"
+    },
+    "Polls": {
+      "implementation": "0x82A9286dB983093Ff234cefCea1d8fA66382876B",
+      "proxy": "0x41219a0a9C0b86ED81933c788a6B63Dfef8f17eE"
+    },
+    "Roles": {
+      "implementation": "0x820638ecd57B55e51CE6EaD7D137962E7A201dD9",
+      "proxy": "0x725314746e727f586E9FCA65AeD5dBe45aA71B99"
+    },
+    "Skins": {
+      "implementation": "0x18b7CBdfFA52d1e7BB992fd50f394c5b59E20B72",
+      "proxy": "0x2f321ed425c82E74925488139e1556f9B76a2551"
+    },
+    "Vault": {
+      "address": "0x737b8F095E3c575a6Ae5FE1711AdB8F271E20269",
+      "implementation": "0xB92257D74B8815EC711071889cB506C8d66A6a06",
+      "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "txHash": "0x66a6e60ad287131690aaea524e0d502635230c83b3ddf911637cba82869087f9",
+      "type": "ERC1967Proxy+UUPS",
+      "purpose": "Session+Key vault, integrity proofs, on-chain security"
+    },
+    "AliceMaster": {
+      "implementation": "0x72659156d44ea859ce7fdbe4f15d4c495cc84110",
+      "proxy": "0x6187e8e4dc5be1ab53545039b9b61441419393fa",
+      "purpose": "ALICE-MASTER controller",
+      "type": "ERC1967Proxy+UUPS"
+    },
+    "AliceGeneral": {
+      "implementation": "0xca881f443190d75f0768371e6758093380c30b6d",
+      "proxy": "0xce8c4caf0215461dd8d60e51bf28cddee5beaa90",
+      "purpose": "ALICE-GENERAL fleet manager"
+    },
+    "AliceNode": {
+      "implementation": "0xf1007861acc4622e5224f9bfeaea21d4d4fc93cb",
+      "proxy": "0x014e024dcbeff4f26948bfe37c89c1b7af887c35",
+      "purpose": "Node registration + auth"
+    },
+    "AliceMemory": {
+      "implementation": "0x25214d0aabff966a1a5e54de4eba6c37a9cb8881",
+      "proxy": "0x8838a203f8d725a64e38a7f411df3d06d11a36de",
+      "purpose": "Persistent AI memory store"
+    },
+    "AliceInference": {
+      "implementation": "0x2cd9c6e10c4e0ccc2802165d21f1771a96787a5d",
+      "proxy": "0x4794228049031a3bfdba9e5dc29b1882b5307020",
+      "purpose": "Inference tracking + billing"
+    },
+    "AliceTraining": {
+      "implementation": "0x22e2b50e5ab70ceb3e3609ea533f99a576ea7cae",
+      "proxy": "0x1e6ce3f930e89fcb577b7ecaa102e25252e4ca5c",
+      "purpose": "Training state + checkpoints"
+    },
+    "AliceIdentity": {
+      "implementation": "0x08e8610d58f6a0586bb7bdc609191ab5f751c579",
+      "proxy": "0x8d240bc7e12ae79a87d13dc01ba045716498152a",
+      "purpose": "ALICE identity + V0 binding"
+    },
+    "KayzerVault": {
+      "implementation": "0x607925c0877ad288641666747799c28961bedddf",
+      "proxy": "0xeb198e377d5f0ff8b714ca165d6371f4848572fe",
+      "purpose": "KAYZER key management vault",
+      "type": "ERC1967Proxy+UUPS"
+    },
+    "GhostRouter": {
+      "implementation": "0x93a1b6047eebb7375a65b594cc9eece990f63558",
+      "proxy": "0x53add1e786c5ca0eded76078b59df09132f19baa",
+      "purpose": "Ghost mode routing + obfuscation"
+    },
+    "FirewallRules": {
+      "implementation": "0x5baf4cc82c7953484de615e028104a8d1e56aacc",
+      "proxy": "0xaecfbc92ec0ef858d59a92a40c4a16695aed0252",
+      "purpose": "On-chain firewall rule store"
+    },
+    "ScanRegistry": {
+      "implementation": "0x63ea705ae7117f94bd73673a370fb35414d6a0f6",
+      "proxy": "0x509fac5dc150f6ff972a0cf217f52f7c9a11dcdc",
+      "purpose": "CVE + scan results registry"
+    },
+    "PermMatrix": {
+      "implementation": "0x3fa8ad289a33e8277aea426e743a2f018a1b57af",
+      "proxy": "0xdbe5ce90797bf42fe0f085fc0b6025803daaec40",
+      "purpose": "Permission matrix on-chain"
+    },
+    "ThreatLog": {
+      "implementation": "0x5af4e27d672a7d6d896bb19bf2b489095a11193a",
+      "proxy": "0x230459312cc42b9b5d164c4bcbba1064626c5804",
+      "purpose": "Threat detection event log"
+    },
+    "IntrusionDetect": {
+      "implementation": "0xab3f7912fba11ad7bf22b9d0b2b941151293ae9b",
+      "proxy": "0xbd0255fd95278477a46ece1196135928884a9d44",
+      "purpose": "IDS on-chain alerts"
+    },
+    "SeedGenesis": {
+      "implementation": "0x9854f7356cc890e94cc6507342b69e8d02148aff",
+      "proxy": "0x1da5862a6c6a04d5c10fd90a6a8c7393712c8872",
+      "purpose": "THESEED genesis block anchor"
+    },
+    "SeedGovernance": {
+      "implementation": "0x403fd146ca364072ed540cafeb483b88528c4f40",
+      "proxy": "0xabcab7f69672a5e31e29b774cd4feb7576d92c2c",
+      "purpose": "DAO governance proposals"
+    },
+    "SeedStaking": {
+      "implementation": "0x6208b1fd7f85c57cc82c238d38a4365e06ab9802",
+      "proxy": "0x5dbcc5aed0152686e6282ee1f5728dd8944c920a",
+      "purpose": "CDT staking + rewards"
+    },
+    "SeedBridge": {
+      "implementation": "0x80e57efc0e34f0651e6695bb5e55c5927af33998",
+      "proxy": "0xf8a57c11afa094f168d2f7769d32ba17e2d88c13",
+      "purpose": "Cross-layer bridge L0\u2192L1"
+    },
+    "SeedOracle": {
+      "implementation": "0xaa4254f4f9e52129b0284853ca02d98f3c980531",
+      "proxy": "0x5b837245a3d160426a2fc14892e500e9bf585bda",
+      "purpose": "Price oracle feed"
+    },
+    "SeedVesting": {
+      "implementation": "0xb08997ddcc5179484f8d8a75f3f57f9a99e66644",
+      "proxy": "0xbc6b5ee57e9c363557f1468dc24667caa0d545d3",
+      "purpose": "Token vesting schedule"
+    },
+    "SeedAudit": {
+      "implementation": "0x809b8e1b55829e7d61099bf135cdf67ecd7c0861",
+      "proxy": "0x91ff5ff5709b0ebc127325f3923decf004ba4d49",
+      "purpose": "On-chain audit trail"
+    },
+    "SesameRouter": {
+      "implementation": "0xf3c2fbe598de6f58447eb7e7edaaca37c0c44bea",
+      "proxy": "0xb6ab0910a81fc0011e32c5bca9d989f0999603a3",
+      "purpose": "SESAME order routing"
+    },
+    "SesameExchange": {
+      "implementation": "0xe6a260814ab079942ab5cfd3b36dbbc1f88e2982",
+      "proxy": "0x32f3c25a375b98e29c5ee75e1ad0718ab231bfdd",
+      "purpose": "SESAME DEX engine"
+    },
+    "SesameVault": {
+      "implementation": "0x4b80a1089e321c98e425a9fd867e3ecbca6137f3",
+      "proxy": "0x3860e7a637dce6f0a6bad1c16fdf9a95c5968e3d",
+      "purpose": "SESAME liquidity vault"
+    },
+    "SesameLiquidity": {
+      "implementation": "0xa940d488ccbf01fb805f802ba00626351ead7968",
+      "proxy": "0xeab0f97fe6ecee254016437c27474d2944ad3442",
+      "purpose": "LP pool management"
+    },
+    "SesameStrategy": {
+      "implementation": "0xc8a46d23858f081cf1324f093a8179a548b04119",
+      "proxy": "0xf704d3214f6817261ffbc2219b01adaabf114eaf",
+      "purpose": "AI trading strategy executor"
+    },
+    "SesamePnL": {
+      "implementation": "0x6550f802c6989f09340f95d4f6573f8ebb1146da",
+      "proxy": "0x36687f771a674761cecef269051081e271886cd7",
+      "purpose": "PnL tracking + reports"
+    },
+    "SesameRisk": {
+      "implementation": "0x676c2ebee95e95b88554b1a65d3e199b1249d466",
+      "proxy": "0xe9020d3f6294384b5cde639126649e822f2c0268",
+      "purpose": "Risk management module"
+    },
+    "BerserkEngine": {
+      "implementation": "0x0ebd59b59e1c61933c7c869b63539cccc6751bf9",
+      "proxy": "0x5db95107dff2bcd4538cad296eec87bb499989d1",
+      "purpose": "BERSERK cyber engine core"
+    },
+    "BerserkShield": {
+      "implementation": "0xd32b83d97593c328e10f12310576ea67d4c12f93",
+      "proxy": "0xd350c5d3d1bba85e3e9f285b076a72a80795e1f8",
+      "purpose": "Active defense shield"
+    },
+    "BerserkScan": {
+      "implementation": "0x693e8db615be44eb6c3a9866c091fad7dc6707d1",
+      "proxy": "0xc6614a422d20f349cfe51f154886f35bde1115d3",
+      "purpose": "Network scanner on-chain log"
+    },
+    "BerserkMitigation": {
+      "implementation": "0x13b904a3af67a83c1b7b63ff61f8e66273595460",
+      "proxy": "0xd9ff2a0e3282fb47e91292131e7ecc75fc957902",
+      "purpose": "Auto-mitigation rules"
+    },
+    "NodeRegistry": {
+      "implementation": "0x76277e7ff189ad87a8c4f463c6807fe7f39ded73",
+      "proxy": "0xf81fba292aecb989d451f730564de383d9c95bc1",
+      "purpose": "Node fleet registry"
+    },
+    "NodeRewards": {
+      "implementation": "0x7ea5d9824304d134d72b9bb9ed176b8ee9da6e77",
+      "proxy": "0x936b54362d8dc7bc3ae198028df8d2e5e0f6d4d1",
+      "purpose": "Node operator rewards"
+    },
+    "NodeSlashing": {
+      "implementation": "0x6154dde0007b57315b37faa8ed1d84c744c5c466",
+      "proxy": "0x674f80eacd5d53bec36d6d809e513053d5d71fab",
+      "purpose": "Misbehavior slashing"
+    },
+    "TaskQueue": {
+      "implementation": "0xae0e2cf56375f56d982676f2636449b685e64679",
+      "proxy": "0x25da03a1a2e90157217652f63aec5b608770b723",
+      "purpose": "Distributed task queue"
+    },
+    "MetricsStore": {
+      "implementation": "0xcecd57170ea74ecc2584d6017c066680a066eb1d",
+      "proxy": "0x1cf0ae66c53059c0601856e7f0706b80937f5013",
+      "purpose": "Metrics aggregation on-chain"
+    },
+    "ConfigStore": {
+      "implementation": "0xbe5c54e7542b3cb4fb5a989c44a9e33d24c3cc1d",
+      "proxy": "0x3654b3f4030590a8ef3532e1db614f7f3c46d2cf",
+      "purpose": "Dynamic config on-chain"
+    },
+    "EventLog": {
+      "implementation": "0x9deaca5578ef4b1d1ae1d142e571d3dd6c34ce90",
+      "proxy": "0xd526e77c9819fc055270bab6b86d0bcf81d11dde",
+      "purpose": "System event log"
+    },
+    "UpgradeManager": {
+      "implementation": "0x08def99ab89230498e5316e492e169fd402aef8d",
+      "proxy": "0x0376ffb78c71c72a7ebc38a6a3493022a76f27db",
+      "purpose": "Contract upgrade controller",
+      "type": "ERC1967Proxy+UUPS"
+    },
+    "CDTToken": {
+      "implementation": "0x3b00657c6a08d60c0364f48e3d6585a614385e1f",
+      "proxy": "0x5b190cc9cfbbc7540b262b8915f1033478bbfe7c",
+      "purpose": "CDT ERC20 main currency"
+    },
+    "CDTPayroll": {
+      "implementation": "0x8f59ff04c0b8492e8c8d09fa01671c8390872111",
+      "proxy": "0x862f907890d16a23149be09c49eb836886253cf1",
+      "purpose": "Agent payroll distribution"
+    },
+    "CDTGas": {
+      "implementation": "0x041879b2c09d9a23a49b14fe4a4a6f3c7fc123c1",
+      "proxy": "0xa379500d5a6dfef1801c0cc1d43b017857e8f8af",
+      "purpose": "CDT gas fee manager"
+    },
+    "POCToken": {
+      "implementation": "0x28844c658cf7e59e301dba3ef8e206a0c8fe1663",
+      "proxy": "0xd806d5c1bd7b6019d43aa17d9f1b1ea32ec81ab1",
+      "purpose": "POC proof token"
+    },
+    "TKNToken": {
+      "implementation": "0x9847791392d052852d79cea3ac7f2eb82d8487f8",
+      "proxy": "0x3dc8021d59d6d7acc3a00d48ae30e1f4e29a840d",
+      "purpose": "TKN AI computation token"
+    },
+    "CPTToken": {
+      "implementation": "0x8d2d2b746c194a06bfdad1fb2e22e1269e7328aa",
+      "proxy": "0xbd62f2383ad0baccf88cafa173e39d0f4e7dade7",
+      "purpose": "CPT compute token"
+    },
+    "ECTToken": {
+      "implementation": "0x931f7422c8165bbe639d8aaba6ba6f9dacad0a62",
+      "proxy": "0x16efded94053c6dc4c697e88a1de7344f84983d1",
+      "purpose": "ECT energy credit token"
+    }
+  },
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "project": "The Seed",
+  "roles": {
+    "admin": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "metadataManager": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "operator": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "pauser": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "upgrader": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+  },
+  "schemaVersion": 1,
+  "startBlock": 14737,
+  "version": "2.0.0"
+}

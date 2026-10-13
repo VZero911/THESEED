@@ -1,0 +1,123 @@
+{
+ "_comment": "Gifts sent to the reward box (game spec 7 ter / 7 quater). Rewards: energy, box_capacity, mana, crystal (whole tokens), items {id: quantity}. Founder tiers (V): each player gets the gift of the smallest tier containing their account number (1-10, 11-1000, 1001-10000, 10001-100000). Mana and crystals are minted at the claim, within the MintManager's daily budgets (raised locally by `make budgets-local`): a claim refused for budget works again the next day.",
+ "founder_tiers": [
+  {
+   "first_players": 10,
+   "sender": "SYSTEM",
+   "title": "Légende fondatrice — les 10 premiers",
+   "body": "Tu es l'un des 10 tout premiers invocateurs de The Seed. Merci d'avoir cru au projet dès le premier jour : voici un cadeau à la hauteur.",
+   "rewards": {
+    "energy": 5000,
+    "box_capacity": 1000,
+    "mana": 100000,
+    "crystal": 5000,
+    "items": {
+     "scroll_mystic": 300,
+     "scroll_ld": 10,
+     "scroll_legendary": 20,
+     "scroll_all_attributes": 10,
+     "scroll_mythic": 10,
+     "scroll_ld_mythic": 1,
+     "chest_legendary": 5,
+     "chest_gold": 10
+    }
+   }
+  },
+  {
+   "first_players": 1000,
+   "sender": "SYSTEM",
+   "title": "Pionnier — les 1 000 premiers",
+   "body": "Tu fais partie des 1 000 premiers invocateurs de The Seed. Merci ! Voici de quoi bien démarrer.",
+   "rewards": {
+    "energy": 3000,
+    "box_capacity": 800,
+    "mana": 50000,
+    "crystal": 2500,
+    "items": {
+     "scroll_mystic": 200,
+     "scroll_ld": 5,
+     "scroll_legendary": 10,
+     "scroll_all_attributes": 3,
+     "scroll_mythic": 5,
+     "chest_legendary": 1,
+     "chest_gold": 5
+    }
+   }
+  },
+  {
+   "first_players": 10000,
+   "sender": "SYSTEM",
+   "title": "Bâtisseur — les 10 000 premiers",
+   "body": "Tu fais partie des 10 000 premiers invocateurs de The Seed. Bienvenue, et merci !",
+   "rewards": {
+    "energy": 2000,
+    "box_capacity": 600,
+    "mana": 25000,
+    "crystal": 1200,
+    "items": {
+     "scroll_mystic": 120,
+     "scroll_ld": 2,
+     "scroll_legendary": 3,
+     "scroll_mythic": 1,
+     "chest_gold": 2,
+     "chest_silver": 3
+    }
+   }
+  },
+  {
+   "first_players": 100000,
+   "sender": "SYSTEM",
+   "title": "Éclaireur — les 100 000 premiers",
+   "body": "Tu fais partie des 100 000 premiers invocateurs de The Seed. Bon jeu !",
+   "rewards": {
+    "energy": 1000,
+    "box_capacity": 400,
+    "mana": 10000,
+    "crystal": 500,
+    "items": {
+     "scroll_mystic": 60,
+     "scroll_ld": 1,
+     "scroll_legendary": 1,
+     "chest_silver": 2,
+     "chest_bronze": 3
+    }
+   }
+  }
+ ],
+ "campaign_complete": {
+  "stage": "z10-7",
+  "sender": "SYSTEM",
+  "title": "Scénario terminé !",
+  "body": "Tu as vaincu le boss de la zone 10. Voici un parchemin mythique (5-6★).",
+  "rewards": {
+   "items": {
+    "scroll_mythic": 1
+   }
+  }
+ },
+ "world_first": {
+  "all": {
+   "sender": "SYSTEM",
+   "title": "Premier mondial !",
+   "body": "{who} est le premier à vaincre « {stage} ». Un petit cadeau pour tout le monde !",
+   "rewards": {
+    "mana": 100,
+    "items": {
+     "scroll_unknown": 1
+    }
+   }
+  },
+  "finder": {
+   "sender": "SYSTEM",
+   "title": "Tu es le premier !",
+   "body": "Tu es le premier joueur à vaincre « {stage} ». Bravo !",
+   "rewards": {
+    "mana": 1000,
+    "items": {
+     "scroll_mystic": 1,
+     "chest_gold": 1
+    }
+   }
+  }
+ }
+}

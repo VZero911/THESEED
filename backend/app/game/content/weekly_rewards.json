@@ -1,0 +1,5 @@
+{
+ "_comment": "Weekly ranking rewards in POT (V, registry ranking-pot). PLACEHOLDER amounts: V settles them. The previous ISO week (Monday 00:00 UTC to Monday) is ranked on each board; the top ranks get POT in the reward box (nothing is minted before the player claims; the MintManager budget caps the emission, ADR 0018). Boards: achievements (points earned that week), world_boss (damage dealt that week), progress (new levels cleared for the first time that week).",
+ "pot": {"1": 3, "2": 2, "3": 1},
+ "boards": ["achievements", "world_boss", "progress"]
+}

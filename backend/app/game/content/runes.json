@@ -1,0 +1,128 @@
+{
+  "_comment": "Rune rules (game spec section 5, rework v2: docs/game/RUNE_REWORK_V2_SPEC.md, ADR 0090). Values are for a 6-star rune and scaled by star_factor; main_max_7 overrides the 7-star main stat; percentages are whole percent. Substat rolls (first roll and procs) use the same range `sub`. A grind (base stats only) rolls its `grind` range and keeps the better value; a gem replaces a substat and rolls its `gem` range. Both ranges are for the top rarity; each rarity below shrinks both ends by `material_shrink`.",
+  "max_level": 25,
+  "proc_every": 5,
+  "max_substats": 5,
+  "innate_chance": 0.18,
+  "stats": {
+    "hp_flat": {"label": "PV", "category": "base", "main_max": 3000, "main_max_7": 3200, "sub": [170, 470], "grind": [320, 650], "gem": [450, 800]},
+    "hp_pct": {"label": "PV %", "category": "base", "main_max": 65, "main_max_7": 70, "sub": [4, 7], "grind": [7, 13], "gem": [9, 15]},
+    "atk_flat": {"label": "ATQ", "category": "base", "main_max": 200, "main_max_7": 215, "sub": [12, 25], "grind": [22, 45], "gem": [28, 45]},
+    "atk_pct": {"label": "ATQ %", "category": "base", "main_max": 65, "main_max_7": 70, "sub": [4, 7], "grind": [7, 13], "gem": [9, 15]},
+    "def_flat": {"label": "DEF", "category": "base", "main_max": 200, "main_max_7": 215, "sub": [12, 25], "grind": [22, 45], "gem": [28, 45]},
+    "def_pct": {"label": "DEF %", "category": "base", "main_max": 65, "main_max_7": 70, "sub": [4, 7], "grind": [7, 13], "gem": [9, 15]},
+    "spd": {"label": "VIT", "category": "base", "main_max": 45, "main_max_7": 50, "sub": [4, 6], "grind": [3, 5], "gem": [8, 12]},
+    "crit_rate": {"label": "Taux crit. %", "category": "additional", "main_max": 60, "main_max_7": 64, "sub": [4, 6], "gem": [6, 12]},
+    "crit_dmg": {"label": "Dégâts crit. %", "category": "additional", "main_max": 85, "main_max_7": 90, "sub": [4, 7], "gem": [9, 15]},
+    "acc": {"label": "Précision %", "category": "additional", "main_max": 65, "main_max_7": 70, "sub": [4, 7], "gem": [9, 15]},
+    "res": {"label": "Résistance %", "category": "additional", "main_max": 65, "main_max_7": 70, "sub": [4, 7], "gem": [9, 15]}
+  },
+  "slots": {
+    "1": ["spd", "hp_flat", "hp_pct", "def_flat", "def_pct", "atk_flat", "atk_pct"],
+    "2": ["hp_flat", "hp_pct", "def_flat", "def_pct", "atk_flat", "atk_pct"],
+    "3": ["hp_flat", "hp_pct", "def_flat", "def_pct", "atk_flat", "atk_pct", "crit_rate", "crit_dmg"],
+    "4": ["hp_flat", "hp_pct", "def_flat", "def_pct", "atk_flat", "atk_pct", "res", "acc"],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "star_factor": {"1": 0.35, "2": 0.45, "3": 0.57, "4": 0.7, "5": 0.85, "6": 1.0, "7": 1.18},
+  "rarities": [
+    {"id": "normal", "label": "Normale", "substats": 0, "base_procs": 0},
+    {"id": "uncommon", "label": "Peu commune", "substats": 1, "base_procs": 1},
+    {"id": "rare", "label": "Rare", "substats": 2, "base_procs": 2},
+    {"id": "heroic", "label": "Héroïque", "substats": 3, "base_procs": 3},
+    {"id": "legendary", "label": "Légendaire", "substats": 4, "base_procs": 4},
+    {"id": "mythic", "label": "Mythique", "substats": 5, "base_procs": 5}
+  ],
+  "change_cost_mana": 150,
+  "reinforce_cost_mana": 80,
+  "upgrade_cost_mana": [5, 8, 12, 16, 20, 25, 30, 36, 42, 50, 60, 70, 80, 95, 110, 125, 140, 160, 180, 200, 225, 250, 280, 310, 350],
+  "_sets_comment": "V 2026-10-02: 4-piece sets are the base ones (ATK %, flat SPD, crit damage, plus the specific lifesteal); 2-piece sets are weaker or more specific (HP %, DEF %, crit rate, accuracy, resistance) and the team sets (HP %, DEF %, ATK % for every ally, once per team). A stat comes back only once per scope. Rework v2: every bonus about 20 % stronger.",
+  "sets": [
+    {
+      "id": "fureur",
+      "name": "Fureur",
+      "pieces": 4,
+      "bonus": {"atk_pct": 60}
+    },
+    {
+      "id": "celerite",
+      "name": "Célérité",
+      "pieces": 4,
+      "bonus": {"spd": 30}
+    },
+    {
+      "id": "acharnement",
+      "name": "Acharnement",
+      "pieces": 4,
+      "bonus": {"crit_dmg": 50}
+    },
+    {
+      "id": "vampire",
+      "name": "Vampire",
+      "pieces": 4,
+      "bonus": {"lifesteal": 30}
+    },
+    {
+      "id": "vitalite",
+      "name": "Vitalité",
+      "pieces": 2,
+      "bonus": {"hp_pct": 18}
+    },
+    {
+      "id": "rempart",
+      "name": "Rempart",
+      "pieces": 2,
+      "bonus": {"def_pct": 18}
+    },
+    {
+      "id": "ferveur",
+      "name": "Ferveur",
+      "pieces": 2,
+      "bonus": {"crit_rate": 15}
+    },
+    {
+      "id": "precision",
+      "name": "Précision",
+      "pieces": 2,
+      "bonus": {"acc": 25}
+    },
+    {
+      "id": "resolution",
+      "name": "Résolution",
+      "pieces": 2,
+      "bonus": {"res": 25}
+    },
+    {
+      "id": "lame",
+      "name": "Lame",
+      "pieces": 2,
+      "bonus": {"atk_pct": 10},
+      "scope": "team"
+    },
+    {
+      "id": "garde",
+      "name": "Garde",
+      "pieces": 2,
+      "bonus": {"def_pct": 12},
+      "scope": "team"
+    },
+    {
+      "id": "seve",
+      "name": "Sève",
+      "pieces": 2,
+      "bonus": {"hp_pct": 10},
+      "scope": "team"
+    }
+  ],
+  "material_shrink": 1,
+  "material_capacity_note": "Grinds and gems are kept in their own storage by kind, set and rarity (ADR 0090).",
+  "material_drop_weights": {
+    "_comment": "Rarity weights [normal..mythic] of a grind or gem won on a dungeon floor, by lowest floor of the band. Mythic stays rare so long farming keeps its value.",
+    "1": [70, 24, 5, 1, 0, 0],
+    "4": [45, 30, 17, 7, 1, 0],
+    "7": [25, 30, 25, 15, 4.5, 0.5],
+    "10": [10, 22, 30, 25, 11, 2]
+  }
+}

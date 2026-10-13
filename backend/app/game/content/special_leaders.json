@@ -1,0 +1,100 @@
+{
+ "_comment": "Special leader skills (V, 2026-10-04, first design, PLACEHOLDER numbers): they replace the generated leader skill of their species. `where` limits a skill to one kind of fight (arena = rival arena, guild = guild league, world_boss); `crit_rate` is flat points, the others `_pct` of the ally's own base stat. Caps: content.py LEADER_MAX. V reviews the numbers.",
+ "leaders": [
+  {
+   "id": "arena-tempo",
+   "name": "Arena tempo",
+   "species": [
+    "ronin_fire",
+    "ronin_water",
+    "ronin_wind",
+    "ronin_earth",
+    "ronin_lightning",
+    "ronin_light",
+    "ronin_dark"
+   ],
+   "leader": {
+    "stat": "spd_pct",
+    "amount": 22,
+    "scope": "all",
+    "where": "arena"
+   }
+  },
+  {
+   "id": "keen-eye",
+   "name": "Keen eye",
+   "species": [
+    "oracle_fire",
+    "oracle_water",
+    "oracle_wind",
+    "oracle_earth",
+    "oracle_lightning",
+    "oracle_light",
+    "oracle_dark"
+   ],
+   "leader": {
+    "stat": "crit_rate",
+    "amount": 18,
+    "scope": "all",
+    "where": "any"
+   }
+  },
+  {
+   "id": "guild-banner",
+   "name": "Guild banner",
+   "species": [
+    "seraphin_fire",
+    "seraphin_water",
+    "seraphin_wind",
+    "seraphin_earth",
+    "seraphin_lightning",
+    "seraphin_light",
+    "seraphin_dark"
+   ],
+   "leader": {
+    "stat": "atk_pct",
+    "amount": 30,
+    "scope": "all",
+    "where": "guild"
+   }
+  },
+  {
+   "id": "bulwark",
+   "name": "Bulwark",
+   "species": [
+    "colosse_fire",
+    "colosse_water",
+    "colosse_wind",
+    "colosse_earth",
+    "colosse_lightning",
+    "colosse_light",
+    "colosse_dark"
+   ],
+   "leader": {
+    "stat": "hp_pct",
+    "amount": 40,
+    "scope": "all",
+    "where": "any"
+   }
+  },
+  {
+   "id": "boss-breaker",
+   "name": "Boss breaker",
+   "species": [
+    "titan_fire",
+    "titan_water",
+    "titan_wind",
+    "titan_earth",
+    "titan_lightning",
+    "titan_light",
+    "titan_dark"
+   ],
+   "leader": {
+    "stat": "atk_pct",
+    "amount": 25,
+    "scope": "element",
+    "where": "world_boss"
+   }
+  }
+ ]
+}

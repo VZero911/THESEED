@@ -1,0 +1,148 @@
+{
+ "_comment": "Summon pools (game spec 4, rates from V 2026-10-02). V: a summon is a scroll AND Mana, never one or the other: each summon burns one scroll of the pool (items.json, off-chain until the ERC-1155 burn is decided) and `cost_mana` MANA. Weights are per 10 000. The basic summon (unknown scroll) gives 1-4 stars: its 1-2 star monsters are off-chain, its 3-4 star monsters are NFTs. PLACEHOLDER basic rates and Mana costs. Drop rule (V, 2026-10-02): a broader pool never gives a rare outcome more often than the dedicated scroll for it (all-attributes = light & dark rates for light & dark + legendary rates for the elements). A pool may list `lanes` (elements + star_weights each, per 10 000 of the whole pool) instead of one `elements` + `star_weights`.",
+ "pools": [
+  {
+   "id": "basic",
+   "name": "Invocation basique (1-4\u2605)",
+   "cost_mana": 10,
+   "elements": [
+    "fire",
+    "water",
+    "wind",
+    "earth",
+    "lightning"
+   ],
+   "star_weights": {
+    "1": 6000,
+    "2": 3000,
+    "3": 900,
+    "4": 100
+   }
+  },
+  {
+   "id": "standard",
+   "name": "Invocation mystique (3-6\u2605)",
+   "cost_mana": 100,
+   "elements": [
+    "fire",
+    "water",
+    "wind",
+    "earth",
+    "lightning"
+   ],
+   "star_weights": {
+    "3": 9090,
+    "4": 850,
+    "5": 50,
+    "6": 10
+   }
+  },
+  {
+   "id": "light_dark",
+   "name": "Invocation Lumi\u00e8re & T\u00e9n\u00e8bres (3-6\u2605)",
+   "cost_mana": 300,
+   "elements": [
+    "light",
+    "dark"
+   ],
+   "star_weights": {
+    "3": 9210,
+    "4": 750,
+    "5": 35,
+    "6": 5
+   }
+  },
+  {
+   "id": "legendary",
+   "name": "Invocation l\u00e9gendaire (4-6\u2605)",
+   "cost_mana": 500,
+   "elements": [
+    "fire",
+    "water",
+    "wind",
+    "earth",
+    "lightning"
+   ],
+   "star_weights": {
+    "4": 9300,
+    "5": 650,
+    "6": 50
+   }
+  },
+  {
+   "id": "mythic",
+   "name": "Invocation mythique (5-6\u2605)",
+   "cost_mana": 1000,
+   "elements": [
+    "fire",
+    "water",
+    "wind",
+    "earth",
+    "lightning"
+   ],
+   "star_weights": {
+    "5": 9900,
+    "6": 100
+   }
+  },
+  {
+   "id": "all_attributes",
+   "name": "Invocation de tous les attributs (4-6\u2605, dont Lumi\u00e8re & T\u00e9n\u00e8bres)",
+   "cost_mana": 1500,
+   "_comment": "Light & dark keep exactly the rates of the light & dark summon (4\u2605 7.5 %, 5\u2605 0.35 %, 6\u2605 0.05 %); the five elements keep the legendary rates for 5-6\u2605 (6.5 %, 0.5 %). Mixing them never makes a rare monster easier to get than its own scroll.",
+   "lanes": [
+    {
+     "elements": [
+      "light",
+      "dark"
+     ],
+     "star_weights": {
+      "4": 750,
+      "5": 35,
+      "6": 5
+     }
+    },
+    {
+     "elements": [
+      "fire",
+      "water",
+      "wind",
+      "earth",
+      "lightning"
+     ],
+     "star_weights": {
+      "4": 8510,
+      "5": 650,
+      "6": 50
+     }
+    }
+   ]
+  },
+  {
+   "id": "light_dark_mythic",
+   "name": "Invocation mythique Lumi\u00e8re & T\u00e9n\u00e8bres (5-6\u2605)",
+   "cost_mana": 3000,
+   "elements": [
+    "light",
+    "dark"
+   ],
+   "star_weights": {
+    "5": 9900,
+    "6": 100
+   }
+  }
+ ],
+ "starter": {
+  "species": [
+   "loup_fire",
+   "fee_water",
+   "loup_wind"
+  ],
+  "mana": 200,
+  "items": {
+   "scroll_unknown": 10,
+   "scroll_mystic": 1
+  },
+  "pot": 5
+ }
+}
