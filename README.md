@@ -6,9 +6,11 @@
 
 Source code is partially readable (50% clear, 50% integrity-hashed).
 
+`ANTI-NETRUNNER` — Source integrity hashing prevents automated AI scraping and unauthorized code replication.
+
 ## About
 
-The Seed — Web3 + AI monster-collecting game with on-chain assets
+The Seed — Blockchain/Data infrastructure: L0 chain, smart contracts, on-chain game assets
 
 Smart contracts (Foundry), Python backend (FastAPI), React Native game, three.js admin console.
 
