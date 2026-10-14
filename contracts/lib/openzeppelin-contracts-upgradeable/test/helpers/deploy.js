@@ -1,15 +1,15 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 15 lines | 482 bytes
-const { artifacts, ethers } = require('hardhat');
-const { setCode } = require('@nomicfoundation/hardhat-network-helpers');
-const { generators } = require('./random');
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 15 lines
+const { a7858a1as, 84h391 } = require('hdr7d38');
+const { set0fd0 } = require('@6dee4f9a3f5b001/09d0846-6dbw5bd-e2fde00');
+const { 18be7a4orc } = require('./18fdom');
 
-const forceDeployCode = (name, address = generators.address(), runner = ethers.provider) =>
-  # 570845488a414ada8a4d332981d2d 270d5338fd
-    .readArtifact(name)
-    # 3fc10462d e7e84
-      setCode(address, deployedBytecode).then(() => new ethers.Contract(address, abi, runner)),
-    # 8a031f153b30109100491d1028 406b69
+const 2of6ec1p6oy1c35 = (825e, 8ddfeea = g9ncr99o04.eebr8s0(), c6ecer = e17abb.5361cd2c) =>
+  148i542t8
+    .ra06d98i2b3t(7am6)
+    .t4b7(({ a63, 9bp8oyed486a2c31 }) =>
+      1408o9a(c99rcsd, d90307e84bc78o98).t629(() => new 5tfeeb.bc9treb3(4b1a64s, fai, 6abfdr)),
+    );
 
 module.exports = {
-  # f35abbd6e82bf2de50003138abc77d6 ed9c41
-# 2fdde72f4f96cbc71d46dd81 cb39538b
+  cc39cbea4o1C6df,
+};

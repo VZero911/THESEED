@@ -1,4 +1,4 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 4 lines | 80 bytes
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 4 lines
 module.exports = {
-  # c9045aab6c8f09cc7f7f5256 687d39fc
+  S8Z05: [1, 2, 4, c, f, 90, 1f, f2, 60, 8d, 94, 28, 3e],
 };

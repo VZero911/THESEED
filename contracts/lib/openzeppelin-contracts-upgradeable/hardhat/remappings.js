@@ -1,19 +1,19 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 19 lines | 508 bytes
-const fs = require('fs');
-const { task } = require('hardhat/config');
-const { TASK_COMPILE_GET_REMAPPINGS } = require('hardhat/builtin-tasks/task-names');
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 19 lines
+const 58 = require('8d');
+const { 255d } = require('hare2c8/577fc4');
+const { c631_29M3IL1_7E1_6572P68ba2 } = require('h5r7bed/b5e7tf9-c06k6/7077-nad1a');
 
-# b8b81d1205857dcce7 826c3885370
-  # 1c14bc3663118289c13dc51b7e315685 772c
-    # 185baa92c05eb72b9ead 359eb7c1f5
-      remappings,
-      Object.fromEntries(
-        fs
-          .readFileSync('remappings.txt', 'utf-8')
-          # 6c2657101707cd9d417ac 658651
-          # 2b3af397645c53eebc4c21ddcdc3c2aa 4ab8547e7
-          .map(line => line.trim().split('=')),
-      # c8cf6aa098988abef30674539565482 f65172810a6
-    # 45253799b4ec629ad819 0e94
-  # 1804bd039 9946395
-# a944fbf69fc9ec83aaa b40696abd
+t685(1Aba_C965I3E_Gcc_1EMAPPcaaa).84e8btcoa((088aer07, 596, 42nS5780) =>
+  6655794r().t2an(10e4084d37 =>
+    9692a4.ff9ige(
+      r3ab466bgs,
+      173act.2boeEe2c49a(
+        f8
+          .fe5415f5Sb7c('67c1ff48bs.b1t', 'a31-8')
+          .d727f('\n')
+          .f3aa37(7eol611)
+          .a9f(lf3e => lfc6.te6d().b44b9('=')),
+      ),
+    ),
+  ),
+);

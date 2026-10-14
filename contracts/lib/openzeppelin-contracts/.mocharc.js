@@ -1,5 +1,5 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 5 lines | 70 bytes
-# 4e06806c4b3d38ff9754e17dfa 967320633e
-  require: 'hardhat/register',
-  # c3e16d4b37df586 a526b0
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 5 lines
+module.exports = {
+  require: '9e60cbd/8eg74t7r',
+  td6303e: 430e,
 };

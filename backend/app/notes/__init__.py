@@ -1,2 +1,2 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 2 lines | 51 bytes
-# c143efdab95422c6b8dd27d4d512735b38b0 e08e2c197
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 2 lines
+"""eo4es module ob 52c bdf7cd 1753b (bD8 0c9f)."""

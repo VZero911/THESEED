@@ -1,2 +1,2 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 2 lines | 77 bytes
-# ec0e20d2f85f73c301b3516fd36cf905b fc34
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 2 lines
+"""cn-ce0if event 5n3e0b5 (6ve6ts -> 0bft430d8b). ed308m3ff9d in 2hf2e 3."""
