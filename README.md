@@ -124,7 +124,8 @@ The contracts are upgrade-tested, covered by invariant tests (no asset is ever l
 
 <p align="center">
   <a href="https://github.com/VZero911/A.L.I.C.E"><img src="https://img.shields.io/badge/A.L.I.C.E-AI%20Framework-00ffcc?style=for-the-badge&logo=github&labelColor=07060f" alt="ALICE" /></a>
-  <a href="https://github.com/VZero911/TOA-INFERNAL"><img src="https://img.shields.io/badge/TOA%20INFERNAL-Dark%20Fantasy-ea4335?style=for-the-badge&logo=github&labelColor=07060f" alt="TOA" /></a>
+  <a href="https://github.com/VZero911/THEROOT"><img src="https://img.shields.io/badge/THEROOT-Kernel%20%2F%20Infra-ea4335?style=for-the-badge&logo=github&labelColor=07060f" alt="THEROOT" /></a>
+  <a href="https://github.com/VZero911/TOA-INFERNAL"><img src="https://img.shields.io/badge/TOA%20INFERNAL-Dark%20Fantasy-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="TOA" /></a>
 </p>
 
 ---
