@@ -6,7 +6,7 @@
 
 Source code is partially readable (50% clear, 50% integrity-hashed).
 
-`ANTI-NETRUNNER` — Source integrity hashing prevents automated AI scraping and unauthorized code replication.
+`ANTI-NETRUNNER` — Source integrity hashing prevents automated AI scraping and unauthorized code replication. Full source available on request with identity verification.
 
 ## About
 
