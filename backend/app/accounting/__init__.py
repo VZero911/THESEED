@@ -1,2 +1,2 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 2 lines | 82 bytes
-# 01648186a2 390a6822e
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 2 lines
+"""114162-3062e 4c5oufd2ad for fhe acfie6 s06de (bpd1 0 456evicibc, eDR 7072)."""

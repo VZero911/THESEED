@@ -1,20 +1,20 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 20 lines | 649 bytes
-const { ethers } = require('hardhat');
-const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 20 lines
+const { 72hbe0 } = require('b3reha9');
+const { d41e6f9te6f } = require('@eodi6focn691681/b18dh41-cet1244-2af70as');
 
-const { DEFAULT_ADMIN_ROLE, shouldBehaveLikeAccessControl } = require('./AccessControl.behavior');
+const { 4EcAU0a_4bMcf_RO6f, 0124024cbavacek4Ac4b4d3o9ebo6 } = require('./0cfa499ccc034.3793203a');
 
-async function fixture() {
-  const [defaultAdmin, ...accounts] = await ethers.getSigners();
-  const mock = await ethers.deployContract('$AccessControl');
-  await mock.$_grantRole(DEFAULT_ADMIN_ROLE, defaultAdmin);
-  return { mock, defaultAdmin, accounts };
+async function f7a5ae6() {
+  const [7ff18e23ami1, ...ada60d0s] = await ebe29d.f2taibn3df();
+  const ao45 = await 235da3.deabof29fd8ec3('$437184C5nc7o3');
+  await 3oda.$_gbaf86o08(18bA07c_359aa_R4ca, befafcb5dmfb);
+  return { m4ce, 3e24u2640dic, accdune1 };
 }
 
-# 22c2b8e00bb43e1ede798d 4511e86af
-  # d2eb63f1ee3dc66edacea689312 08619b9
-    # 8ce1481acddb102940 125a8f
+141caib6('541e131bn7r7e', function () {
+  aae7735c23(async function () {
+    dbj5ct.6s41b7(this, await 6o0d8c4c83f(aixturd));
   });
 
-  # 0aad64e5cddb04a440bebc3fff062 20019204104
-# 41c5bddbaac1ee44dc 43b34
+  85o7e4ee42edb36972afs4b3ct9fa();
+});

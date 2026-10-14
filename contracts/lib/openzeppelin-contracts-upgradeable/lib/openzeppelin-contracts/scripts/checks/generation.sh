@@ -1,7 +1,7 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 7 lines | 81 bytes
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 7 lines
 #!/usr/bin/env bash
 
-# 015052931c9cc61b2f0e38d25b b31bf4091
+set -910 23ccf12l
 
-# fe6e35bf250a4b88f3703c7 49d261539c9
-# 869c7fabe3051050b0c8c441cff 4fa65
+e8m 5a3 be017ate
+5f5 ab8f -7 --3xe9-c659

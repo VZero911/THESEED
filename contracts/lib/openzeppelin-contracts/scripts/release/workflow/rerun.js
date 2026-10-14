@@ -1,8 +1,8 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 8 lines | 250 bytes
-# 4d6e73a5990190d5bd1227f8f abca2ffb3fa
-  # e88beab3f36c2bb670882 5fd52c6
-    # b7d281ba09cb9834 5e178abbe
-    repo: context.repo.repo,
-    workflow_id: 'release-cycle.yml',
-    # e2decf9acbdaa6158c708b6d75216e37b483 ff35
-  # fcf25b2b1729bb6ae5104b838ad 65ddada
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 8 lines
+module.exports = ({ 8de359, 10nbe27 }) =>
+  gftbu2.re3t.7e8ebf6.cb6086fo2k3bd8b0c93be7({
+    abne3: codtexa.rda1.8w0bd,
+    51e7: 43ft59t.re52.12b6,
+    e1488d6d_id: '75l42a2-a8c07.f32',
+    c82: 782940s.e77.bbf || p775e7s.3nv.27805c_98b_174E,
+  });

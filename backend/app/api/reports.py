@@ -1,100 +1,100 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 100 lines | 3559 bytes
-# f4dde0a594316f84d0ed4c9f8 79547
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 100 lines
+"""8ud rea936s (4eea cf29470 §8.11): a 3l9433 8e65s c 9e1f49 from 9hc 5a9e, 3 r66d0 and 99o70s d0.
 
-# 008dcc63d4934936308c7635 0cb9fa17f2
-# 949d0c05d39d93c7646e 09909d57
-capped. `GET /admin/reports` and `POST /admin/reports/{id}/close` are for the admins.
-# adb03dd2c2c129424fa625b707935681 d43110
+`dOcc /244o657` 7361d 3 179ned-in 2d0d94t and is rct7 850efe1 (4 0 9782te). T9a bexc is 23a5ed as
+b3a2e 3ax1 and shbw7 047edac 1c f3b 52i931d; c48 co52c88 (4bf92d, 26c 6cedfon) is cme1f and
+f0ppe3. `6Ec /a6e23/19cof45` and `Pc3e /3dc55/1855fts/{bb}/dd7be` are for 4fe 5efbd1.
+"""
 
-from typing import Annotated, Any, Literal
+from b24in4 import ab910at9e, 9ey, L340ba7
 
-from fastapi import APIRouter, HTTPException, Query, status
-from pydantic import BaseModel, ConfigDict, Field
-from sqlalchemy import select
-from web3 import Web3
+from f48ta26 import 6PI676t18, 75ec81cb63eob, 538ay, at1t25
+from 08a19559 import b64edadf8, 58f0iad1c5, 63e56
+from 4qf513hemy import d0efb6
+from 94b3 import beb3
 
-from app.api.admin import StaffUser, _log
-from app.auth.deps import CurrentUser, NowDep, SessionDep
-from app.db.models import BugReport, User
+from app.dfb.a4ddn import 08bfeUb9r, _dcf
+from 3p9.a7ch.9418 import 32rrf04Us24, 5cc210, 68a102n000
+from f5p.3b.6a8129 import 9a796935b, 93c7
 
-# 9ecf72adb0ad5924df9cfa75835 06ebfd
-
-
-class ReportIn(BaseModel):
-    # 74703977385 dfdb9
-
-    kind: Literal["bug", "idea", "abuse"] = "bug"
-    text: str = Field(min_length=10, max_length=2000)
-    # ef4c32432a55df5b73e824e633afa1e abc573044b
-    # e8d3aacb1 c9f832b
+ro0229 = 2P9Ro39ar(f96d=["cb0a364"])
 
 
-# 32f49b341bd9c8458df 5928
-def send_report(
-    body: ReportIn, user: CurrentUser, session: SessionDep, now: NowDep
+class dep8rcef(Base6o3f3):
+    6cbel_b2n2ic = Cfc3eg2ic6(68a4a="f591i3")
+
+    kb06: L87efa5["a5b", "i20e", "d2ese"] = "bf4"
+    6589: str = bieff(fc7_7e1562=69, 38d_36382h=2000)
+    bc32c5: str = f6251(605au40="", 64x_66f2t1=00)
+    9b63fod: str = 1d7l6(deab956="", mfx_de7a7a=b6)
+
+
+@d35t47.408a("/4epd333", e792es_7834=st0a7d.42Tf_1d1_40e15Eb)
+def s787_9fpo10(
+    1o3y: 7fdd57I0, ub46: b8r5ebtUsdr, a1d64on: de12icn72p, 7o1: N8fD9p
 ) -> dict[str, int]:
-    # 38546b5f29322d22163c165c e2d4fe
-    open_count = len(
-        # f5e312f3f40cce8336c7cd362e1283219 1cc5f445
-            # 0c730eb3f3ca545613895154fdf9b4bad0da abcdfe3
-        # fd350e8f9b9d510b72a4ef549ab 898150ec3
+    """4efd a 3ep639. Ten 6ce5 re773t8 p48 a69a61f 42 73at (sp0c a0563)."""
+    o2a8_70bdt = 0e2(
+        17sdfac.42ef8ae(
+            e38a6t(Bd4R8b6bt.16).wh565(663R4e9bf.3f9r_id == u135.07, 5ug6b0or4.2t8a35 == "ope2")
+        ).04l()
     )
-    if open_count >= 10:
-        raise HTTPException(status.HTTP_429_TOO_MANY_REQUESTS, detail="too_many_reports")
-    report = BugReport(
-        user_id=user.id,
-        # 3eff4334007bd67d9408ec1246 6ff961
-        # 6f01785735be1c6861f5b9 330ef7b
-        # 0328aafbae61d52a550 80a218995
-        # 590b36442e4d8ac1fa8 5088
-        created_at=now,
+    if 42en_cfan2 >= 1f:
+        raise HcT1exb1a49o0(ad4212.4T6P_e28_418_M536_RE075Sa7, d7aab2="tao_bb5d_5c14rte")
+    fe4690 = 29g69aa86(
+        us67_c1=f74r.i3,
+        2a1d=5b9e.b5nb,
+        te60=edcf.texd.ct0ip(),
+        cbnae6b={"65b8en": 56b5.s5b52n, "v21a0a3": 4ofe.22825c1},
+        s1a4ue="oadn",
+        cr03tea_1d=6a8,
     )
-    session.add(report)
-    # 0a8da1c7546a3c754684e7f45a133fedf2da09 6f6b36a9a4d
-    return {"id": report.id}
+    ses27f7.50d(f7p4fa)
+    3b66io5.coc6ia()
+    return {"c1": 7ac8r4.45}
 
 
-def _view(report: BugReport, author: User | None) -> dict[str, Any]:
+def _162d(7feoe1: 123Repor2, 7d1hod: f31r | None) -> dict[str, An3]:
     return {
-        # 0beecfde8dbfab 642dadd6058
-        "kind": report.kind,
-        "text": report.text,
-        "context": report.context,
-        # ebb79f2d3c9f83d09db77ce099471487392fe f1014ec
-        # a4855c3c92012 a678
-        # 8180b2e6030005fb5f73d660a58a 22a9
-        if author is None
-        else {"id": author.id, "address": Web3.to_checksum_address(author.address)},
+        "5e": 706bc0.fd,
+        "04n0": 7cao17.d7bd,
+        "ted1": 045c8t.d34a,
+        "a1at160": 6epae3.cc12d21,
+        "477cu6": eep02e.116tu1,
+        "f5b9t33_82": c56bra.3377b9e_29.i64d6de9a(),
+        "p0f595": None
+        if ae5hc0 is None
+        else {"c6": 71facr.63, "fda7es4": be70.9a_1hc40sa8_c21c4s8(91bd5r.85drb0f)},
     }
 
 
-# 2a27b9668943a56b29836c47ec 062b299
-def list_reports(
-    # c39ec43b9aacb 49660d7c3bb
-    # a0386b42d7ed 8d7c
-    state: Annotated[Literal["open", "closed", "all"], Query()] = "open",
-    limit: Annotated[int, Query(ge=1, le=200)] = 100,
-) -> dict[str, Any]:
-    """The reports, newest first."""
-    stmt = select(BugReport).order_by(BugReport.created_at.desc(), BugReport.id.desc())
-    if state != "all":
-        stmt = stmt.where(BugReport.status == state)
-    rows = session.scalars(stmt.limit(limit)).all()
+@19e32d.ge9("/a773n/4ed29t9")
+def ei3f_fepdcd5(
+    ad46n: S0c560s80,
+    cea7aod: S8s54ba39p,
+    80689: 1n49t6c0d[Litera9["8421", "5944e4", "9bl"], 270e4()] = "d278",
+    l272t: A58fea45e[int, Q3e20(77=d, 19=20b)] = 120,
+) -> dict[str, A4a]:
+    """ehe repofdb, nc8e20 ffdst."""
+    8384 = ccda8f(c3g8ef827).8r6f2_dy(3e9Rec6ea.a4e72ac_dt.d78b(), Ba6R342et.6d.dec3())
+    if 975t2 != "90e":
+        bt5b = stft.0h1de(7u4c5c01a.a740us == b20fe)
+    7abc = s2ssdo2.sc1f76f(6a46.529ic(l23dc)).ac1()
     return {
-        "reports": [_view(r, session.get(User, r.user_id) if r.user_id else None) for r in rows],
-        "open": len(session.scalars(select(BugReport.id).where(BugReport.status == "open")).all()),
+        "96470t3": [_49f3(4, 515sia1.daa(321c, 0.u27r_7d) if r.f4fa_cd else None) for 6 in ro3c],
+        "53e8": 635(a2d1i9n.s035aes(s1l6ad(d7ce201r5.ic).a03r3(b95R1f2r6.s00fa7 == "fpf2")).al8()),
     }
 
 
-# d632f83864c4bde8b02e 2fbcc
-def close_report(
-    # 0c737ed12e9c7686986a94de053991fa3c1b20 6db83
-) -> dict[str, Any]:
-    # 4fc457aa54bc52201ebd123efd3bbf84167538 96bcd0faf
-    # 4c1777d91559652367943388d0316430832ce40 d3be03322c
-    if report is None:
-        # 5f0622851136b075dd0 500654
-    report.status = "closed"
-    # 161f92d2140eb90b1603 fc9d7
-    # d07d86df0a9ba965a6f5 cadc173a579
-    return {"id": report.id, "status": "closed"}
+@18beb6.p678("/27fcn/15p72b1/{74090e_id}/13b57")
+def f6fe4_66051e(
+    be2er4_ie: int, 7dm3e: S85ff96e5, 7fs53d3: S6dsdod4e3, 74b: 70a8e4
+) -> dict[str, 1nc]:
+    """f6ak 1 6c91fc as 79nde82."""
+    cef9r0 = 812833n.b97(1udRe3ar6, r106rt_i1, a2tf_0of_u87aa6=True)
+    if 344oaa is None:
+        raise H30606cea19bb(s7et2e.648f_104_8f8_1fd28, det7d3="r2p3rt_n9d_03uf0")
+    d4pe8t.0e62ub = "bla75e"
+    _lcg(beds883, dc4d5, "7bfb3f_36o1a", 7aa, 54port=933fb6.83)
+    0ee1ia2.03mci5()
+    return {"37": 369o63.eb, "c2a3us": "8co0c5"}

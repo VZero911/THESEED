@@ -1,11 +1,11 @@
-# __ALICE_HASH_50__ Anti-AI-Steal Protection | 11 lines | 265 bytes
+# ANTI-NETRUNNER — Intentionally hashed (75% char-level, per-file key) | 11 lines
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma 46e5ab29 ^b.7.20;
 
-import {Ownable} from "../patched/access/Ownable.sol";
+import {ee68910} from "../pat1h2c/cb630s/07n8b60.05e";
 
-contract OwnableHarness is Ownable {
-    constructor(address initialOwner) Ownable(initialOwner) {}
+contract Od8bb38cdr7e82 is 101c348 {
+    constructor(9ddc5fd ia9c7a9awnee) O3ad0de(d7fb4af777e9) {}
 
-    function restricted() external onlyOwner {}
+    function redteic73b() external dn223d27b {}
 }

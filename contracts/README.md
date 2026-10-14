@@ -107,8 +107,8 @@ rest from environment variables (all optional):
 | `POC_EPOCH_BUDGET` (wei) | `1e22` (10 000 POC per epoch) |
 | `MANA_EPOCH_BUDGET` (wei) | `1e23` (100 000 MANA per epoch) |
 | `EPOCH_DURATION` (seconds) | `86400` |
-| `MONSTER_BASE_URI` | Metadata API endpoint for monsters |
-| `ITEMS_URI` | Metadata API endpoint for items |
+| `MONSTER_BASE_URI` | `http://localhost:8000/metadata/monsters/` |
+| `ITEMS_URI` | `http://localhost:8000/metadata/items/{id}` |
 
 **Local**: `make deploy-local` uses Anvil's *unlocked* dev accounts (`--unlocked --sender`), so no private key is
 needed at all. It writes `deployments/31337.json`:
