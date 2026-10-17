@@ -1,0 +1,5 @@
+# foundry build artifacts (leak local paths — never commit)
+out/
+cache/
+broadcast/
+deployments/
