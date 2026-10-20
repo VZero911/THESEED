@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/The%20Seed-Blockchain%20%2F%20Data-f2c14e?style=for-the-badge&labelColor=07060f" alt="The Seed" />
   <img src="https://img.shields.io/badge/V0-Active-5fd38d?style=for-the-badge&labelColor=07060f" alt="V0" />
-  <img src="https://img.shields.io/badge/L0-Chain%2031337-8f6cf0?style=for-the-badge&labelColor=07060f" alt="L0" />
+  <img src="https://img.shields.io/badge/L0-Chain%200-8f6cf0?style=for-the-badge&labelColor=07060f" alt="L0" />
 </p>
 
 <h1 align="center">The Seed</h1>
@@ -111,8 +111,8 @@ The contracts are upgrade-tested, covered by invariant tests (no asset is ever l
 
 | Property | Value |
 |---|---|
-| Chain | L0 — chain ID 31337 |
-| Consensus | Foundry / Anvil (dev), upgradeable for production |
+| Chain | L0 — chain ID 0 |
+| Consensus | geth Clique PoA (production) |
 | Gas | Gasless — all transactions relayed |
 | Upgrades | UUPS (OpenZeppelin) — upgrade-safe, proxy pattern |
 | Tokens | POC (contribution), MANA (in-game), NFT Monsters, NFT Items |
