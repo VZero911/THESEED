@@ -1,4 +1,10 @@
 <p align="center">
+  <a href="https://claude.ai/artifact/DVeJj778Ccmdtgpeh7JkMU">
+    <img src="assets/theseed.gif" alt="THESEED — Layer Zero, interactive 3D view" width="100%" />
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/The%20Seed-Blockchain%20%2F%20Data-f2c14e?style=for-the-badge&labelColor=07060f" alt="The Seed" />
   <img src="https://img.shields.io/badge/V0-Active-5fd38d?style=for-the-badge&labelColor=07060f" alt="V0" />
   <img src="https://img.shields.io/badge/L0-Chain%200-8f6cf0?style=for-the-badge&labelColor=07060f" alt="L0" />
